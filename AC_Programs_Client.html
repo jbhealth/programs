@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AC — JB Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
+.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
+.header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
+.header-info{flex:1;}
+.brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
+.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
+.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
+.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
+.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
+.tab-btn:hover{color:rgba(255,255,255,0.7);}
+.tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
+.tab-btn.archive-tab{color:rgba(255,255,255,0.45);font-size:12px;}
+.tab-btn.archive-tab.active{color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.3);}
+.content{max-width:800px;margin:0 auto;padding:28px 20px 80px;}
+.program-panel{display:none;}
+.program-panel.active{display:block;}
+.program-header{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.program-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.section-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey);margin:22px 0 10px;}
+.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px;transition:box-shadow 0.2s;}
+.exercise-card:hover{box-shadow:0 4px 18px rgba(27,63,107,0.07);}
+.exercise-card.main{border-left:3px solid var(--blue);}
+.ex-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.2;flex:1;}
+.ex-badges{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;}
+.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;}
+.badge-sets{background:var(--navy);color:#fff;}
+.badge-equip{background:var(--accent);color:var(--blue);}
+.ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
+.ex-desc p{margin-bottom:6px;}
+.ex-desc strong{color:var(--navy);font-weight:500;}
+.archive-month{border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;}
+.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:white;cursor:pointer;transition:background 0.15s;}
+.archive-month-header:hover{background:var(--accent);}
+.archive-month-title{font-weight:500;color:var(--navy);font-size:14px;}
+.archive-chevron{color:var(--grey);transition:transform 0.2s;font-size:12px;}
+.archive-month.open .archive-chevron{transform:rotate(180deg);}
+.archive-month-body{display:none;padding:16px 18px;background:#FAFCFE;border-top:1px solid var(--border);}
+.archive-month.open .archive-month-body{display:block;}
+.archive-program-header{font-weight:600;color:var(--navy);font-size:13px;margin:10px 0 6px;}
+.archive-ex{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(27,63,107,0.08);}
+.archive-ex:last-child{border-bottom:none;}
+.archive-ex-name{font-size:13px;color:var(--navy);font-weight:500;line-height:1.3;}
+.archive-ex-sets{font-size:12px;color:var(--grey);white-space:nowrap;flex-shrink:0;text-align:right;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-top">
+    <div class="header-info">
+      <div class="brand">JB Health</div>
+      <div class="client-name">AC</div>
+      <div class="month-label"></div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="meta-pill">Full Gym</span><span class="meta-pill">2 Sets · 10-15 Reps</span>
+    <span class="meta-pill">Sessions: —</span>
+  </div>
+</div>
+<div class="tab-nav">
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
+</div>
+<div class="content">
+
+<div class="program-panel active" id="program-0">
+<div class="program-header">
+<div class="program-title">Program 1 — Knee Stability &amp; Functional Control</div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
+</div>
+
+<div class="exercise-card main" data-id="p0-ex0">
+
+<div class="ex-top">
+<div class="ex-name">TRX Reverse Lunge</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">TRX</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Hold TRX handles for balance.</p>
+<p><strong>Focus:</strong> Use the TRX for balance, not power. Progress to freestanding when control is established.</p>
+<p><strong>Movement:</strong> Step one foot back into a lunge. Lower rear knee toward floor, return through front heel.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex1">
+
+<div class="ex-top">
+<div class="ex-name">Romanian Deadlift – Single Leg</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">DB</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand tall holding weight in front of your thighs.</p>
+<p><strong>Focus:</strong> Keep your back flat throughout — feel the stretch develop in your hamstrings.</p>
+<p><strong>Movement:</strong> Push hips back and lower weight down the front of your legs. Drive hips forward to return.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex2">
+
+<div class="ex-top">
+<div class="ex-name">Suitcase Carry</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 20m each side</span><span class="badge badge-equip">DB / KB</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Hold heavy dumbbell or kettlebell in one hand at side.</p>
+<p><strong>Focus:</strong> Resist lateral pull trying to lean you toward loaded side. Completely upright.</p>
+<p><strong>Movement:</strong> Walk for prescribed distance. Switch hands at halfway point.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex3">
+
+<div class="ex-top">
+<div class="ex-name">Balance – Single Leg with Arm Reach</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 5 reaches each side</span><span class="badge badge-equip">Bodyweight</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand on one leg with soft knee bend.</p>
+<p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p>
+<p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex4">
+
+<div class="ex-top">
+<div class="ex-name">Band Pallof Press – Half Kneeling</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 10 each side</span><span class="badge badge-equip">Band</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p>
+<p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p>
+<p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex5">
+
+<div class="ex-top">
+<div class="ex-name">TRX Hamstring Curl</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">TRX</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Lie on your back with both heels in the TRX loops and hips raised off the floor.</p>
+<p><strong>Focus:</strong> Keep your hips elevated throughout the entire set — don't let them drop between reps. Feel your hamstrings working through the full movement.</p>
+<p><strong>Movement:</strong> Bend your knees to pull the handles toward your glutes. Extend back to straight legs. Hips stay raised throughout.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex6">
+
+<div class="ex-top">
+<div class="ex-name">Copenhagen Plank – Short Lever</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 20–30 sec each side</span><span class="badge badge-equip">Bench</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Set up in side plank with lower shin resting on a bench.</p>
+<p><strong>Focus:</strong> Keep straight body line head to ankle. Feel adductors and lateral core engaged.</p>
+<p><strong>Movement:</strong> Other leg hovers below bench — unsupported. Hold position.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex7">
+
+<div class="ex-top">
+<div class="ex-name">Calf Raises – Slow Eccentric</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand with feet flat on the floor.</p>
+<p><strong>Focus:</strong> The single leg eccentric (lowering) phase is the therapeutic component. Go slow.</p>
+<p><strong>Movement:</strong> Rise onto both feet, transfer to one foot. Lower that heel slowly over 4 seconds. Rise on both feet each rep.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex8">
+
+<div class="ex-top">
+<div class="ex-name">Lateral Band Walks</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 12 each side</span><span class="badge badge-equip">Band</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Place resistance band above knees, stand in a slight squat.</p>
+<p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p>
+<p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p>
+</div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex9">
+
+<div class="ex-top">
+<div class="ex-name">Step Box – Forward / Side / Rotation</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 3 mins</span><span class="badge badge-equip">Step Box</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand in front of or to the side of a step box.</p>
+<p><strong>Focus:</strong> Maintain consistent momentum control between directions.</p>
+<p><strong>Movement:</strong> Perform three step-ups in sequence: forward, lateral, and with rotation. Complete all reps in each direction before switching.</p>
+</div>
+
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">May 2026</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian Deadlift – BB</div></div><div class="archive-ex-sets">3 × 6–8</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian Deadlift – Single Leg</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Step-Up – High Box</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Copenhagen Plank – Short Lever</div></div><div class="archive-ex-sets">3 × 20–30 sec each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band Pallof Press – Half Kneeling</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Cossack Squat</div></div><div class="archive-ex-sets">3 × 6 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Glute Bridges – Single Leg</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Lateral Band Walks</div></div><div class="archive-ex-sets">3 × 12 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Good Morning (Light)</div></div><div class="archive-ex-sets">3 × 8</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">29th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">14th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg bridges</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Back extension machine</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Cable abductor</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Calf drops/raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Hopping/ricochet work</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">6th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg bridges</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Back extension machine</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Cable abductor</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Calf drops/raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Hopping/ricochet work</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">17th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg bridges</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Back extension machine</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Calf drops/raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Hopping/ricochet work?</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">9th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg bridges</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Back extension machine</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Calf drops/raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Hopping/ricochet work?</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">4th March</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">6th Nov</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">18th Sep</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">1st Aug</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5–10 × 2</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 × 2 · 2 weights</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn × 2</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Step box / side / rotation</div></div><div class="archive-ex-sets">10 each · Low</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift (KB)</div></div><div class="archive-ex-sets">10 · 6kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift – no support</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">15th July</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5–10 × 2</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 × 2 · 2 weights</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn × 2</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Abductor machine</div></div><div class="archive-ex-sets">10–15 × 2 · 2–3 weights</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift (KB)</div></div><div class="archive-ex-sets">10 · 6kg</div></div>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+function showProgram(index, btn) {
+  const panels = document.querySelectorAll('.program-panel');
+  const btns = document.querySelectorAll('.tab-btn');
+  panels.forEach(p => p.classList.remove('active'));
+  btns.forEach(b => b.classList.remove('active'));
+  const target = document.getElementById('program-' + index);
+  if (target) { target.classList.add('active'); btn.classList.add('active'); }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.archive-month-header').forEach(function(header){
+    header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
+  });
+});
+</script>
+</body>
+</html>
