@@ -94,8 +94,8 @@ function buildGrid(list) {
       <div class="client-initial">${c.code}</div>
       <div class="client-code">${c.code}</div>
       <div class="card-links">
-        <a class="card-link client" href="${c.code}_Programs_Client.html">Client</a>
-        <a class="card-link master" href="${MASTER_BASE}${c.code}_Programs_Master.html" target="_blank" rel="noopener">Master</a>
+        <a class="card-link client" href="JB_${c.code}_Programs_Client.html">Client</a>
+        <a class="card-link master" href="${MASTER_BASE}JB_${c.code}_Programs_Master.html" target="_blank" rel="noopener">Master</a>
       </div>
     </div>`).join('');
   document.getElementById('clientCount').textContent = `${clients.length} clients`;
