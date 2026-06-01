@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CM — JB Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
+.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
+.header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
+.header-info{flex:1;}
+.brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
+.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
+.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
+.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
+.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
+.tab-btn:hover{color:rgba(255,255,255,0.7);}
+.tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
+.tab-btn.archive-tab{color:rgba(255,255,255,0.45);font-size:12px;}
+.tab-btn.archive-tab.active{color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.3);}
+.content{max-width:800px;margin:0 auto;padding:28px 20px 80px;}
+.program-panel{display:none;}
+.program-panel.active{display:block;}
+.program-header{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.program-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.section-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey);margin:22px 0 10px;}
+.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px;transition:box-shadow 0.2s;}
+.exercise-card:hover{box-shadow:0 4px 18px rgba(27,63,107,0.07);}
+.exercise-card.main{border-left:3px solid var(--blue);}
+.ex-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.2;flex:1;}
+.ex-badges{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;}
+.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;}
+.badge-sets{background:var(--navy);color:#fff;}
+.badge-equip{background:var(--accent);color:var(--blue);}
+.ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
+.ex-desc p{margin-bottom:6px;}
+.ex-desc strong{color:var(--navy);font-weight:500;}
+.archive-month{border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;}
+.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:white;cursor:pointer;transition:background 0.15s;}
+.archive-month-header:hover{background:var(--accent);}
+.archive-month-title{font-weight:500;color:var(--navy);font-size:14px;}
+.archive-chevron{color:var(--grey);transition:transform 0.2s;font-size:12px;}
+.archive-month.open .archive-chevron{transform:rotate(180deg);}
+.archive-month-body{display:none;padding:16px 18px;background:#FAFCFE;border-top:1px solid var(--border);}
+.archive-month.open .archive-month-body{display:block;}
+.archive-program-header{font-weight:600;color:var(--navy);font-size:13px;margin:10px 0 6px;}
+.archive-ex{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(27,63,107,0.08);}
+.archive-ex:last-child{border-bottom:none;}
+.archive-ex-name{font-size:13px;color:var(--navy);font-weight:500;line-height:1.3;}
+.archive-ex-sets{font-size:12px;color:var(--grey);white-space:nowrap;flex-shrink:0;text-align:right;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-top">
+    <div class="header-info">
+      <div class="brand">JB Health</div>
+      <div class="client-name">CM</div>
+      <div class="month-label"></div>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span class="meta-pill">See program</span>
+    <span class="meta-pill">Sessions: Owes 4</span>
+  </div>
+</div>
+<div class="tab-nav">
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
+</div>
+<div class="content">
+
+<div class="program-panel active" id="program-0">
+<div class="program-header">
+<div class="program-title">Program 1 — KB Power &amp; Carry</div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">Week commencing: 1 June 2026</span></div>
+<div style="font-size:13px;color:var(--grey);margin-top:2px;">Hip power · Anti-rotation carries · Shoulder stability</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">2 rounds</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">60 sec rest</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">30 mins</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">KB · Bands · Bodyweight</span></div>
+</div>
+
+<div class="section-label">Main Circuit</div>
+<div class="rounds-info" style="background:var(--accent);border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:13px;color:var(--blue);font-weight:500;">2 rounds · 60 sec rest</div>
+<div class="exercise-card main" data-id="p0-ex0">
+
+<div class="ex-top"><div class="ex-name">KB Swings</div><div class="ex-badges"><span class="badge badge-sets">3 × 12 · Moderate-Heavy</span><span class="badge badge-equip">Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with feet slightly wider than hip-width, kettlebell on the floor just ahead of you.</p><p><strong>Focus:</strong> Power comes entirely from your hip snap — not your arms. Think explosive hip extension, not shoulder lift.</p><p><strong>Movement:</strong> Hinge at the hips and hike the kettlebell back between your legs. Explosively snap your hips forward, letting the bell float to chest height. Control the descent back into the hinge.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex1">
+
+<div class="ex-top"><div class="ex-name">Push-up – Varied Grip</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each grip</span><span class="badge badge-equip">Bodyweight</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Set up in a push-up position.</p><p><strong>Focus:</strong> Three grip widths shift the load differently — standard targets chest and triceps, wide emphasises chest, narrow hits triceps hard.</p><p><strong>Movement:</strong> Perform push-ups in three grips within the same set: standard, wide, then narrow. Maintain a strict plank line throughout.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex2">
+
+<div class="ex-top"><div class="ex-name">Waiter Carry – Single Arm</div><div class="ex-badges"><span class="badge badge-sets">2 × 20m each</span><span class="badge badge-equip">Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright — no leaning away from the load.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex3">
+
+<div class="ex-top"><div class="ex-name">Balance – Single Leg Eyes Closed</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Bodyweight</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Establish a controlled single leg stance with eyes open first. Soft knee bend, tall spine.</p><p><strong>Focus:</strong> Closing your eyes dramatically increases proprioceptive demand by removing the visual cue. Master eyes-open first — don't rush.</p><p><strong>Movement:</strong> Once you have solid eyes-open control, close your eyes and hold balance. Open if needed to reset. Build time gradually.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex4">
+
+<div class="ex-top"><div class="ex-name">Side Plank – With Rotation</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each side</span><span class="badge badge-equip">Bodyweight</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Set up in a full side plank — elbow under shoulder, feet stacked.</p><p><strong>Focus:</strong> Rotation comes from your thoracic spine — not your lumbar. Keep your lower back stable throughout.</p><p><strong>Movement:</strong> Reach your top arm underneath your body, rotating through your upper back. Return to the start position under control.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex5">
+
+<div class="ex-top"><div class="ex-name">Goblet Squat – Pause at Bottom</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 · Moderate</span><span class="badge badge-equip">Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell in front of chest.</p><p><strong>Focus:</strong> At the bottom, keep your chest tall and lower back neutral. Hold the tension — don't collapse into the hips.</p><p><strong>Movement:</strong> Squat down and pause 3 seconds at bottom. Drive through heels to stand.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p0-ex6">
+
+<div class="ex-top"><div class="ex-name">Bottoms-Up KB Carry</div><div class="ex-badges"><span class="badge badge-sets">2 × 15m each</span><span class="badge badge-equip">Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell upside down — bell pointing up, handle pointing down — at shoulder height with your elbow bent at 90°.</p><p><strong>Focus:</strong> Continuous rotator cuff firing required to maintain the inverted position. Start with a light kettlebell — harder than it looks.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the upside-down position at shoulder height. Keep your torso upright throughout.</p></div>
+
+</div>
+
+<div class="section-label">Cardio Finisher</div>
+<div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
+<div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">Ice Skaters</div>
+<div style="font-size:13px;color:var(--grey);">30 sec on · 15 sec off · 4 rounds · ~3 mins. Push off one leg and bound laterally, landing softly on the opposite foot. Stay on the balls of your feet. Build speed as you settle in.</div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header">
+<div class="program-title">Program 2 — DB Strength &amp; Stability</div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">Week commencing: 1 June 2026</span></div>
+<div style="font-size:13px;color:var(--grey);margin-top:2px;">Lateral squat pattern · Anti-lateral flexion · Single leg strength</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">2 rounds</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">60 sec rest</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">30 mins</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">DB · Bodyweight</span></div>
+</div>
+
+<div class="section-label">Main Circuit</div>
+<div class="rounds-info" style="background:var(--accent);border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:13px;color:var(--blue);font-weight:500;">2 rounds · 60 sec rest</div>
+<div class="exercise-card main" data-id="p1-ex0">
+
+<div class="ex-top"><div class="ex-name">DB Lateral Lunge</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each · Moderate</span><span class="badge badge-equip">Dumbbell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding dumbbells at your sides.</p><p><strong>Focus:</strong> Keep the lunging knee tracking over your foot. Chest tall throughout.</p><p><strong>Movement:</strong> Take a wide step to one side, bend that knee while keeping the other leg straight. Push through the lunging heel to return to standing.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p1-ex1">
+
+<div class="ex-top"><div class="ex-name">Single Arm Clean and Press</div><div class="ex-badges"><span class="badge badge-sets">3 × 6 each · Moderate</span><span class="badge badge-equip">Dumbbell / Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with a kettlebell or dumbbell on the floor between your feet.</p><p><strong>Focus:</strong> Hip drive initiates the clean — not your arms. Explosive hip extension then press overhead in one fluid movement.</p><p><strong>Movement:</strong> Hinge and clean the weight to shoulder height using explosive hip drive. Press overhead to full arm extension. Lower under control.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p1-ex2">
+
+<div class="ex-top"><div class="ex-name">Suitcase Carry</div><div class="ex-badges"><span class="badge badge-sets">2 × 20m each</span><span class="badge badge-equip">Dumbbell / Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a heavy dumbbell or kettlebell in one hand at side.</p><p><strong>Focus:</strong> Resist the lateral pull trying to lean you toward the loaded side. Stay completely upright — anti-lateral flexion challenge.</p><p><strong>Movement:</strong> Walk for prescribed distance. Switch hands at halfway point.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p1-ex3">
+
+<div class="ex-top"><div class="ex-name">ISO Romanian Deadlift – Single Leg</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Dumbbell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hinge into a single leg RDL position with your torso roughly parallel to the floor and one leg extended behind.</p><p><strong>Focus:</strong> Feel the posterior chain endurance demand. Keep your back flat and hips square throughout.</p><p><strong>Movement:</strong> Hold the position for the prescribed time. Use a light dumbbell in one or both hands. Focus on hamstring tension — not just balance.</p></div>
+
+
+</div>
+<div class="exercise-card main" data-id="p1-ex4">
+
+<div class="ex-top"><div class="ex-name">Hollow Body Hold</div><div class="ex-badges"><span class="badge badge-sets">2 × 25 sec</span><span class="badge badge-equip">Bodyweight</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with arms extended overhead and legs straight out.</p><p><strong>Focus:</strong> Press your entire lower back firmly into the floor. Feel like a hollow banana shape — the lower back must stay flat.</p><p><strong>Movement:</strong> Hold position with core tension. If lower back lifts off, raise your legs higher.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p1-ex5">
+
+<div class="ex-top"><div class="ex-name">Lunge and Rotate</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each · Light-Moderate</span><span class="badge badge-equip">Dumbbell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall ready to step into a lunge.</p><p><strong>Focus:</strong> Rotation comes from your thoracic spine, not arm swinging. Control both the lunge and the rotation.</p><p><strong>Movement:</strong> Step into lunge, at bottom rotate torso toward front leg while holding weight. Return to centre, push back to standing. Alternate sides.</p></div>
+
+</div>
+<div class="exercise-card main" data-id="p1-ex6">
+
+<div class="ex-top"><div class="ex-name">ISO Split Squat – Weighted</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each · Light</span><span class="badge badge-equip">Dumbbell / Kettlebell</span></div></div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells or a kettlebell and lower into a split squat — both knees at 90°, front shin vertical, rear knee hovering just above the floor.</p><p><strong>Focus:</strong> Torso upright, front shin vertical, core braced. Hips level. Builds strength endurance in quads and hip flexors simultaneously.</p><p><strong>Movement:</strong> Hold the bottom position isometrically for the prescribed time. Don't let the rear knee touch the floor.</p></div>
+
+</div>
+
+<div class="section-label">Cardio Finisher</div>
+<div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
+<div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">Mountain Climbers</div>
+<div style="font-size:13px;color:var(--grey);">30 sec on · 15 sec off · 4 rounds · ~3 mins. Full push-up plank, hips level. Drive knees to chest alternating at a controlled-to-fast pace. Build speed as rounds progress.</div>
+</div>
+</div>
+<div class="program-panel" id="program-2">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<!-- ARCHIVE_RECENT_START -->
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">May / June 2026</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header">Program 1 — KB Focus</div>
+<div class="archive-ex"><div><div class="archive-ex-name">KB Deadlift</div></div><div class="archive-ex-sets">3 × 8-10</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">KB Single Arm Row</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">KB Romanian Deadlift</div></div><div class="archive-ex-sets">3 × 8</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band Crab Walk</div></div><div class="archive-ex-sets">3 × 12 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">KB Shrug</div></div><div class="archive-ex-sets">3 × 12</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band Shoulder Press</div></div><div class="archive-ex-sets">3 × 10</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">KB Side Bend (Anti-Lateral Flexion)</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Alternate V-Ups</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+<div class="archive-program-header">Program 2 — DB Focus</div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Goblet Squat &amp; Reach</div></div><div class="archive-ex-sets">2 × 15 · 5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Woodchop</div></div><div class="archive-ex-sets">2 × 12 each · 7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Curl &amp; Press</div></div><div class="archive-ex-sets">2 × 15 each · 5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Squat</div></div><div class="archive-ex-sets">3 × 10 each · 7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Single Leg Deadlift (Overhead)</div></div><div class="archive-ex-sets">2 × 8 each · 5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Press</div></div><div class="archive-ex-sets">2 × 15 each · 5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Shin to Opposite Shoulder</div></div><div class="archive-ex-sets">10 each · 3kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Reverse Crunches (removed)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg Raises</div></div><div class="archive-ex-sets">3 × 10</div></div>
+</div>
+</div>
+<!-- ARCHIVE_RECENT_END -->
+<!-- ARCHIVE_HISTORICAL_START -->
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">22nd May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Core</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">20th May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Wood chops (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Sit ups (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Lunge and rotate (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Curl and press (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift (DB)</div></div><div class="archive-ex-sets">5kg</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">15th May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Band walks</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Clams</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Alternate Vups</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Squat reach</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Clean and press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bicep curls</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Triceps overhead</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">13th May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Shrugs (Kettlebell)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (Kettlebell)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Sit ups</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Romanians (Kettlebell)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Side bend (Kettlebell)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Back lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bridge</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">8th May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Arnold press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Lateral raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg raises (Pilates ball)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bridges (Pilates ball squeeze)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Goblet squat hold</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Clean and press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">4th May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Core</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">1st May</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single arm presses (DB)</div></div><div class="archive-ex-sets">7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Tricep push backs (DB)</div></div><div class="archive-ex-sets">7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Planks</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Alternate leg V ups</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Squat press (DB)</div></div><div class="archive-ex-sets">7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bicep curls (DB)</div></div><div class="archive-ex-sets">7kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift (DB)</div></div><div class="archive-ex-sets">7kg</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">27th Apr</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Shin to opposite shoulder (5kg)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Curl and press (7kg)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">V ups</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Goblet and reach (5kg)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Straight arm raises (7kg then 5kg)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (12kg)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">23rd Apr</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Core</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">20th Apr</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-body">
+<div class="archive-program-header"></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Arnold press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Lateral raises</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Leg raises (Pilates ball)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bridges (Pilates ball squeeze)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Goblet squat hold</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Clean and press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<!-- ARCHIVE_HISTORICAL_END -->
+</div>
+
+</div>
+<script>
+function showProgram(index, btn) {
+  const panels = document.querySelectorAll('.program-panel');
+  const btns = document.querySelectorAll('.tab-btn');
+  panels.forEach(p => p.classList.remove('active'));
+  btns.forEach(b => b.classList.remove('active'));
+  const target = document.getElementById('program-' + index);
+  if (target) { target.classList.add('active'); btn.classList.add('active'); }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.archive-month-header').forEach(function(header){
+    header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
+  });
+});
+</script>
+</body>
+</html>
