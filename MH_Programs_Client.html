@@ -10,15 +10,15 @@
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
-.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+
+
 .tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
@@ -67,10 +67,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="month-label"></div>
 </div>
 </div>
-<div class="header-meta">
-<span class="meta-pill">Barbell &amp; Full Gym</span><span class="meta-pill">3-4 Sets · 4-8 Reps</span>
-<span class="meta-pill">Sessions: 3 of 10</span>
-</div>
+
 </div>
 <div class="tab-nav">
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
@@ -254,7 +251,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="archive-ex"><div><div class="archive-ex-name">Straight-Arm Raises with Plate (Shoulder/Lat)</div></div><div class="archive-ex-sets">3 x 10 · Light-Moderate</div></div>
 </div>
 </div>
-
 <div class="archive-month">
 <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
 <span class="archive-month-title">19th May</span>
