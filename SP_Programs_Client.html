@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>SP — JB Health</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
-.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+
+
 .tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
@@ -59,23 +60,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </head>
 <body>
 <div class="header">
-  <div class="header-top">
-    <div class="header-info">
-      <div class="brand">JB Health</div>
-      <div class="client-name">SP</div>
-      <div class="month-label"></div>
-    </div>
-  </div>
-  <div class="header-meta">
-    <span class="meta-pill">See program</span>
-    <span class="meta-pill">Sessions: —</span>
-  </div>
+<div class="header-top">
+<div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">SP</div>
+<div class="month-label"></div>
+</div>
+</div>
+
 </div>
 <div class="tab-nav">
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
 </div>
 <div class="content">
-
 <div class="program-panel active" id="program-0">
 <div class="program-header">
 <div class="program-title">Program 1 — Squat, Pull &amp; Carry</div>
@@ -83,52 +80,36 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div style="font-size:13px;color:var(--grey);margin-top:2px;">Squat pattern · Posterior chain · Loaded stability</div>
 <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">2 sets per exercise</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">Rest as needed</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">30 mins</span><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">BB · DB · TRX · Band</span></div>
 </div>
-
 <div class="section-label">Main Circuit</div>
 <div class="rounds-info" style="background:var(--accent);border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:13px;color:var(--blue);font-weight:500;">2 sets per exercise · Rest as needed</div>
 <div class="exercise-card main" data-id="p0-ex0">
-
 <div class="ex-top"><div class="ex-name">Back Squat – BB</div><div class="ex-badges"><span class="badge badge-sets">2 × 6 · Moderate</span><span class="badge badge-equip">Barbell</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Place the barbell across your upper traps with feet shoulder-width apart and toes pointing slightly out.</p><p><strong>Focus:</strong> Keep your chest tall and knees tracking over your toes. Core braced throughout — breathe in at the top, out on the way up.</p><p><strong>Movement:</strong> Push your hips back and knees out as you descend to hip crease at or below parallel. Drive through your heels to stand.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex1">
-
 <div class="ex-top"><div class="ex-name">Single Arm DB Row – Incline</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each · Moderate</span><span class="badge badge-equip">Dumbbell / Incline Bench</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie face down on an incline bench with one arm hanging freely. Hold a dumbbell in the hanging hand.</p><p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex2">
-
 <div class="ex-top"><div class="ex-name">TRX Hamstring Curl</div><div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">TRX</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with both heels in the TRX loops and hips raised off the floor.</p><p><strong>Focus:</strong> Keep your hips elevated throughout the entire set — don't let them drop between reps. Feel the hamstrings loading.</p><p><strong>Movement:</strong> Bend your knees to pull the handles toward your glutes. Extend back to straight legs. Hips stay up throughout.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex3">
-
 <div class="ex-top"><div class="ex-name">Suitcase Carry</div><div class="ex-badges"><span class="badge badge-sets">2 × 20m each</span><span class="badge badge-equip">Dumbbell / Kettlebell</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Hold a heavy dumbbell or kettlebell in one hand at side.</p><p><strong>Focus:</strong> Resist the lateral pull trying to lean you toward the loaded side. Stay completely upright — anti-lateral flexion challenge.</p><p><strong>Movement:</strong> Walk for prescribed distance. Switch hands at halfway point.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex4">
-
 <div class="ex-top"><div class="ex-name">Balance – Single Leg Eyes Closed</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Bodyweight</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Establish a controlled single leg stance with eyes open first. Soft knee bend, tall spine.</p><p><strong>Focus:</strong> Closing your eyes dramatically increases proprioceptive demand by removing the visual cue. Master eyes-open first — don't rush.</p><p><strong>Movement:</strong> Once you have solid eyes-open control, close your eyes and hold balance. Open if needed to reset. Build time gradually.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex5">
-
 <div class="ex-top"><div class="ex-name">Dead Bug – Slow with Band</div><div class="ex-badges"><span class="badge badge-sets">2 × 6 each</span><span class="badge badge-equip">Band</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°. Loop a band between both hands and the opposite foot.</p><p><strong>Focus:</strong> 4-second tempo both extending and returning. Quality is the priority — this is the most challenging dead bug variation.</p><p><strong>Movement:</strong> Slowly extend the opposing arm and leg over 4 seconds while maintaining lower back contact with the floor. Return under control.</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex6">
-
 <div class="ex-top"><div class="ex-name">Copenhagen Plank – Short Lever</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Bench</span></div></div>
 <div class="ex-desc"><p><strong>Start:</strong> Set up in side plank with lower shin resting on a bench.</p><p><strong>Focus:</strong> Keep straight body line head to ankle. Feel adductors and lateral core engaged.</p><p><strong>Movement:</strong> Other leg hovers below bench — unsupported. Hold position for prescribed time each side.</p></div>
-
 </div>
-
 <div class="section-label">Cardio Finisher</div>
 <div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
 <div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">Pivot Lunges</div>
@@ -184,7 +165,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 <!-- ARCHIVE_HISTORICAL_END -->
 </div>
-
 </div>
 <script>
 function showProgram(index, btn) {
