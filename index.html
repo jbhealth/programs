@@ -27,12 +27,27 @@ body { font-family:'DM Sans',sans-serif; background:var(--warm); color:var(--dar
 .search-input { width:100%; border:1.5px solid var(--border); border-radius:10px; padding:12px 16px; font-size:14px; font-family:'DM Sans',sans-serif; outline:none; color:var(--dark); background:white; }
 .search-input:focus { border-color:var(--blue); }
 
-/* GRID */
-.content { max-width:860px; margin:0 auto; padding:20px 20px 80px; }
-.section-title { font-size:11px; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--grey); margin:24px 0 12px; }
+/* CONTENT / SECTIONS */
+.content { max-width:860px; margin:0 auto; padding:8px 20px 80px; }
+.client-section { margin-top:18px; border-bottom:1px solid var(--border); padding-bottom:18px; }
+.client-section:last-child { border-bottom:none; }
+.section-header { display:flex; align-items:center; gap:10px; cursor:pointer; padding:12px 2px; user-select:none; }
+.section-header:hover .section-title { color:var(--navy); }
+.chevron { font-size:11px; color:var(--blue); transition:transform 0.2s ease; display:inline-block; }
+.client-section:not(.collapsed) .chevron { transform:rotate(90deg); }
+.section-title { font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--grey); }
+.section-count { font-size:11px; font-weight:500; color:var(--grey); background:var(--accent); border-radius:20px; padding:2px 9px; }
+.section-body { margin-top:8px; }
+.client-section.collapsed .section-body { display:none; }
+.section-empty { color:var(--grey); font-size:13px; padding:6px 2px 2px; font-style:italic; }
+
+/* GRID + CARDS */
 .client-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
 .client-card { background:white; border:1px solid var(--border); border-radius:14px; padding:18px 16px 14px; transition:all 0.2s; position:relative; }
 .client-card:hover { box-shadow:0 6px 22px rgba(27,63,107,0.10); border-color:var(--blue); transform:translateY(-1px); }
+.card-badge { position:absolute; top:12px; right:12px; font-size:9px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; padding:3px 8px; border-radius:7px; }
+.card-badge.inperson { background:var(--accent); color:var(--blue); }
+.card-badge.online { background:var(--navy); color:#fff; }
 .client-initial { width:42px; height:42px; border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:16px; font-weight:700; color:var(--navy); margin-bottom:12px; letter-spacing:0.02em; }
 .client-code { font-family:'Playfair Display',serif; font-size:15px; font-weight:600; color:var(--navy); margin-bottom:12px; }
 .card-links { display:flex; gap:8px; }
@@ -60,12 +75,11 @@ body { font-family:'DM Sans',sans-serif; background:var(--warm); color:var(--dar
 </div>
 
 <div class="search-wrap">
-  <input type="text" class="search-input" id="searchInput" placeholder="Search by code…" oninput="filterClients()" />
+  <input type="text" class="search-input" id="searchInput" placeholder="Search by code…" oninput="render()" />
 </div>
 
 <div class="content">
-  <div class="section-title">All Clients</div>
-  <div class="client-grid" id="clientGrid"></div>
+  <div id="sections"></div>
   <div class="no-results" id="noResults">No clients found</div>
 </div>
 
@@ -78,37 +92,76 @@ body { font-family:'DM Sans',sans-serif; background:var(--warm); color:var(--dar
 // Master repo file-view base (private — opens for the signed-in trainer only)
 const MASTER_BASE = 'https://github.com/jbhealth/masters/blob/main/';
 
-// Client codes (initials). Update this list as the roster changes.
+// Client codes (initials) + stream. Update this list as the roster changes.
 const clients = [
-  { code:'AM' }, { code:'AC' }, { code:'AB' }, { code:'AL' }, { code:'BW' },
-  { code:'CP' }, { code:'CM' }, { code:'CB' }, { code:'EC' }, { code:'EL' },
-  { code:'FH' }, { code:'JJ' }, { code:'KH' }, { code:'KB' }, { code:'LS' },
-  { code:'MH' }, { code:'NS' }, { code:'RC' }, { code:'SP' }, { code:'SD' },
-  { code:'SB' }, { code:'HH' }
+  { code:'AM', stream:'in-person' }, { code:'AC', stream:'in-person' }, { code:'AB', stream:'in-person' },
+  { code:'AL', stream:'in-person' }, { code:'BW', stream:'in-person' }, { code:'CP', stream:'in-person' },
+  { code:'CM', stream:'in-person' }, { code:'CB', stream:'in-person' }, { code:'EC', stream:'in-person' },
+  { code:'EL', stream:'in-person' }, { code:'FH', stream:'in-person' }, { code:'JJ', stream:'in-person' },
+  { code:'KH', stream:'in-person' }, { code:'KB', stream:'in-person' }, { code:'LS', stream:'in-person' },
+  { code:'MH', stream:'in-person' }, { code:'NS', stream:'in-person' }, { code:'RC', stream:'in-person' },
+  { code:'SP', stream:'in-person' }, { code:'SD', stream:'in-person' }, { code:'SB', stream:'in-person' },
+  { code:'HH', stream:'in-person' }
 ];
 
-function buildGrid(list) {
-  const grid = document.getElementById('clientGrid');
-  grid.innerHTML = list.map(c => `
+const PREFIX = { 'in-person':'JB_', 'online':'OL_' };
+
+// Section order + default collapse state (in-person open, online collapsed)
+const sections = [
+  { key:'in-person', label:'In-Person', collapsed:false },
+  { key:'online',    label:'Online',    collapsed:true  }
+];
+
+function cardHTML(c) {
+  const p = PREFIX[c.stream];
+  const badgeClass = c.stream === 'online' ? 'online' : 'inperson';
+  const badgeText  = c.stream === 'online' ? 'Online' : 'In-Person';
+  return `
     <div class="client-card">
+      <div class="card-badge ${badgeClass}">${badgeText}</div>
       <div class="client-initial">${c.code}</div>
       <div class="client-code">${c.code}</div>
       <div class="card-links">
-        <a class="card-link client" href="JB_${c.code}_Programs_Client.html">Client</a>
-        <a class="card-link master" href="${MASTER_BASE}JB_${c.code}_Programs_Master.html" target="_blank" rel="noopener">Master</a>
+        <a class="card-link client" href="${p}${c.code}_Programs_Client.html">Client</a>
+        <a class="card-link master" href="${MASTER_BASE}${p}${c.code}_Programs_Master.html" target="_blank" rel="noopener">Master</a>
       </div>
-    </div>`).join('');
-  document.getElementById('clientCount').textContent = `${clients.length} clients`;
+    </div>`;
 }
 
-function filterClients() {
+function render() {
   const q = document.getElementById('searchInput').value.toLowerCase();
-  const filtered = clients.filter(c => c.code.toLowerCase().includes(q));
-  buildGrid(filtered);
-  document.getElementById('noResults').style.display = filtered.length === 0 ? 'block' : 'none';
+  const searching = q.length > 0;
+  let totalMatches = 0;
+
+  document.getElementById('sections').innerHTML = sections.map(sec => {
+    const items = clients.filter(c => c.stream === sec.key && c.code.toLowerCase().includes(q));
+    totalMatches += items.length;
+    // when searching, force sections open so matches are never hidden
+    const collapsed = searching ? false : sec.collapsed;
+    const body = items.length
+      ? `<div class="client-grid">${items.map(cardHTML).join('')}</div>`
+      : `<div class="section-empty">${searching ? 'No matches here.' : (sec.key === 'online' ? 'No online clients yet.' : 'No clients.')}</div>`;
+    return `
+      <div class="client-section ${collapsed ? 'collapsed' : ''}">
+        <div class="section-header" onclick="toggleSection('${sec.key}')">
+          <span class="chevron">&#9656;</span>
+          <span class="section-title">${sec.label}</span>
+          <span class="section-count">${items.length}</span>
+        </div>
+        <div class="section-body">${body}</div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('clientCount').textContent = `${clients.length} clients`;
+  document.getElementById('noResults').style.display = (searching && totalMatches === 0) ? 'block' : 'none';
 }
 
-buildGrid(clients);
+function toggleSection(key) {
+  const sec = sections.find(s => s.key === key);
+  if (sec) { sec.collapsed = !sec.collapsed; render(); }
+}
+
+render();
 </script>
 </body>
 </html>
