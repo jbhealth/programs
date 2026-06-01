@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>NS — JB Health</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
-.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+
+
 .tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
@@ -59,31 +60,25 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </head>
 <body>
 <div class="header">
-  <div class="header-top">
-    <div class="header-info">
-      <div class="brand">JB Health</div>
-      <div class="client-name">NS</div>
-      <div class="month-label"></div>
-    </div>
-  </div>
-  <div class="header-meta">
-    <span class="meta-pill">DB &amp; Bands</span><span class="meta-pill">2 Sets · 8-12 Reps</span>
-    <span class="meta-pill">Sessions: Owes 1</span>
-  </div>
+<div class="header-top">
+<div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">NS</div>
+<div class="month-label"></div>
+</div>
+</div>
+
 </div>
 <div class="tab-nav">
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
-
 <div class="program-panel active" id="program-0">
 <div class="program-header">
 <div class="program-title">Program 1 — Foundation &amp; Left Side Control</div>
 <div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
 </div>
-
 <div class="exercise-card main" data-id="p0-ex0">
-
 <div class="ex-top">
 <div class="ex-name">Goblet squat</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Dumbbell</span></div>
@@ -93,10 +88,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p>
 <p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex1">
-
 <div class="ex-top">
 <div class="ex-name">Dumbbell Romanian deadlift</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Dumbbell</span></div>
@@ -106,10 +99,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p>
 <p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex2">
-
 <div class="ex-top">
 <div class="ex-name">Wall slides</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Wall</span></div>
@@ -119,10 +110,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep entire back and both arms in wall contact throughout — no loss of contact.</p>
 <p><strong>Movement:</strong> Slide arms up slowly toward overhead while maintaining wall contact. Slide back down with control.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex3">
-
 <div class="ex-top">
 <div class="ex-name">Scapular retraction – seated</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Bodyweight</span></div>
@@ -132,10 +121,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep shoulders pressed down — don't shrug. Feel your shoulder blades squeeze together.</p>
 <p><strong>Movement:</strong> Draw shoulder blades back and together, hold 5 seconds, release slowly. Repeat.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex4">
-
 <div class="ex-top">
 <div class="ex-name">Step-ups – forward low</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 8 each side</span><span class="badge badge-equip">Step</span></div>
@@ -145,10 +132,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Drive through the heel of the elevated foot — don't push off the back foot.</p>
 <p><strong>Movement:</strong> Step one foot up, drive through that heel to stand fully. Lower with control, repeat.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex5">
-
 <div class="ex-top">
 <div class="ex-name">Balance – single leg assisted</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 30 sec each</span><span class="badge badge-equip">Wall</span></div>
@@ -158,10 +143,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Balance through your standing foot, not through the wall. Keep the wall touch feather-light.</p>
 <p><strong>Movement:</strong> Stand on one leg for the prescribed time. Switch sides and repeat.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex6">
-
 <div class="ex-top">
 <div class="ex-name">Lateral band walks</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12 each direction</span><span class="badge badge-equip">Resistance Band</span></div>
@@ -171,10 +154,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p>
 <p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex7">
-
 <div class="ex-top">
 <div class="ex-name">Reverse lunge – bodyweight</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 8 each side</span><span class="badge badge-equip">Bodyweight</span></div>
@@ -184,10 +165,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep your front knee over your ankle and torso upright. Control the descent.</p>
 <p><strong>Movement:</strong> Step one foot back into a lunge, lowering rear knee toward floor. Push through front heel to return.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex8">
-
 <div class="ex-top">
 <div class="ex-name">Dead bug – arms only</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each side</span><span class="badge badge-equip">Mat</span></div>
@@ -197,10 +176,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep your lower back pressed into the floor the entire time — this is non-negotiable.</p>
 <p><strong>Movement:</strong> Lower one arm slowly overhead toward the floor, return, then alternate sides. Never let your lower back arch.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex9">
-
 <div class="ex-top">
 <div class="ex-name">Side plank – knees bent</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Mat</span></div>
@@ -210,7 +187,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep your hips straight — don't let your top hip roll backward. Stay in a straight line.</p>
 <p><strong>Movement:</strong> Lift your hips to form a straight line from knees to head. Hold for the prescribed time.</p>
 </div>
-
 </div>
 </div>
 <div class="program-panel" id="program-1">
@@ -234,7 +210,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 </div>
-
 </div>
 <script>
 function showProgram(index, btn) {
