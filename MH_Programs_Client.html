@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MH — JB Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
+.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
+.header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
+.header-info{flex:1;}
+.brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
+.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
+.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
+.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
+.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
+.tab-btn:hover{color:rgba(255,255,255,0.7);}
+.tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
+.tab-btn.archive-tab{color:rgba(255,255,255,0.45);font-size:12px;}
+.tab-btn.archive-tab.active{color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.3);}
+.content{max-width:800px;margin:0 auto;padding:28px 20px 80px;}
+.program-panel{display:none;}
+.program-panel.active{display:block;}
+.program-header{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.program-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.section-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey);margin:22px 0 10px;}
+.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px;transition:box-shadow 0.2s;}
+.exercise-card:hover{box-shadow:0 4px 18px rgba(27,63,107,0.07);}
+.exercise-card.main{border-left:3px solid var(--blue);}
+.ex-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.2;flex:1;}
+.ex-badges{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;}
+.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;}
+.badge-sets{background:var(--navy);color:#fff;}
+.badge-equip{background:var(--accent);color:var(--blue);}
+.ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
+.ex-desc p{margin-bottom:6px;}
+.ex-desc strong{color:var(--navy);font-weight:500;}
+.archive-month{border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;}
+.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:white;cursor:pointer;transition:background 0.15s;}
+.archive-month-header:hover{background:var(--accent);}
+.archive-month-title{font-weight:500;color:var(--navy);font-size:14px;}
+.archive-chevron{color:var(--grey);transition:transform 0.2s;font-size:12px;}
+.archive-month.open .archive-chevron{transform:rotate(180deg);}
+.archive-month-body{display:none;padding:16px 18px;background:#FAFCFE;border-top:1px solid var(--border);}
+.archive-month.open .archive-month-body{display:block;}
+.archive-program-header{font-weight:600;color:var(--navy);font-size:13px;margin:10px 0 6px;}
+.archive-ex{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(27,63,107,0.08);}
+.archive-ex:last-child{border-bottom:none;}
+.archive-ex-name{font-size:13px;color:var(--navy);font-weight:500;line-height:1.3;}
+.archive-ex-sets{font-size:12px;color:var(--grey);white-space:nowrap;flex-shrink:0;text-align:right;}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-top">
+<div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">MH</div>
+<div class="month-label"></div>
+</div>
+</div>
+<div class="header-meta">
+<span class="meta-pill">Barbell &amp; Full Gym</span><span class="meta-pill">3-4 Sets · 4-8 Reps</span>
+<span class="meta-pill">Sessions: 3 of 10</span>
+</div>
+</div>
+<div class="tab-nav">
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
+</div>
+<div class="content">
+<div class="program-panel active" id="program-0">
+<div class="program-header">
+<div class="program-title">Program 1 — Squat &amp; Push</div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
+</div>
+<div class="exercise-card main" data-id="p0-ex0">
+<div class="ex-top">
+<div class="ex-name">Back squat – high bar</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 5 · heavy</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Place the barbell high on your traps close to the base of your neck, feet shoulder-width.</p>
+<p><strong>Focus:</strong> High bar position requires a more upright torso than low bar. Keep your chest tall and knees tracking over toes.</p>
+<p><strong>Movement:</strong> Squat to parallel or below with an upright torso. Drive through your heels to stand.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p0-ex1">
+<div class="ex-top">
+<div class="ex-name">Barbell forward lunge</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Place the barbell across your upper traps with feet hip-width apart.</p>
+<p><strong>Focus:</strong> Front knee tracks over your ankle. Keep your torso upright throughout.</p>
+<p><strong>Movement:</strong> Step into a forward lunge, lowering rear knee toward floor. Drive through your front heel to return to standing.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p0-ex2">
+<div class="ex-top">
+<div class="ex-name">Barbell bench press</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 6-8</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Lie flat on a bench with eyes under the bar. Grip the bar just wider than shoulder-width, feet flat on the floor. Retract and depress your shoulder blades into the bench.</p>
+<p><strong>Focus:</strong> Keep your shoulder blades pinched together throughout. Lower with control — don't let the bar bounce off your chest. Maintain a slight arch in your lower back.</p>
+<p><strong>Movement:</strong> Unrack the bar and lower it in a slight arc to your lower chest. Touch lightly, then press back up and slightly back toward the rack. Lock out at the top without losing tension.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p0-ex3">
+<div class="ex-top">
+<div class="ex-name">Dips – slow negative</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Dip Station</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Grip the dip bars with arms straight. Use assistance for the concentric (up) phase.</p>
+<p><strong>Focus:</strong> The slow negative builds eccentric strength — the most effective stimulus for dip strength development.</p>
+<p><strong>Movement:</strong> Lower yourself over 4–5 seconds to the bottom position. Use assistance on the way back up if needed.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p0-ex4">
+<div class="ex-top">
+<div class="ex-name">Renegade row</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Dumbbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Start in a push-up plank position with a dumbbell in each hand directly under your shoulders.</p>
+<p><strong>Focus:</strong> Prevent your hips from rotating — that's the whole challenge. Row one side at a time while the rest of the body stays still.</p>
+<p><strong>Movement:</strong> Row one dumbbell to hip height, keeping your hips level. Place it back down, then row the other side.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p0-ex5">
+<div class="ex-top">
+<div class="ex-name">Ab rollout – full</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Ab Wheel</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Kneel on the floor holding an ab wheel or loaded barbell, arms straight.</p>
+<p><strong>Focus:</strong> Keep your lower back flat throughout — critical. The slow eccentric lowering is where the strength is built.</p>
+<p><strong>Movement:</strong> Roll forward, extending your body toward the floor until your chest is close to touching. Roll back under control.</p>
+</div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header">
+<div class="program-title">Program 2 — Deadlift &amp; Pull</div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
+</div>
+<div class="exercise-card main" data-id="p1-ex0">
+<div class="ex-top">
+<div class="ex-name">Barbell deadlift</div>
+<div class="ex-badges"><span class="badge badge-sets">4 × 4 · heavy</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand with feet hip-width apart, barbell over mid-foot. Hinge at the hips and grip the bar just outside your legs with a neutral or double overhand grip.</p>
+<p><strong>Focus:</strong> Keep your back flat and chest up throughout. Drive your feet through the floor — this is a push, not a pull. Bar stays close to your body the entire way.</p>
+<p><strong>Movement:</strong> Take a deep breath and brace your core. Drive through your heels, extending hips and knees simultaneously until you're standing tall. Lower with control by hinging at the hips first, then bending the knees as the bar passes them.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p1-ex1">
+<div class="ex-top">
+<div class="ex-name">Romanian deadlift to shrug</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 · moderate</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand tall holding the barbell at hip height with a shoulder-width grip.</p>
+<p><strong>Focus:</strong> The shrug at the top should be explosive. Feel your traps and posterior chain working together.</p>
+<p><strong>Movement:</strong> Perform a Romanian deadlift, then at the top add an explosive shoulder shrug before lowering back down.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p1-ex2">
+<div class="ex-top">
+<div class="ex-name">Pull-ups</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × max</span><span class="badge badge-equip">Pull-up Bar</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Hang from a pull-up bar with hands just wider than shoulder-width, palms facing away. Arms fully extended, shoulders engaged — don't just hang passively.</p>
+<p><strong>Focus:</strong> Initiate with your shoulder blades — pull them down and back before bending your elbows. Think about driving your elbows toward your hips.</p>
+<p><strong>Movement:</strong> Pull your chest toward the bar by driving elbows down. Chin clears the bar at the top. Lower with full control back to a dead hang. Avoid swinging or kipping.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p1-ex3">
+<div class="ex-top">
+<div class="ex-name">DB single-arm press</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Dumbbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p>
+<p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p>
+<p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p1-ex4">
+<div class="ex-top">
+<div class="ex-name">Reverse lunge – BB</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Barbell</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Place the barbell across your upper traps with feet hip-width apart.</p>
+<p><strong>Focus:</strong> Front knee tracks over your ankle. Reverse lunge places less stress on the knee than forward lunge.</p>
+<p><strong>Movement:</strong> Step back into a lunge, lowering the rear knee toward the floor. Drive through your front heel to return.</p>
+</div>
+</div>
+<div class="exercise-card main" data-id="p1-ex5">
+<div class="ex-top">
+<div class="ex-name">ISO Copenhagen plank</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 20-30 sec each</span><span class="badge badge-equip">Mat</span></div>
+</div>
+<div class="ex-desc">
+<p><strong>Start:</strong> Lie on your side with your top foot or shin resting on a bench. Set up a side plank with your bottom elbow under your shoulder.</p>
+<p><strong>Focus:</strong> Build time progressively — start with shin on bench, progress to ankle. Keep your body in a straight line throughout.</p>
+<p><strong>Movement:</strong> Hold the position for the prescribed time with no hip drop. This isometric exercise loads both the adductors and lateral core.</p>
+</div>
+</div>
+</div>
+<div class="program-panel" id="program-2">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">Previous Program 1</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Deadlift (Heavy)</div></div><div class="archive-ex-sets">3 x 5-6 · 120</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Sumo Deadlift (Variation)</div></div><div class="archive-ex-sets">3 x 6-8 · 110</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Bent-Over Row</div></div><div class="archive-ex-sets">3 x 6-8 · 55</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single-Arm DB Row</div></div><div class="archive-ex-sets">3 x 8 each · 20</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Bench Press</div></div><div class="archive-ex-sets">3 x 6-8 · 50</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Chest Fly (Assistance)</div></div><div class="archive-ex-sets">3 x 8-10 · Moderate</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Press</div></div><div class="archive-ex-sets">3 x 8 each · Moderate</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Ab Sling Hold (Core)</div></div><div class="archive-ex-sets">3 x 30-45 sec</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">Previous Program 2</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Squat (Heavy)</div></div><div class="archive-ex-sets">3 x 5-6 · 80</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Front Squat with Plate (Knee-Friendly Variation)</div></div><div class="archive-ex-sets">2 x10 · 15</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Romanian Deadlift (Posterior Chain)</div></div><div class="archive-ex-sets">To burn x2 · 60</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Pull-Ups (Bodyweight or Weighted)</div></div><div class="archive-ex-sets">7, 6 · Bodyweight or Light Weight</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Press (Shoulder)</div></div><div class="archive-ex-sets">2 x5 · 52.5</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Barbell Dips Assistance (Upper Body Power)</div></div><div class="archive-ex-sets">To burn x2 · Bodyweight or Light Weight</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift Overhead with Plate (Unilateral)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Straight-Arm Raises with Plate (Shoulder/Lat)</div></div><div class="archive-ex-sets">3 x 10 · Light-Moderate</div></div>
+</div>
+</div>
+
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">19th May</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">15th May</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">7th May</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">30th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Pause squats</div></div><div class="archive-ex-sets">40kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">45kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bench narrow</div></div><div class="archive-ex-sets">40kg</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">28th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Bent over rows</div></div><div class="archive-ex-sets">50kg</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">23rd Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg squats (Bench)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">45kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">21st Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Bent over rows</div></div><div class="archive-ex-sets">50kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Press</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Warrior row/press</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">10th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+<div class="archive-month">
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">9th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
+<div class="archive-month-body">
+<div class="archive-ex"><div><div class="archive-ex-name">Single leg squats (Bench)</div></div><div class="archive-ex-sets">—</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">50kg</div></div>
+<div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+function showProgram(index, btn) {
+  const panels = document.querySelectorAll('.program-panel');
+  const btns = document.querySelectorAll('.tab-btn');
+  panels.forEach(p => p.classList.remove('active'));
+  btns.forEach(b => b.classList.remove('active'));
+  const target = document.getElementById('program-' + index);
+  if (target) { target.classList.add('active'); btn.classList.add('active'); }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.archive-month-header').forEach(function(header){
+    header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
+  });
+});
+</script>
+</body>
+</html>
