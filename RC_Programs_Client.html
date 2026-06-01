@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>RC — JB Health</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
-.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+
+
 .tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
@@ -59,31 +60,25 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </head>
 <body>
 <div class="header">
-  <div class="header-top">
-    <div class="header-info">
-      <div class="brand">JB Health</div>
-      <div class="client-name">RC</div>
-      <div class="month-label"></div>
-    </div>
-  </div>
-  <div class="header-meta">
-    <span class="meta-pill">Full Gym</span><span class="meta-pill">2 Sets · 8-12 Reps</span>
-    <span class="meta-pill">Sessions: Owes 1</span>
-  </div>
+<div class="header-top">
+<div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">RC</div>
+<div class="month-label"></div>
+</div>
+</div>
+
 </div>
 <div class="tab-nav">
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
 </div>
 <div class="content">
-
 <div class="program-panel active" id="program-0">
 <div class="program-header">
 <div class="program-title">Program 1 — Rotation, Power &amp; Hamstrings</div>
 <div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
 </div>
-
 <div class="exercise-card main" data-id="p0-ex0">
-
 <div class="ex-top">
 <div class="ex-name">Single-leg deadlift – DB</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Dumbbell</span></div>
@@ -93,10 +88,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep hips square throughout — the overhead load increases the anti-rotation challenge significantly. Control the movement slowly.</p>
 <p><strong>Movement:</strong> Hinge at the hip, pushing the free leg behind as counterbalance while maintaining the dumbbell overhead. Lower until your torso is near parallel. Drive the standing hip forward to return.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex1">
-
 <div class="ex-top">
 <div class="ex-name">Cable hip abduction</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Cable</span></div>
@@ -106,10 +99,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep your torso upright. Resist leaning away from the cable.</p>
 <p><strong>Movement:</strong> Step away from machine and lift attached leg out to side against cable.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex2">
-
 <div class="ex-top">
 <div class="ex-name">Med ball rotational throw</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine Ball</span></div>
@@ -119,10 +110,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Power comes from your hip rotation — not just your arms. Load your hips by rotating away first.</p>
 <p><strong>Movement:</strong> Rotate away to load, then explosively rotate and throw the ball against the wall. Catch the rebound and repeat.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex3">
-
 <div class="ex-top">
 <div class="ex-name">Band monster walk – diagonal</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Resistance Band</span></div>
@@ -132,10 +121,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Step at 45° angles, alternating directions. Feel your hip stabilisers working in multiple planes.</p>
 <p><strong>Movement:</strong> Step diagonally forward and to the side, alternating directions.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex4">
-
 <div class="ex-top">
 <div class="ex-name">Reverse lunge to knee raise</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div>
@@ -145,10 +132,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Control the lunge before driving the knee. Keep your torso tall throughout.</p>
 <p><strong>Movement:</strong> Perform reverse lunge, then drive rear knee powerfully upward in front. Balance and hip flexor challenge.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex5">
-
 <div class="ex-top">
 <div class="ex-name">Seated cable row</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Cable</span></div>
@@ -158,10 +143,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Drive elbows back, squeeze shoulder blades at the end. Don't lean back to cheat the weight.</p>
 <p><strong>Movement:</strong> Pull the handle to your lower abdomen, driving elbows back. Return to full arm extension under control.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex6">
-
 <div class="ex-top">
 <div class="ex-name">Nordic hamstring curl</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 6</span><span class="badge badge-equip">Bodyweight</span></div>
@@ -171,10 +154,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Control is everything. Lower as slowly as you can — use your hands to catch yourself at the bottom if needed.</p>
 <p><strong>Movement:</strong> Slowly lower your body toward the floor using your hamstrings as the brake. This is the most effective knee injury prevention exercise available.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex7">
-
 <div class="ex-top">
 <div class="ex-name">Hollow body hold</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 30 sec</span><span class="badge badge-equip">Mat</span></div>
@@ -184,10 +165,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Press your entire lower back firmly into the floor. Feel like a hollow banana shape.</p>
 <p><strong>Movement:</strong> Hold position with core tension. If lower back lifts off, raise your legs higher.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex8">
-
 <div class="ex-top">
 <div class="ex-name">ISO Copenhagen plank</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Mat</span></div>
@@ -197,10 +176,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Build time progressively — start with shin on bench, progress to ankle. Keep your body in a straight line throughout.</p>
 <p><strong>Movement:</strong> Hold the position for the prescribed time with no hip drop. This isometric exercise loads both the adductors and lateral core.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p0-finisher">
-
 <div class="ex-top">
 <div class="ex-name">Ski Erg — Cardio Finisher</div>
 <div class="ex-badges"><span class="badge badge-sets">3 × 30 sec on / 30 sec off</span><span class="badge badge-equip">Ski Erg</span></div>
@@ -209,7 +186,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Full body conditioning. Drive from the hips, not just the arms. Keep consistent pace — don't sprint the first interval.</p>
 <p><strong>Movement:</strong> Stand on the footplates, grip the handles overhead. Pull down and back explosively, hinging at the hips. Return arms overhead with control and repeat.</p>
 </div>
-
 </div>
 </div>
 <div class="program-panel" id="program-1">
@@ -217,9 +193,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="program-title">Program 2 — Posterior Chain &amp; Knee Stability</div>
 <div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
 </div>
-
 <div class="exercise-card main" data-id="p1-ex0">
-
 <div class="ex-top">
 <div class="ex-name">KB deadlift</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Kettlebell</span></div>
@@ -229,10 +203,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep your back flat throughout. Keep kettlebell close to your legs.</p>
 <p><strong>Movement:</strong> Push hips back, grip handle. Drive through heels to stand. Squeeze glutes at top.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex1">
-
 <div class="ex-top">
 <div class="ex-name">Balance – single leg with arm reach</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div>
@@ -242,10 +214,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p>
 <p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex2">
-
 <div class="ex-top">
 <div class="ex-name">Band pallof press – half kneeling</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Resistance Band</span></div>
@@ -255,10 +225,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Resist the rotational pull of the band. Keep your hips square and torso facing forward.</p>
 <p><strong>Movement:</strong> Hold band at chest and press straight out. Return to chest.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex3">
-
 <div class="ex-top">
 <div class="ex-name">Single arm DB row – incline</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each · slow eccentric</span><span class="badge badge-equip">Dumbbell</span></div>
@@ -268,10 +236,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p>
 <p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex4">
-
 <div class="ex-top">
 <div class="ex-name">Step-ups – lateral low</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Step</span></div>
@@ -281,10 +247,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep heel fully in contact with the step — don't let it hang off.</p>
 <p><strong>Movement:</strong> Step nearest foot up and sideways. Drive through that heel to stand fully. Lower under control.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex5">
-
 <div class="ex-top">
 <div class="ex-name">Lateral raises – slow eccentric</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span></div>
@@ -294,10 +258,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> The slow eccentric lowering is the therapeutic part — particularly good for supraspinatus health. Keep shoulders down throughout.</p>
 <p><strong>Movement:</strong> Raise the dumbbells to shoulder height at normal speed. Lower over 4 seconds under full control. Repeat.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex6">
-
 <div class="ex-top">
 <div class="ex-name">Back extension machine – bilateral</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Machine</span></div>
@@ -307,10 +269,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Squeeze your glutes hard at the top. Keep your lower back neutral throughout.</p>
 <p><strong>Movement:</strong> Lower your torso, extend back to neutral.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex7">
-
 <div class="ex-top">
 <div class="ex-name">Bicycle twists</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 15 each</span><span class="badge badge-equip">Mat</span></div>
@@ -320,10 +280,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p>
 <p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-ex8">
-
 <div class="ex-top">
 <div class="ex-name">Side plank – feet stacked</div>
 <div class="ex-badges"><span class="badge badge-sets">2 × 30 sec each</span><span class="badge badge-equip">Mat</span></div>
@@ -333,10 +291,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Keep hips pressing forward. Don't let them drop or rotate back.</p>
 <p><strong>Movement:</strong> Lift hips to create a straight line from head to heels. Hold for prescribed time.</p>
 </div>
-
 </div>
 <div class="exercise-card main" data-id="p1-finisher">
-
 <div class="ex-top">
 <div class="ex-name">Ski Erg — Cardio Finisher</div>
 <div class="ex-badges"><span class="badge badge-sets">3 × 30 sec on / 30 sec off</span><span class="badge badge-equip">Ski Erg</span></div>
@@ -345,7 +301,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <p><strong>Focus:</strong> Full body conditioning. Drive from the hips, not just the arms. Keep consistent pace — don't sprint the first interval.</p>
 <p><strong>Movement:</strong> Stand on the footplates, grip the handles overhead. Pull down and back explosively, hinging at the hips. Return arms overhead with control and repeat.</p>
 </div>
-
 </div>
 </div>
 <div class="program-panel" id="program-2">
@@ -520,7 +475,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 </div>
-
 </div>
 <script>
 function showProgram(index, btn) {
