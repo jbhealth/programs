@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>KH — JB Health</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 0;position:relative;overflow:hidden;}
+.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-.header-meta{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;padding-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto;position:relative;z-index:1;}
-.meta-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.65);}
+
+
 .tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
@@ -59,100 +60,79 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </head>
 <body>
 <div class="header">
-  <div class="header-top">
-    <div class="header-info">
-      <div class="brand">JB Health</div>
-      <div class="client-name">KH</div>
-      <div class="month-label"></div>
-    </div>
-  </div>
-  <div class="header-meta">
-    
-    <span class="meta-pill">Sessions: 2 due</span>
-  </div>
+<div class="header-top">
+<div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">KH</div>
+<div class="month-label"></div>
+</div>
+</div>
+
 </div>
 <div class="tab-nav">
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(99,this)">Archive</button>
 </div>
 <div class="content">
-
 <div class="program-panel active" id="program-0">
 <div class="program-header">
 <div class="program-title">Program 1</div>
 </div>
-
 <div class="section-label"></div>
 <div class="exercise-card main" data-id="p0-ex0">
-
 <div class="ex-top">
 <div class="ex-name">Goblet Squat &amp; Reach (Light)</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 10</span><span class="badge badge-equip">Dumbbell</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet shoulder-width apart holding a single dumbbell vertically at chest height (goblet style), cradling it with both hands</p><p><strong>Focus:</strong> Keep your chest upright and core braced</p><p><strong>Movement:</strong> Squat down as deep as mobility allows, then at the bottom position, reach the dumbbell forward or diagonally across your body (rotational reach). Return the dumbbell to chest and drive through your heels to stand. This combines squat mobility with functional reaching in a gentle, movement-rich pattern</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex1">
-
 <div class="ex-top">
 <div class="ex-name">KB Romanian Deadlift (Light)</div>
 <div class="ex-badges"><span class="badge badge-sets">—</span><span class="badge badge-equip">Kettlebell</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, holding a kettlebell in each hand at your sides or one in both hands at chest height</p><p><strong>Focus:</strong> This is a hip hinge movement, not a knee bend</p><p><strong>Movement:</strong> Hinge at the hips, pushing your bottom backward while the kettlebells travel down the front of your legs. Feel a stretch in your hamstrings. Drive your hips forward to stand back up, squeezing your glutes at the top. This posterior chain flow is gentle but highly mobile</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex2">
-
 <div class="ex-top">
 <div class="ex-name">Pivot Lunge (Rotational)</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 8 each side</span><span class="badge badge-equip">Bodyweight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, arms crossed on your chest or hands behind your head</p><p><strong>Focus:</strong> This is a dynamic stepping and rotational movement</p><p><strong>Movement:</strong> Step forward with one leg and pivot your torso toward that leg (rotating to that side). Lower into a lunge while rotating. Push through your front heel to return to standing, rotating back to center. Step back and return to the starting position. Alternate legs. This integrates stepping, rotation, and dynamic balance—excellent for movement quality post-holiday</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex3">
-
 <div class="ex-top">
 <div class="ex-name">Single-Leg Balance Reach (DB)</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 8 each side</span><span class="badge badge-equip">Dumbbell</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with a soft knee, holding a light dumbbell in one hand</p><p><strong>Focus:</strong> Balance and controlled movement</p><p><strong>Movement:</strong> Maintain your single-leg stance while reaching the dumbbell forward, to the side, and backward in controlled motions (or perform a single reach in each direction). Return to center after each reach. This is pure movement quality work—gentle loading with high proprioceptive demand. Complete all reaches on one side, then switch legs</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex4">
-
 <div class="ex-top">
 <div class="ex-name">Cable Rotation (Low to High)</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 10 each side</span><span class="badge badge-equip">Cable</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand perpendicular to a cable machine with the handle set at knee height</p><p><strong>Focus:</strong> This is a rotational core movement with full-body engagement</p><p><strong>Movement:</strong> Rotate your torso, bringing the cable handle diagonally across your body and up to the opposite shoulder (high position). Feel the rotation and engagement in your core. Reverse the movement, rotating back to the low position. This is gentle, flowing rotational work with constant tension</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex5">
-
 <div class="ex-top">
 <div class="ex-name">Quadruped Shoulder Tap</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 10 each side</span><span class="badge badge-equip">Bodyweight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Assume a quadruped position (hands and knees) with hands directly under shoulders and knees directly under hips</p><p><strong>Focus:</strong> Maintain a stable, neutral spine throughout</p><p><strong>Movement:</strong> Maintaining the quadruped position and core stability, lift one arm and tap the opposite shoulder. Return that hand to the floor. Lift the other arm and tap the opposite shoulder. Continue alternating in a controlled manner. This integrates core stability with shoulder mobility and proprioception—excellent post-holiday movement quality work</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex6">
-
 <div class="ex-top">
 <div class="ex-name">Suitcase Carry (DB)</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 30-40 sec each side</span><span class="badge badge-equip">Dumbbell</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand upright holding a single dumbbell at your side in one hand (suitcase position)</p><p><strong>Focus:</strong> Resist leaning toward the weight</p><p><strong>Movement:</strong> Walk forward in a straight line for the prescribed distance or time, maintaining upright posture and level shoulders throughout. The dumbbell remains at your side. Complete the distance, then switch hands and repeat. This builds unilateral core stability, shoulder stability, and postural control in a gentle, functional pattern</p></div>
-
 </div>
 <div class="exercise-card main" data-id="p0-ex7">
-
 <div class="ex-top">
 <div class="ex-name">Reverse Lunge to Knee Raise</div>
 <div class="ex-badges"><span class="badge badge-sets">3 x 10 each</span><span class="badge badge-equip">Dumbbell or Bodyweight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand tall with feet hip-width apart</p><p><strong>Focus:</strong> Step backward far enough that your front knee can bend to approximately 90 degrees without excessive forward knee travel</p><p><strong>Movement:</strong> Step one leg back, lowering into a lunge until your rear knee nearly touches the ground. Drive through your front heel to stand back up. As you stand, raise the rear leg's knee up in front of you (hip flexion). This creates a dynamic stepping pattern and develops balance and control. Alternate legs. This functional movement improves walking mechanics and postural control</p></div>
-
 </div>
 </div>
 <div class="program-panel" id="program-99">
@@ -166,7 +146,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="archive-ex">
 <div>
 <div class="archive-ex-name">Supported back lunges to knee raise</div>
-
 </div>
 <div class="archive-ex-sets">—</div>
 </div>
@@ -179,21 +158,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="archive-ex">
 <div>
 <div class="archive-ex-name">Reverse crunches</div>
-
 </div>
 <div class="archive-ex-sets">—</div>
 </div>
 <div class="archive-ex">
 <div>
 <div class="archive-ex-name">TRX squats</div>
-
 </div>
 <div class="archive-ex-sets">—</div>
 </div>
 <div class="archive-ex">
 <div>
 <div class="archive-ex-name">Single leg balance reaches</div>
-
 </div>
 <div class="archive-ex-sets">—</div>
 </div>
@@ -206,7 +182,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="archive-ex">
 <div>
 <div class="archive-ex-name">Side planks</div>
-
 </div>
 <div class="archive-ex-sets">—</div>
 </div>
@@ -667,7 +642,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 </div>
-
 </div>
 <script>
 function showProgram(index, btn) {
