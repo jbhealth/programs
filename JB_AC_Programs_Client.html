@@ -70,14 +70,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
-<button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
 <div class="program-panel active" id="program-0">
 <div class="program-header">
 <div class="program-title">Program 1 — Knee Stability &amp; Functional Control</div>
-<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">WC 1st June 2026</span></div>
+<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;">WC 1st June 2026</div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
@@ -99,15 +98,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
-<div class="ex-name">Suitcase Carry</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 20m each side</span><span class="badge badge-equip">DB / KB</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold heavy dumbbell or kettlebell in one hand at side.</p>
-<p><strong>Focus:</strong> Resist lateral pull trying to lean you toward loaded side. Completely upright.</p>
-<p><strong>Movement:</strong> Walk for prescribed distance. Switch hands at halfway point.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
 <div class="ex-name">Balance – Single Leg with Arm Reach</div>
 <div class="ex-badges"><span class="badge badge-sets">3 × 5 reaches each side</span><span class="badge badge-equip">Bodyweight</span></div>
 </div>
@@ -126,15 +116,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
-<div class="ex-name">TRX Hamstring Curl</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">TRX</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with both heels in the TRX loops and hips raised off the floor.</p>
-<p><strong>Focus:</strong> Keep your hips elevated throughout the entire set — don't let them drop between reps. Feel your hamstrings working through the full movement.</p>
-<p><strong>Movement:</strong> Bend your knees to pull the handles toward your glutes. Extend back to straight legs. Hips stay raised throughout.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
 <div class="ex-name">Copenhagen Plank – Short Lever</div>
 <div class="ex-badges"><span class="badge badge-sets">3 × 20–30 sec each side</span><span class="badge badge-equip">Bench</span></div>
 </div>
@@ -144,36 +125,30 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
-<div class="ex-name">Calf Raises – Slow Eccentric</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div>
+<div class="ex-name">Waiter carry</div>
+
 </div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand with feet flat on the floor.</p>
-<p><strong>Focus:</strong> The single leg eccentric (lowering) phase is the therapeutic component. Go slow.</p>
-<p><strong>Movement:</strong> Rise onto both feet, transfer to one foot. Lower that heel slowly over 4 seconds. Rise on both feet each rep.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
-<div class="ex-name">Lateral Band Walks</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 12 each side</span><span class="badge badge-equip">Band</span></div>
+<div class="ex-name">Leg extension machine</div>
+
 </div>
-<div class="ex-desc"><p><strong>Start:</strong> Place resistance band above knees, stand in a slight squat.</p>
-<p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p>
-<p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
-<div class="ex-name">Step Box – Forward / Side / Rotation</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 3 mins</span><span class="badge badge-equip">Step Box</span></div>
+<div class="ex-name">Band Terminal Knee Extension</div>
+
 </div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand in front of or to the side of a step box.</p>
-<p><strong>Focus:</strong> Maintain consistent momentum control between directions.</p>
-<p><strong>Movement:</strong> Perform three step-ups in sequence: forward, lateral, and with rotation. Complete all reps in each direction before switching.</p></div>
 </div>
 </div>
 <div class="program-panel" id="program-1">
 <div class="program-header"><div class="program-title">Archive</div></div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">May 2026</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">May 2026</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Romanian Deadlift – BB</div></div><div class="archive-ex-sets">3 × 6–8</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Romanian Deadlift – Single Leg</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
@@ -187,13 +162,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">29th Mar</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">29th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">14th Apr</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">14th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
@@ -207,7 +188,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">6th Apr</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">6th Apr</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
@@ -221,7 +205,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">17th Mar</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">17th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
@@ -234,7 +221,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">9th Mar</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">9th Mar</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Box squats with ball</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Single leg box squats</div></div><div class="archive-ex-sets">—</div></div>
@@ -247,13 +237,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">4th March</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">4th March</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">6th Nov</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">6th Nov</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div>
@@ -267,7 +263,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">18th Sep</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">18th Sep</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
@@ -278,7 +277,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">1st Aug</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">1st Aug</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
@@ -293,7 +295,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <div class="archive-month">
-<div class="archive-month-header"><span class="archive-month-title">15th July</span><span class="archive-chevron">▼</span></div>
+<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
+<span class="archive-month-title">15th July</span>
+<span class="archive-chevron">▼</span>
+</div>
 <div class="archive-month-body">
 <div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
 <div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
