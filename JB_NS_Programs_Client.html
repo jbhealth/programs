@@ -3,14 +3,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>NS — JB Health</title>
+<!-- PWA / app-like -->
+<meta name="theme-color" content="#1B3F6B"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="JB Health"/>
+<link rel="apple-touch-icon" href="icon-180.png"/>
+<link rel="icon" href="icon-180.png"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;}
-.header{background:var(--navy);padding:28px 24px 22px;position:relative;overflow:hidden;}
+html{-webkit-text-size-adjust:100%;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none;}
+.header{background:var(--navy);padding:calc(28px + env(safe-area-inset-top)) calc(24px + env(safe-area-inset-right)) 22px calc(24px + env(safe-area-inset-left));position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
@@ -19,7 +29,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
 
 
-.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;position:sticky;top:0;z-index:50;-webkit-overflow-scrolling:touch;}
 .tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
 .tab-btn:hover{color:rgba(255,255,255,0.7);}
 .tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
