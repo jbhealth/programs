@@ -80,289 +80,266 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn" onclick="showProgram(2,this)">Program 3</button><button class="tab-btn archive-tab" onclick="showProgram(3,this)">Archive</button>
+  <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
+  <button class="tab-btn" onclick="showProgram(1,this)">Program 2</button>
+  <button class="tab-btn" onclick="showProgram(2,this)">Program 3</button>
+  <button class="tab-btn archive-tab" onclick="showProgram(3,this)">Archive</button>
 </div>
 <div class="content">
-<div class="program-panel active" id="program-0">
-<div class="program-header">
-<div class="program-title">Program 1 — Lower Body &amp; Hip Stability</div>
-<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">Week commencing: 1 June 2026</span></div>
-<div style="font-size:13px;color:var(--grey);margin-top:2px;">Knee-safe squat pattern · Hip stability · Single-leg control</div>
-<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">DB · ViPR · Bodyweight</span></div>
-</div>
-<div class="section-label">Main Circuit</div>
-<div class="exercise-card main" data-id="p0-ex1">
-<div class="ex-top"><div class="ex-name">Dumbbell Romanian Deadlift</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 · Light-Moderate</span><span class="badge badge-equip">Dumbbell</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back.</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return.</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Return to standing by driving hips forward.</p></div>
-</div>
-<div class="exercise-card main" data-id="p0-ex2">
-<div class="ex-top"><div class="ex-name">Glute Bridges – Single Leg</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your back, one knee bent with foot flat, other leg extended.</p><p><strong>Focus:</strong> Keep hips level — don't let one side drop.</p><p><strong>Movement:</strong> Drive through the bent knee heel to push hips up. Hold 2 seconds, lower with control.</p></div>
-</div>
-<div class="exercise-card main" data-id="p0-ex4">
-<div class="ex-top"><div class="ex-name">Balance – Single Leg with Arm Reach</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft knee bend.</p><p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p><p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return to centre each time.</p></div>
-</div>
-<div class="exercise-card main" data-id="p0-ex5">
-<div class="ex-top"><div class="ex-name">Dead Bug – Arms and Legs</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo.</p></div>
-</div>
-<div class="exercise-card main" data-id="p0-ex6">
-<div class="ex-top"><div class="ex-name">Side Plank – Feet Stacked</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your side with feet stacked, elbow under shoulder.</p><p><strong>Focus:</strong> Keep hips pressing forward. Don't let them drop or rotate back.</p><p><strong>Movement:</strong> Lift hips to create a straight line from head to heels. Hold for prescribed time.</p></div>
-</div>
-<div class="section-label">Cardio Finisher</div>
-<div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
-<div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">ViPR Side-to-Side Shift with Leg Lift</div>
-<div style="font-size:13px;color:var(--grey);">30 sec on · 15 sec off · 3 rounds · ~2 mins. Lift the leg fully off the floor each time as a progression from previous sessions.</div>
-</div>
-</div>
-<div class="program-panel" id="program-1">
-<div class="program-header">
-<div class="program-title">Program 2 — ViPR &amp; Rotational Strength</div>
-<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">Week commencing: 1 June 2026</span></div>
-<div style="font-size:13px;color:var(--grey);margin-top:2px;">Rotational power · Anti-rotation · Single-leg posterior chain</div>
-<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">ViPR · DB · Bodyweight</span></div>
-</div>
-<div class="section-label">Main Circuit</div>
-<div class="exercise-card main" data-id="p1-ex0">
-<div class="ex-top"><div class="ex-name">ViPR Goblet Squat</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 · Light-Moderate</span><span class="badge badge-equip">ViPR</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold the ViPR vertically at chest height in a goblet position, feet shoulder-width apart.</p><p><strong>Focus:</strong> Keep your chest tall and knees tracking over toes. The ViPR offset load adds a stability challenge.</p><p><strong>Movement:</strong> Squat down as deep as comfortable, keeping chest up. Drive through heels to stand.</p></div>
-</div>
-<div class="exercise-card main" data-id="p1-ex1">
-<div class="ex-top"><div class="ex-name">ViPR Rotations</div><div class="ex-badges"><span class="badge badge-sets">3 × 12 each side</span><span class="badge badge-equip">ViPR</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the ViPR at waist height with both hands.</p><p><strong>Focus:</strong> Start slowly — the offset load can catch you off guard. Core braced, control each direction.</p><p><strong>Movement:</strong> Rotate side to side in a controlled arc. The offset weight creates a unique challenge for trunk control.</p></div>
-</div>
-<div class="exercise-card main" data-id="p1-ex2">
-<div class="ex-top"><div class="ex-name">ISO Romanian Deadlift – Single Leg</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each · Light DB</span><span class="badge badge-equip">Dumbbell</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Hinge into a single leg RDL position with your torso roughly parallel to the floor and one leg extended behind.</p><p><strong>Focus:</strong> Feel the posterior chain endurance demand. Keep your back flat and hips square throughout.</p><p><strong>Movement:</strong> Hold the position for the prescribed time. Use a light dumbbell in one or both hands.</p></div>
-</div>
-<div class="exercise-card main" data-id="p1-ex3">
-<div class="ex-top"><div class="ex-name">Lunge Matrix</div><div class="ex-badges"><span class="badge badge-sets">2 × 5 each direction</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand with good posture, feet hip-width apart.</p><p><strong>Focus:</strong> Stay upright and controlled in each direction. Move slowly through full range.</p><p><strong>Movement:</strong> Complete forward lunges alternating legs, then lateral lunges, then reverse lunges. Control each step.</p></div>
-</div>
-<div class="exercise-card main" data-id="p1-ex4">
-<div class="ex-top"><div class="ex-name">ViPR Needle</div><div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">ViPR</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the ViPR with both hands, one end pointed toward the floor.</p><p><strong>Focus:</strong> Keep your core braced and spine neutral throughout. Control the arc of movement.</p><p><strong>Movement:</strong> Drive the ViPR in a sweeping arc from one side to the other through a needle-threading motion.</p></div>
-</div>
-<div class="exercise-card main" data-id="p1-ex5">
-<div class="ex-top"><div class="ex-name">Bird-Dog</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Start on all fours with a neutral spine.</p><p><strong>Focus:</strong> Keep your spine completely still — no rotation or hip drop.</p><p><strong>Movement:</strong> Extend opposite arm forward and opposite leg behind. Hold 3 seconds, return under control.</p></div>
-</div>
-
-<div class="section-label">Cardio Finisher</div>
-<div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
-<div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">Reverse Lunge – Bodyweight</div>
-<div style="font-size:13px;color:var(--grey);">30 sec on · 15 sec off · 3 rounds · ~2 mins. Step one foot back, lower rear knee toward floor, push through front heel to return. Keep torso upright throughout.</div>
-</div>
-<div class="exercise-card main" data-id="p1-ex6">
-<div class="ex-top"><div class="ex-name">Crunches</div><div class="ex-badges"><span class="badge badge-sets">4 × 15</span><span class="badge badge-equip">Mat</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with knees bent and feet flat on the floor, hands lightly behind your head or crossed on your chest.</p><p><strong>Focus:</strong> Curl up using your abs — never pull on your neck. Keep a small space under your chin and your lower back lightly grounded.</p><p><strong>Movement:</strong> Curl your shoulder blades off the floor toward your knees, then lower under control. Keep the motion smooth, not jerky.</p></div>
-</div></div>
-<div class="program-panel" id="program-2">
-<div class="program-header">
-<div class="program-title">Program 3 — Push, Pull &amp; Core</div>
-<div class="program-date" style="font-size:13px;color:var(--grey);margin-top:4px;"><span class="program-date-value">Week commencing: 1 June 2026</span></div>
-<div style="font-size:13px;color:var(--grey);margin-top:2px;">Upper body strength · Posterior chain · Core endurance</div>
-<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;"><span class="meta-tag" style="background:var(--accent);color:var(--blue);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:500;">DB · Bodyweight</span></div>
-</div>
-<div class="section-label">Main Circuit</div>
-<div class="exercise-card main" data-id="p2-ex0">
-<div class="ex-top"><div class="ex-name">DB Single-Arm Press (Anti-Rotation)</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each · Moderate</span><span class="badge badge-equip">Dumbbell</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand tall with one dumbbell at shoulder height. Other arm at your side.</p><p><strong>Focus:</strong> Resist the trunk rotation and lean created by the single arm load. Core braced, hips level.</p><p><strong>Movement:</strong> Press the dumbbell overhead to full arm extension with one arm. Lower under control. Anti-rotation is the key stimulus.</p></div>
-</div>
-<div class="exercise-card main" data-id="p2-ex1">
-<div class="ex-top"><div class="ex-name">DB Single-Arm Row (Hip Hinge Focus)</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each · Moderate</span><span class="badge badge-equip">Dumbbell</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Hinge at the hips with a flat back, one hand supported on a bench or thigh.</p><p><strong>Focus:</strong> Drive your elbow back toward your hip — not upward. Keep hips square throughout.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip. Lower under full control. Maintain the hinge position throughout.</p></div>
-</div>
-<div class="exercise-card main" data-id="p2-ex2">
-<div class="ex-top"><div class="ex-name">Glute Bridges – March</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip height throughout.</p></div>
-</div>
-<div class="exercise-card main" data-id="p2-ex4">
-<div class="ex-top"><div class="ex-name">Balance – Single Leg Eyes Closed</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 sec each</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Establish a controlled single leg stance with eyes open first. Soft knee bend, tall spine.</p><p><strong>Focus:</strong> Closing your eyes dramatically increases proprioceptive demand by removing the visual cue. Master eyes-open first.</p><p><strong>Movement:</strong> Once you have solid eyes-open control, close your eyes and hold balance. Open if needed to reset.</p></div>
-</div>
-<div class="exercise-card main" data-id="p2-ex5">
-<div class="ex-top"><div class="ex-name">Elbow Plank</div><div class="ex-badges"><span class="badge badge-sets">2 × 30 sec</span><span class="badge badge-equip">Bodyweight</span></div></div>
-<div class="ex-desc"><p><strong>Start:</strong> Place forearms on the floor with elbows under shoulders. Feet together or slightly apart.</p><p><strong>Focus:</strong> Keep a straight line from head to heels — no hip sagging or raising. Breathe steadily.</p><p><strong>Movement:</strong> Hold the position for prescribed time. Focus on bracing your core rather than just surviving.</p></div>
-<div class="ex-note">On elbows — not on hands.</div>
-</div>
-<div class="section-label">Cardio Finisher</div>
-<div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;">
-<div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">Step-ups – Forward Low</div>
-<div style="font-size:13px;color:var(--grey);">30 sec on · 15 sec off · 3 rounds · ~2 mins. Drive through the heel of the elevated foot each time — no pushing off the back foot.</div>
-</div>
-</div>
-<div class="program-panel" id="program-3">
-<div class="program-header"><div class="program-title">Archive</div></div>
-
-<div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">May 2026</span><span class="archive-chevron">▼</span></div>
-<div class="archive-month-body">
-<div class="archive-program-header">Program 1 — ViPR &amp; Hip Mobility</div>
-<div class="archive-ex"><div><div class="archive-ex-name">ViPR Goblet Squat</div></div><div class="archive-ex-sets">× 10</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Lateral Lunge (DB Counterbalance)</div></div><div class="archive-ex-sets">× 10 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">ViPR Needle</div></div><div class="archive-ex-sets">× 10</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Cossack Squat</div></div><div class="archive-ex-sets">× 20</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Lateral Raise – Single Arm</div></div><div class="archive-ex-sets">× 10 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">ViPR Side-to-Side Shift</div></div><div class="archive-ex-sets">× 20</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Side Plank – Hip Drop</div></div><div class="archive-ex-sets">× 30 sec each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Quad Activation – Single Leg Raise</div></div><div class="archive-ex-sets">× 10 each</div></div>
-<div class="archive-program-header">Program 2 — Single-Leg Strength</div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Goblet Squat &amp; Reach</div></div><div class="archive-ex-sets">3 × 8</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Leg Deadlift (Supported)</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Suitcase Squat – Single Arm</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">ViPR Ukrainian Twist</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row (Hip Hinge)</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge to Knee Raise</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Reverse Crunches</div></div><div class="archive-ex-sets">3 × 12</div></div>
-<div class="archive-program-header">Program 3 — DB Hinge &amp; Core</div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Deadlift (Neutral Spine)</div></div><div class="archive-ex-sets">2 × 6 · 10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">ViPR Clean &amp; Press</div></div><div class="archive-ex-sets">× 6 · 10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Press (Anti-Rotation)</div></div><div class="archive-ex-sets">× 6 · 10kg each</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Pallof Press Hold (ViPR)</div></div><div class="archive-ex-sets">2 × 10 · 6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB Bent-Over Row</div></div><div class="archive-ex-sets">× 6 · 10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Back Extension (Bodyweight)</div></div><div class="archive-ex-sets">3 × 10</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Elbow Plank</div></div><div class="archive-ex-sets">× 30 sec</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
-</div>
-</div>
-
-
-<div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">18th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm curl and press (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">V sits</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm squats (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm triceps (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Planks</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm reverse fly (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">15th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Throw over shoulder (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Curl and press (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Needle (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Side to side (ViPR)</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">13th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm press (KB)</div></div><div class="archive-ex-sets">8kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Romanian (KB)</div></div><div class="archive-ex-sets">16kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (KB)</div></div><div class="archive-ex-sets">16kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Row</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">11th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Triceps dips (Bench)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">V ups bent</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">No jump burpee</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">V ups straight</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Burpee</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">8th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Wood chop (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Sit ups (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Knee drive (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Row (1000m)</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">6th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Throw over shoulder (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Corkscrew</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Curl and press (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Needle (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Row (500m)</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">4th May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Bent over row (Barbell)</div></div><div class="archive-ex-sets">25kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Romanians (Barbell)</div></div><div class="archive-ex-sets">25kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Press (Barbell)</div></div><div class="archive-ex-sets">10kg</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Row (250m)</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">1st May</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">29th Apr</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">Lateral pivot</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Planks</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Squat thrusts</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift with rotation</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Dips</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Alternate v up</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div> <div class="archive-month">
-<div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')">
-<span class="archive-month-title">27th Apr</span>
-<span class="archive-chevron">▼</span>
-</div>
-<div class="archive-month-body">
-<div class="archive-ex"><div><div class="archive-ex-name">DB single arm row (DB)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB triceps (DB)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB single arm press (DB)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">DB single leg deadlift (DB)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunges (DB)</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
-<div class="archive-ex"><div><div class="archive-ex-name">Squat press 2 arms (DB)</div></div><div class="archive-ex-sets">—</div></div>
-</div>
-</div>
-</div>
+  <div class="program-panel active" id="program-0">
+    <div class="program-header"><div class="program-title">Lower Body & Balance</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 9 June 2026</div></div>
+    <div class="section-label">Main Circuit</div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Dumbbell squat</div><div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">Dumbbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells at your sides or at shoulders.</p><p><strong>Focus:</strong> Keep chest tall and torso upright. Knees track over toes.</p><p><strong>Movement:</strong> Squat to depth under control. Drive through heels to stand.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">DB lateral lunge</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Dumbbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding dumbbells at your sides.</p><p><strong>Focus:</strong> Keep the lunging knee tracking over your foot. Chest tall throughout.</p><p><strong>Movement:</strong> Take a wide step to one side, bend that knee while keeping the other leg straight. Push through the bent heel to return.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Reverse fly – DB</div><div class="ex-badges"><span class="badge badge-sets">3 × 12</span><span class="badge badge-equip">Dumbbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand with a slight hip hinge or lie face down.</p><p><strong>Focus:</strong> Squeeze shoulder blades together at top. Control the lowering phase.</p><p><strong>Movement:</strong> Raise both arms out to the sides to shoulder height. Lead with slight external rotation of upper arm.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Pivots</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft bend in knee.</p><p><strong>Focus:</strong> Keep your standing knee tracking forward and core braced. Control rotation — don't swing.</p><p><strong>Movement:</strong> Pivot your body 90° left and then 90° right, rotating through hip and ankle.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Bird-dog – weighted arm</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Dumbbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Set up in bird-dog position holding a light dumbbell in extending arm.</p><p><strong>Focus:</strong> Added weight increases anti-rotation challenge. Slow, controlled movement.</p><p><strong>Movement:</strong> Extend arm forward and opposite leg behind simultaneously. No momentum.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Side plank – with rotation</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Set up in a full side plank — elbow under shoulder, feet stacked.</p><p><strong>Focus:</strong> Rotation comes from your thoracic spine — not your lumbar. Keep your lower back stable throughout.</p><p><strong>Movement:</strong> Reach your top arm underneath your body, rotating through your upper back. Return to the start position.</p></div>
+    </div>
+  </div>
+  <div class="program-panel" id="program-1">
+    <div class="program-header"><div class="program-title">Hinge & Rotational Core</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 9 June 2026</div></div>
+    <div class="section-label">Main Circuit</div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Dumbbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Dumbbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">ViPR rotations</div><div class="ex-badges"><span class="badge badge-sets">3 × 12 each</span><span class="badge badge-equip">ViPR</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the ViPR at waist height with both hands.</p><p><strong>Focus:</strong> Start slowly — the offset load can catch you off guard. Core braced, control each direction of rotation.</p><p><strong>Movement:</strong> Rotate side to side in a controlled arc. The offset weight creates a unique challenge that a standard weight cannot replicate.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Reverse lunge to knee raise</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Control the lunge before driving the knee. Keep your torso tall throughout.</p><p><strong>Movement:</strong> Perform reverse lunge, then drive rear knee powerfully upward in front. Balance and hip flexor challenge.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Scapular clock</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand or sit with good posture.</p><p><strong>Focus:</strong> Move smoothly through all positions. Keep the movement controlled and fluid.</p><p><strong>Movement:</strong> Move your shoulder blade through clockwise and anti-clockwise arcs — up, forward, down, back.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Dead bug – arms and legs</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Mat</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Bicycle twists</div><div class="ex-badges"><span class="badge badge-sets">2 × 20 total</span><span class="badge badge-equip">Mat</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
+    </div>
+  </div>
+  <div class="program-panel" id="program-2">
+    <div class="program-header"><div class="program-title">New Kit — Full-Body Strength</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 9 June 2026</div></div>
+    <div class="section-label">Main Circuit</div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Barbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Barbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, barbell in a double overhand grip just outside your legs. Stand tall with the bar at hip height.</p><p><strong>Focus:</strong> This is a hip hinge — keep your knees soft but nearly straight. Feel the hamstring stretch as you lower. Keep the bar close to your body throughout.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your legs until you feel a strong hamstring stretch. Drive your hips forward to return to standing, squeezing your glutes at the top.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Goblet squat</div><div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">Kettlebell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Bench press – BB</div><div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Barbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on the bench with feet flat on the floor. Retract your shoulder blades and grip the bar slightly wider than shoulder-width.</p><p><strong>Focus:</strong> Keep your shoulder blades retracted and feet flat on the floor throughout. Control the lowering phase.</p><p><strong>Movement:</strong> Lower the bar to your mid-chest under control. Drive back to full extension.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Bent-over rows – BB</div><div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">Barbell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart. Hinge forward to roughly 45° with a flat back. Grip the barbell with an overhand grip.</p><p><strong>Focus:</strong> Keep your core braced throughout — don't let your lower back round. Squeeze your shoulder blades at the top.</p><p><strong>Movement:</strong> Pull the barbell toward your lower ribs, driving your elbows back. Lower under control.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Wood chop – med ball / DB</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Medicine ball</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold a medicine ball or dumbbell with both hands overhead to one side.</p><p><strong>Focus:</strong> Power comes from your hips and obliques — not just arms.</p><p><strong>Movement:</strong> Rotate and chop explosively diagonally down toward opposite hip. Return under control.</p></div>
+    </div>
+    <div class="exercise-card main">
+      <div class="ex-top"><div class="ex-name">Farmer's carries</div><div class="ex-badges"><span class="badge badge-sets">3 × ~20m</span><span class="badge badge-equip">Kettlebell</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding a heavy kettlebell or dumbbell in each hand at your sides.</p><p><strong>Focus:</strong> Torso perfectly upright, shoulders back, core braced. Take deliberate, controlled steps.</p><p><strong>Movement:</strong> Walk for prescribed distance or time. Keep everything tight — this is a full body stability and strength exercise.</p></div>
+    </div>
+  </div>
+  <div class="program-panel" id="program-3">
+    <div class="program-header"><div class="program-title">Archive</div></div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-program-header">Program 1 — Lower Body & Hip Stability</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Dumbbell Romanian Deadlift</div></div><div class="archive-ex-sets">3 × 8 · Light-Moderate</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Glute Bridges – Single Leg</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Balance – Single Leg with Arm Reach</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Dead Bug – Arms and Legs</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Side Plank – Feet Stacked</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div>
+      <div class="archive-program-header">Program 2 — ViPR & Rotational Strength</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Goblet Squat</div></div><div class="archive-ex-sets">3 × 10 · Light-Moderate</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Rotations</div></div><div class="archive-ex-sets">3 × 12 each side</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ISO Romanian Deadlift – Single Leg</div></div><div class="archive-ex-sets">2 × 20 sec each · Light DB</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Lunge Matrix</div></div><div class="archive-ex-sets">2 × 5 each direction</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Needle</div></div><div class="archive-ex-sets">3 × 10</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Bird-Dog</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">4 × 15</div></div>
+      <div class="archive-program-header">Program 3 — Push, Pull & Core</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Press (Anti-Rotation)</div></div><div class="archive-ex-sets">3 × 8 each · Moderate</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row (Hip Hinge Focus)</div></div><div class="archive-ex-sets">3 × 8 each · Moderate</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Glute Bridges – March</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Balance – Single Leg Eyes Closed</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Elbow Plank</div></div><div class="archive-ex-sets">2 × 30 sec</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">May 2026</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-program-header">Program 1 — ViPR &amp; Hip Mobility</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Goblet Squat</div></div><div class="archive-ex-sets">× 10</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Lateral Lunge (DB Counterbalance)</div></div><div class="archive-ex-sets">× 10 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Needle</div></div><div class="archive-ex-sets">× 10</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Cossack Squat</div></div><div class="archive-ex-sets">× 20</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Lateral Raise – Single Arm</div></div><div class="archive-ex-sets">× 10 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Side-to-Side Shift</div></div><div class="archive-ex-sets">× 20</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Side Plank – Hip Drop</div></div><div class="archive-ex-sets">× 30 sec each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Quad Activation – Single Leg Raise</div></div><div class="archive-ex-sets">× 10 each</div></div>
+      <div class="archive-program-header">Program 2 — Single-Leg Strength</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Goblet Squat &amp; Reach</div></div><div class="archive-ex-sets">3 × 8</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Leg Deadlift (Supported)</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Suitcase Squat – Single Arm</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Ukrainian Twist</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row (Hip Hinge)</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge to Knee Raise</div></div><div class="archive-ex-sets">3 × 8 each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Reverse Crunches</div></div><div class="archive-ex-sets">3 × 12</div></div>
+      <div class="archive-program-header">Program 3 — DB Hinge &amp; Core</div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Deadlift (Neutral Spine)</div></div><div class="archive-ex-sets">2 × 6 · 10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">ViPR Clean &amp; Press</div></div><div class="archive-ex-sets">× 6 · 10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Press (Anti-Rotation)</div></div><div class="archive-ex-sets">× 6 · 10kg each</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Pallof Press Hold (ViPR)</div></div><div class="archive-ex-sets">2 × 10 · 6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB Bent-Over Row</div></div><div class="archive-ex-sets">× 6 · 10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Back Extension (Bodyweight)</div></div><div class="archive-ex-sets">3 × 10</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Elbow Plank</div></div><div class="archive-ex-sets">× 30 sec</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">3 × 10 each</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">18th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm curl and press (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">V sits</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm squats (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm triceps (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Planks</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm reverse fly (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">15th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Throw over shoulder (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Curl and press (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Needle (ViPR)</div></div><div class="archive-ex-sets">6kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Side to side (ViPR)</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">13th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm press (KB)</div></div><div class="archive-ex-sets">8kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Romanian (KB)</div></div><div class="archive-ex-sets">16kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (KB)</div></div><div class="archive-ex-sets">16kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Corkscrews</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Row</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">11th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Triceps dips (Bench)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">V ups bent</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">No jump burpee</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">V ups straight</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Burpee</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">8th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Wood chop (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Sit ups (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Knee drive (Med ball)</div></div><div class="archive-ex-sets">4kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Row (1000m)</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">6th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Throw over shoulder (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Corkscrew</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Curl and press (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Needle (ViPR)</div></div><div class="archive-ex-sets">10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Row (500m)</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">4th May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Bent over row (Barbell)</div></div><div class="archive-ex-sets">25kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Romanians (Barbell)</div></div><div class="archive-ex-sets">25kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Press (Barbell)</div></div><div class="archive-ex-sets">10kg</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Row (250m)</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">1st May</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">29th Apr</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">Lateral pivot</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Planks</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Squat thrusts</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift with rotation</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Dips</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Alternate v up</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  <div class="archive-month">
+    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">27th Apr</span><span class="archive-chevron">▼</span></div>
+    <div class="archive-month-body">
+      <div class="archive-ex"><div><div class="archive-ex-name">DB single arm row (DB)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB triceps (DB)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB single arm press (DB)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">DB single leg deadlift (DB)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunges (DB)</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
+      <div class="archive-ex"><div><div class="archive-ex-name">Squat press 2 arms (DB)</div></div><div class="archive-ex-sets">—</div></div>
+    </div>
+  </div>
+  </div>
 </div>
 <script>
 const CLIENT_STREAM = 'in-person';
