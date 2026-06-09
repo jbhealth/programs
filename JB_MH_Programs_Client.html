@@ -52,6 +52,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .badge-sets{background:var(--navy);color:#fff;}
 .badge-equip{background:var(--accent);color:var(--blue);}
 .badge-weight{background:#FBEFD8;color:#9A6700;}
+.badge-weight.placeholder{background:#EEF2F6;color:#9AA5B1;font-style:italic;}
+.ex-collapse-chevron{display:inline-block;color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:3px 9px;margin:-2px 0 0 -9px;border-radius:6px;user-select:none;-webkit-user-select:none;transition:transform 0.2s;}
+.ex-collapse-chevron:hover{background:var(--accent);}
+.exercise-card.collapsed .ex-collapse-chevron{transform:rotate(-90deg);}
+.exercise-card.collapsed .ex-desc,.exercise-card.collapsed .ex-note{display:none;}
+.exercise-card .ex-name{cursor:pointer;}
+.exercise-card.collapsed{padding-bottom:14px;}
+.cue-toggle{margin-top:10px;background:transparent;border:1px solid var(--border);color:var(--blue);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:background 0.15s;}
+.cue-toggle:hover{background:var(--accent);}
 .ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
 .ex-desc p{margin-bottom:6px;}
 .ex-desc strong{color:var(--navy);font-weight:500;}
@@ -121,42 +130,42 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Barbell deadlift</div>
-<div class="ex-badges"><span class="badge badge-sets">4 × 4 · heavy</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">4 × 4 · heavy</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, barbell over mid-foot. Hinge at the hips and grip the bar just outside your legs with a neutral or double overhand grip.</p><p><strong>Focus:</strong> Keep your back flat and chest up throughout. Drive your feet through the floor — this is a push, not a pull. Bar stays close to your body the entire way.</p><p><strong>Movement:</strong> Take a deep breath and brace your core. Drive through your heels, extending hips and knees simultaneously until you're standing tall. Lower with control by hinging at the hips first, then bending the knees as the bar passes them.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Romanian deadlift to shrug</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 8 · moderate</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 · moderate</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the barbell at hip height with a shoulder-width grip.</p><p><strong>Focus:</strong> The shrug at the top should be explosive. Feel your traps and posterior chain working together.</p><p><strong>Movement:</strong> Perform a Romanian deadlift, then at the top add an explosive shoulder shrug before lowering back down.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Pull-ups</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × max</span><span class="badge badge-equip">Pull-up bar</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">3 × max</span><span class="badge badge-equip">Pull-up bar</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Hang from a pull-up bar with hands just wider than shoulder-width, palms facing away. Arms fully extended, shoulders engaged — don't just hang passively.</p><p><strong>Focus:</strong> Initiate with your shoulder blades — pull them down and back before bending your elbows. Think about driving your elbows toward your hips.</p><p><strong>Movement:</strong> Pull your chest toward the bar by driving elbows down. Chin clears the bar at the top. Lower with full control back to a dead hang. Avoid swinging or kipping.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">DB single-arm press</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p><p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p><p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Reverse lunge – BB</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Place the barbell across your upper traps with feet hip-width apart.</p><p><strong>Focus:</strong> Front knee tracks over your ankle. Reverse lunge places less stress on the knee than forward lunge.</p><p><strong>Movement:</strong> Step back into a lunge, lowering the rear knee toward the floor. Drive through your front heel to return.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">ISO Copenhagen plank</div>
-<div class="ex-badges"><span class="badge badge-sets">3 × 20-30s each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 20-30s each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your side with your top foot or shin resting on a bench. Set up a side plank with your bottom elbow under your shoulder.</p><p><strong>Focus:</strong> Build time progressively — start with shin on bench, progress to ankle. Keep your body in a straight line throughout.</p><p><strong>Movement:</strong> Hold the position for the prescribed time with no hip drop. This isometric exercise loads both the adductors and lateral core.</p></div>
 </div>
@@ -178,6 +187,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <script>
+const CLIENT_CODE = 'MH';
 const CLIENT_STREAM = 'in-person';
 function showProgram(index, btn) {
   const panels = document.querySelectorAll('.program-panel');
@@ -187,7 +197,54 @@ function showProgram(index, btn) {
   const target = document.getElementById('program-' + index);
   if (target) { target.classList.add('active'); btn.classList.add('active'); }
 }
+// --- Collapsible coaching cues (Start / Focus / Movement) ---
+function cueKey(){ return 'jb:' + CLIENT_CODE + ':cues-hidden'; }
+function cuesHidden(){ try { return localStorage.getItem(cueKey()) === '1'; } catch(e){ return false; } }
+function detailCards(){
+  return Array.from(document.querySelectorAll('.exercise-card'))
+    .filter(c => c.querySelector('.ex-desc') || c.querySelector('.ex-note'));
+}
+function applyCues(hidden){
+  detailCards().forEach(c => c.classList.toggle('collapsed', hidden));
+  document.querySelectorAll('.cue-toggle').forEach(b => {
+    b.textContent = hidden ? 'Show coaching cues' : 'Hide coaching cues';
+  });
+}
+function toggleCard(card){ card.classList.toggle('collapsed'); }
+function initCues(){
+  detailCards().forEach(card => {
+    const top = card.querySelector('.ex-top');
+    if (top && !top.querySelector('.ex-collapse-chevron')) {
+      const ch = document.createElement('span');
+      ch.className = 'ex-collapse-chevron'; ch.textContent = '\u2304';
+      ch.setAttribute('aria-label', 'Toggle details');
+      ch.addEventListener('click', e => { e.stopPropagation(); toggleCard(card); });
+      top.insertBefore(ch, top.firstChild);
+    }
+    const nm = card.querySelector('.ex-name');
+    if (nm && !nm.dataset.cueBound) {
+      nm.dataset.cueBound = '1';
+      nm.addEventListener('click', () => toggleCard(card));
+    }
+  });
+  document.querySelectorAll('.program-panel').forEach(panel => {
+    const hasDetail = panel.querySelector('.ex-desc') || panel.querySelector('.ex-note');
+    const header = panel.querySelector('.program-header');
+    if (hasDetail && header && !header.querySelector('.cue-toggle')) {
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'cue-toggle';
+      btn.onclick = () => {
+        const next = !cuesHidden();
+        try { localStorage.setItem(cueKey(), next ? '1' : '0'); } catch(e){}
+        applyCues(next);
+      };
+      header.appendChild(btn);
+    }
+  });
+  applyCues(cuesHidden());
+}
 document.addEventListener('DOMContentLoaded', function() {
+  initCues();
   document.querySelectorAll('.archive-month-header').forEach(function(header){
     header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
   });
