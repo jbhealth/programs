@@ -52,6 +52,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .badge-sets{background:var(--navy);color:#fff;}
 .badge-equip{background:var(--accent);color:var(--blue);}
 .badge-weight{background:#FBEFD8;color:#9A6700;}
+.badge-weight.placeholder{background:#EEF2F6;color:#9AA5B1;font-style:italic;}
+.ex-collapse-chevron{display:inline-block;color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:3px 9px;margin:-2px 0 0 -9px;border-radius:6px;user-select:none;-webkit-user-select:none;transition:transform 0.2s;}
+.ex-collapse-chevron:hover{background:var(--accent);}
+.exercise-card.collapsed .ex-collapse-chevron{transform:rotate(-90deg);}
+.exercise-card.collapsed .ex-desc,.exercise-card.collapsed .ex-note{display:none;}
+.exercise-card .ex-name{cursor:pointer;}
+.exercise-card.collapsed{padding-bottom:14px;}
+.cue-toggle{margin-top:10px;background:transparent;border:1px solid var(--border);color:var(--blue);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:background 0.15s;}
+.cue-toggle:hover{background:var(--accent);}
 .ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
 .ex-desc p{margin-bottom:6px;}
 .ex-desc strong{color:var(--navy);font-weight:500;}
@@ -104,28 +113,28 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Lateral band walks</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each way</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each way</span><span class="badge badge-equip">Band</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Place resistance band above knees, stand in a slight squat.</p><p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p><p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Calf raises – bilateral</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Step</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Step</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand tall, feet flat on the floor or edge of a step.</p><p><strong>Focus:</strong> Go through the full range — let heels dip below the step on the way down.</p><p><strong>Movement:</strong> Rise up onto the balls of your feet as high as possible. Lower slowly through full range.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Suitcase carry</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Hold heavy dumbbell or kettlebell in one hand at side.</p><p><strong>Focus:</strong> Resist lateral pull trying to lean you toward loaded side. Completely upright.</p><p><strong>Movement:</strong> Walk for prescribed distance. Switch hands at halfway point.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Balance – single leg assisted</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 20s each</span><span class="badge badge-equip">Wall</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 20s each</span><span class="badge badge-equip">Wall</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with one finger lightly touching a wall for light support.</p><p><strong>Focus:</strong> Balance through your standing foot, not through the wall. Keep the wall touch feather-light.</p><p><strong>Movement:</strong> Stand on one leg for the prescribed time. Switch sides and repeat.</p></div>
 </div>
@@ -139,14 +148,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Hip abduction – clamshell</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Glute bridges – march</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip stability.</p></div>
 </div>
@@ -156,70 +165,70 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Box squats – medium box</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Box</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Box</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand in front of a medium-height box, feet shoulder-width apart.</p><p><strong>Focus:</strong> Keep knees tracking over toes. Maintain tension — don't collapse onto the box.</p><p><strong>Movement:</strong> Sit back and down to the box under control. Drive through heels to stand.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Band good morning</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Band</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand on a resistance band with it across your upper traps.</p><p><strong>Focus:</strong> Control the hip hinge — feel your hamstring stretch on the way down.</p><p><strong>Movement:</strong> Hinge forward with slight knee bend and flat back until torso approaches parallel. Drive hips forward to return.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Single arm row – DB</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Place one knee and hand on a bench. Hold dumbbell in other hand, arm hanging straight down.</p><p><strong>Focus:</strong> Drive elbow directly back, squeeze shoulder blade at top.</p><p><strong>Movement:</strong> Row dumbbell up toward ceiling. Lower under control — don't let weight drop.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Reverse fly – DB</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with a slight hip hinge or lie face down.</p><p><strong>Focus:</strong> Squeeze shoulder blades together at top. Control the lowering phase.</p><p><strong>Movement:</strong> Raise both arms out to the sides to shoulder height. Lead with slight external rotation of upper arm.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Shoulder press – seated DB</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Sit tall with dumbbells at shoulder height, palms facing forward.</p><p><strong>Focus:</strong> Core braced, lower back neutral. Don't arch your lower back.</p><p><strong>Movement:</strong> Press both dumbbells directly overhead to full arm extension. Lower to shoulder height under control.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Step-ups – forward low</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Step</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Step</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand in front of a low step or box.</p><p><strong>Focus:</strong> Drive through the heel of the elevated foot — don't push off the back foot.</p><p><strong>Movement:</strong> Step one foot up, drive through that heel to stand fully. Lower with control, repeat.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Waiter carry – single arm</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Hold a dumbbell or kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Balance – single leg free</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 20s each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 20s each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with no support.</p><p><strong>Focus:</strong> Fix your gaze on a still point ahead. Keep a soft bend in the standing knee.</p><p><strong>Movement:</strong> Stand tall and breathe steadily. Spread your foot wide for stability.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Side plank – knees bent</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 20-30s each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 20-30s each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your side with knees bent, bottom elbow under your shoulder.</p><p><strong>Focus:</strong> Keep your hips straight — don't let your top hip roll backward. Stay in a straight line.</p><p><strong>Movement:</strong> Lift your hips to form a straight line from knees to head. Hold for the prescribed time.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Bicycle twists</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight placeholder">weight</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
 </div>
@@ -241,6 +250,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </div>
 </div>
 <script>
+const CLIENT_CODE = 'JJ';
 const CLIENT_STREAM = 'in-person';
 function showProgram(index, btn) {
   const panels = document.querySelectorAll('.program-panel');
@@ -250,7 +260,54 @@ function showProgram(index, btn) {
   const target = document.getElementById('program-' + index);
   if (target) { target.classList.add('active'); btn.classList.add('active'); }
 }
+// --- Collapsible coaching cues (Start / Focus / Movement) ---
+function cueKey(){ return 'jb:' + CLIENT_CODE + ':cues-hidden'; }
+function cuesHidden(){ try { return localStorage.getItem(cueKey()) === '1'; } catch(e){ return false; } }
+function detailCards(){
+  return Array.from(document.querySelectorAll('.exercise-card'))
+    .filter(c => c.querySelector('.ex-desc') || c.querySelector('.ex-note'));
+}
+function applyCues(hidden){
+  detailCards().forEach(c => c.classList.toggle('collapsed', hidden));
+  document.querySelectorAll('.cue-toggle').forEach(b => {
+    b.textContent = hidden ? 'Show coaching cues' : 'Hide coaching cues';
+  });
+}
+function toggleCard(card){ card.classList.toggle('collapsed'); }
+function initCues(){
+  detailCards().forEach(card => {
+    const top = card.querySelector('.ex-top');
+    if (top && !top.querySelector('.ex-collapse-chevron')) {
+      const ch = document.createElement('span');
+      ch.className = 'ex-collapse-chevron'; ch.textContent = '\u2304';
+      ch.setAttribute('aria-label', 'Toggle details');
+      ch.addEventListener('click', e => { e.stopPropagation(); toggleCard(card); });
+      top.insertBefore(ch, top.firstChild);
+    }
+    const nm = card.querySelector('.ex-name');
+    if (nm && !nm.dataset.cueBound) {
+      nm.dataset.cueBound = '1';
+      nm.addEventListener('click', () => toggleCard(card));
+    }
+  });
+  document.querySelectorAll('.program-panel').forEach(panel => {
+    const hasDetail = panel.querySelector('.ex-desc') || panel.querySelector('.ex-note');
+    const header = panel.querySelector('.program-header');
+    if (hasDetail && header && !header.querySelector('.cue-toggle')) {
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'cue-toggle';
+      btn.onclick = () => {
+        const next = !cuesHidden();
+        try { localStorage.setItem(cueKey(), next ? '1' : '0'); } catch(e){}
+        applyCues(next);
+      };
+      header.appendChild(btn);
+    }
+  });
+  applyCues(cuesHidden());
+}
 document.addEventListener('DOMContentLoaded', function() {
+  initCues();
   document.querySelectorAll('.archive-month-header').forEach(function(header){
     header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
   });
