@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-RC.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
@@ -82,243 +82,138 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
-  <button class="tab-btn" onclick="showProgram(1,this)">Program 2</button>
-  <button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
 </div>
 <div class="content">
-  <div class="program-panel active" id="program-0">
-    <div class="program-header"><div class="program-title">Posterior Chain & Hamstrings</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 8 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Hip thrust – BB</div><div class="ex-badges"><span class="badge badge-sets">3 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit with your upper back against a bench, barbell across your hips and feet flat on the floor.</p><p><strong>Focus:</strong> The peak glute exercise. Drive to full hip extension at the top and squeeze your glutes hard. Keep your hips level — no side drop.</p><p><strong>Movement:</strong> Drive through your heels to lift your hips to full extension. Hold briefly, lower under control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Romanian deadlift – BB</div><div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the barbell at hip height with a shoulder-width grip.</p><p><strong>Focus:</strong> Keep your back flat throughout. Feel the hamstring stretch developing as you lower. Keep the bar close to your body.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your thighs to mid-shin. Drive your hips forward to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Leg curl – seated</div><div class="ex-badges"><span class="badge badge-sets">3 × 12</span><span class="badge badge-equip">Leg curl machine</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit at the leg curl machine, pad just below your calves.</p><p><strong>Focus:</strong> Keep your back strong throughout. Use full range of motion.</p><p><strong>Movement:</strong> Curl both heels toward your glutes. Hold briefly at top, lower with control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single-leg deadlift – DB</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg holding a dumbbell in the opposite hand at hip height. Slight bend in the standing knee.</p>
+<div class="program-panel active" id="program-0">
+<div class="program-header"><div class="program-title">Posterior Chain &amp; Hamstrings</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Hip thrust – BB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">15kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Sit with your upper back against a bench, barbell across your hips and feet flat on the floor.</p><p><strong>Focus:</strong> The peak glute exercise. Drive to full hip extension at the top and squeeze your glutes hard. Keep your hips level — no side drop.</p><p><strong>Movement:</strong> Drive through your heels to lift your hips to full extension. Hold briefly, lower under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Romanian deadlift – BB</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">25kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the barbell at hip height with a shoulder-width grip.</p><p><strong>Focus:</strong> Keep your back flat throughout. Feel the hamstring stretch developing as you lower. Keep the bar close to your body.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your thighs to mid-shin. Drive your hips forward to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single-leg deadlift – DB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">6kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg holding a dumbbell in the opposite hand at hip height. Slight bend in the standing knee.</p>
 <p><strong>Focus:</strong> Keep your back flat and hips square throughout. Resist the pelvis rotating toward the free leg.</p>
 <p><strong>Movement:</strong> Hinge forward at the hip, lowering the dumbbell toward the floor while your rear leg extends behind as a counterbalance until your torso is near parallel. Drive through your heel to return to tall.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Cable hip abduction</div><div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Cable machine</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Attach ankle strap to cable machine at lowest setting. Stand side-on to machine.</p><p><strong>Focus:</strong> Keep your torso upright. Resist leaning away from the cable.</p><p><strong>Movement:</strong> Step away from machine and lift attached leg out to side against cable.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Calf raises – bilateral</div><div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Step</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall, feet flat on the floor or edge of a step.</p><p><strong>Focus:</strong> Go through the full range — let heels dip below the step on the way down.</p><p><strong>Movement:</strong> Rise up onto the balls of your feet as high as possible. Lower slowly through full range.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Pallof press</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Cable</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Hollow body hold</div><div class="ex-badges"><span class="badge badge-sets">2 × 30s</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with arms extended overhead and legs straight out.</p><p><strong>Focus:</strong> Press your entire lower back firmly into the floor. Feel like a hollow banana shape.</p><p><strong>Movement:</strong> Hold position with core tension. If lower back lifts off, raise your legs higher.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-1">
-    <div class="program-header"><div class="program-title">Knee Stability & Single-Leg Control</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 8 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Bulgarian split squat</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with your rear foot elevated on a bench behind you and your front foot far enough forward that your front shin stays vertical.</p><p><strong>Focus:</strong> Keep your torso upright throughout. Your front knee should not travel excessively forward.</p><p><strong>Movement:</strong> Lower into a deep single leg squat until your rear knee is just above the floor. Drive through your front heel to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Nordic hamstring curls</div><div class="ex-badges"><span class="badge badge-sets">2 × 6</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Kneel on a mat with your feet anchored securely by a partner or machine.</p><p><strong>Focus:</strong> Control is everything. Lower as slowly as you can — use your hands to catch yourself at the bottom if needed.</p><p><strong>Movement:</strong> Slowly lower your body toward the floor using your hamstrings as the brake. This is the most effective knee injury prevention exercise available.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single leg box squats</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Box</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg in front of a box.</p><p><strong>Focus:</strong> Sit fully onto the box — don't just tap it. Keep your knee in line with your hip and ankle throughout. Avoid the knee collapsing inward.</p><p><strong>Movement:</strong> Slowly lower yourself to sit fully on the box by bending the standing knee. Pause briefly, drive through your heel to stand.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Balance – single leg with arm reach</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft knee bend.</p><p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p><p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Hip abduction machine</div><div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Hip abduction machine</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit in the hip abduction machine, pads on the outside of your knees.</p><p><strong>Focus:</strong> Keep your back flat against the seat. Push legs apart against resistance.</p><p><strong>Movement:</strong> Push legs apart, hold briefly at the end range, return with control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single arm DB row – incline</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each · slow eccentric</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie face down on an incline bench with one arm hanging freely. Hold a dumbbell in the hanging hand.</p><p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Dead bug – arms and legs</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Bicycle twists</div><div class="ex-badges"><span class="badge badge-sets">2 × 15 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-2">
-    <div class="program-header"><div class="program-title">Archive</div></div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-program-header">Program 1 — Rotation, Power & Hamstrings</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-leg deadlift – DB</div></div><div class="archive-ex-sets">2 × 8 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable hip abduction</div></div><div class="archive-ex-sets">2 × 12 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Med ball rotational throw</div></div><div class="archive-ex-sets">2 × 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band monster walk – diagonal</div></div><div class="archive-ex-sets">2 × 12 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">2 × 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Nordic hamstring curl</div></div><div class="archive-ex-sets">2 × 6</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Hollow body hold</div></div><div class="archive-ex-sets">2 × 30 sec</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">ISO Copenhagen plank</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div>
-      <div class="archive-program-header">Program 2 — Posterior Chain & Knee Stability</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">KB deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg with arm reach</div></div><div class="archive-ex-sets">2 × 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band pallof press – half kneeling</div></div><div class="archive-ex-sets">2 × 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row – incline</div></div><div class="archive-ex-sets">2 × 10 each side · slow eccentric</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lateral raises – slow eccentric</div></div><div class="archive-ex-sets">2 × 12</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Back extension machine – bilateral</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists</div></div><div class="archive-ex-sets">2 × 15 each side</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">Previous Program 1</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Rotation (Low to High)</div></div><div class="archive-ex-sets">3 x 10 each side · 3</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Med Ball Woodchop (Rotational Power)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift with KB (Hamstring &amp; Stability)</div></div><div class="archive-ex-sets">3 x 8 each · Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Pallof Press (Anti-Rotation)</div></div><div class="archive-ex-sets">3 x 8 each side · 1</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band Walk (Glute &amp; Abductor Activation)</div></div><div class="archive-ex-sets">To fatigue x2 · Orange band</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ice Skaters (Lateral Knee Stability)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Straight-Arm Pulldown (Lat Power)</div></div><div class="archive-ex-sets">3 x 10 · 5</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg Raises with Med Ball (Core Running)</div></div><div class="archive-ex-sets">3 x 12 · 1</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">Previous Program 2</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Med Ball Burpee (Power &amp; Control)</div></div><div class="archive-ex-sets">2 x10 · 6</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Abductor Work (Knee Stabilizer)</div></div><div class="archive-ex-sets">2 x  12 each side · 0 / 1</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reaches (Proprioception)</div></div><div class="archive-ex-sets">2 x 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Med Ball Lunge Pass (Rotational &amp; Hamstring)</div></div><div class="archive-ex-sets">2 x 10  each · 4</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row (Unilateral Posterior Chain)</div></div><div class="archive-ex-sets">2 x  10 each · 14</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Back Extension Machine (Hamstring Emphasis)</div></div><div class="archive-ex-sets">2 x 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Triceps (Upper Body Stability)</div></div><div class="archive-ex-sets">3 x 10 · 5 then 6</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Med Ball Bicycle Twist (Core Rotation &amp; Control)</div></div><div class="archive-ex-sets">30 seconds x3 · 6</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">19th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Pallof press (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ski</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable straight arm pull down (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable triceps (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ab roll out</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Row (30 30)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable chest press (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">15th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge pass (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Wood chops (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Knee drive (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Sit up pass (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">12th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">5th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm reverse fly (Dumbbell)</div></div><div class="archive-ex-sets">3kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm clean and press (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ski 30:30</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ab rollout</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Front squats (Plate)</div></div><div class="archive-ex-sets">5kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Seated press (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Row 30:30</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">V ups</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Hand planks</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">1st May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm press (DB)</div></div><div class="archive-ex-sets">6kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Sit ups (KB)</div></div><div class="archive-ex-sets">6kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Romanian (KB)</div></div><div class="archive-ex-sets">14kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (KB)</div></div><div class="archive-ex-sets">14kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Swings (KB)</div></div><div class="archive-ex-sets">8kg</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">28th Apr</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable rotation low to high (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ski</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable straight arm pull down (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable triceps (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ab roll out</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Row (30 30)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable chest press (Cables)</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">23rd Apr</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Back lunge knee raise with hop</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Side planks</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lateral leg raises</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm squats (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ricochets</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">21st Apr</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">7th Apr</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Step ups, various (Step box)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable abductor work (Cable machine)</div></div><div class="archive-ex-sets">1kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Abductor machine</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ice skaters</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Goblet squats for depth (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band squats (Step box)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg balances</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">24th Mar</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  </div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Cable hip abduction</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Cable machine</span><span class="badge badge-weight">4.25kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Attach ankle strap to cable machine at lowest setting. Stand side-on to machine.</p><p><strong>Focus:</strong> Keep your torso upright. Resist leaning away from the cable.</p><p><strong>Movement:</strong> Step away from machine and lift attached leg out to side against cable.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Calf raises – bilateral</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Step</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall, feet flat on the floor or edge of a step.</p><p><strong>Focus:</strong> Go through the full range — let heels dip below the step on the way down.</p><p><strong>Movement:</strong> Rise up onto the balls of your feet as high as possible. Lower slowly through full range.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Pallof press</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Cable</span><span class="badge badge-weight">7kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Hollow body hold</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30s</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with arms extended overhead and legs straight out.</p><p><strong>Focus:</strong> Press your entire lower back firmly into the floor. Feel like a hollow banana shape.</p><p><strong>Movement:</strong> Hold position with core tension. If lower back lifts off, raise your legs higher.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Knee Stability &amp; Single-Leg Control</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Bulgarian split squat</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with your rear foot elevated on a bench behind you and your front foot far enough forward that your front shin stays vertical.</p><p><strong>Focus:</strong> Keep your torso upright throughout. Your front knee should not travel excessively forward.</p><p><strong>Movement:</strong> Lower into a deep single leg squat until your rear knee is just above the floor. Drive through your front heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Nordic hamstring curls</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 6</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Kneel on a mat with your feet anchored securely by a partner or machine.</p><p><strong>Focus:</strong> Control is everything. Lower as slowly as you can — use your hands to catch yourself at the bottom if needed.</p><p><strong>Movement:</strong> Slowly lower your body toward the floor using your hamstrings as the brake. This is the most effective knee injury prevention exercise available.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single leg box squats</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Box</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg in front of a box.</p><p><strong>Focus:</strong> Sit fully onto the box — don't just tap it. Keep your knee in line with your hip and ankle throughout. Avoid the knee collapsing inward.</p><p><strong>Movement:</strong> Slowly lower yourself to sit fully on the box by bending the standing knee. Pause briefly, drive through your heel to stand.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Balance – single leg with arm reach</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft knee bend.</p><p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p><p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Hip abduction machine</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Hip abduction machine</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Sit in the hip abduction machine, pads on the outside of your knees.</p><p><strong>Focus:</strong> Keep your back flat against the seat. Push legs apart against resistance.</p><p><strong>Movement:</strong> Push legs apart, hold briefly at the end range, return with control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single arm DB row – incline</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each · slow eccentric</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie face down on an incline bench with one arm hanging freely. Hold a dumbbell in the hanging hand.</p><p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Dead bug – arms and legs</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Bicycle twists</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 15 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-2">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single-leg deadlift – DB</div></div><div class="archive-ex-sets">2 × 8 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable hip abduction</div></div><div class="archive-ex-sets">2 × 12 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Med ball rotational throw</div></div><div class="archive-ex-sets">2 × 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band monster walk – diagonal</div></div><div class="archive-ex-sets">2 × 12 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">2 × 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Nordic hamstring curl</div></div><div class="archive-ex-sets">2 × 6</div></div><div class="archive-ex"><div><div class="archive-ex-name">Hollow body hold</div></div><div class="archive-ex-sets">2 × 30 sec</div></div><div class="archive-ex"><div><div class="archive-ex-name">ISO Copenhagen plank</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div><div class="archive-ex"><div><div class="archive-ex-name">KB deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg with arm reach</div></div><div class="archive-ex-sets">2 × 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band pallof press – half kneeling</div></div><div class="archive-ex-sets">2 × 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row – incline</div></div><div class="archive-ex-sets">2 × 10 each side · slow eccentric</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral raises – slow eccentric</div></div><div class="archive-ex-sets">2 × 12</div></div><div class="archive-ex"><div><div class="archive-ex-name">Back extension machine – bilateral</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists</div></div><div class="archive-ex-sets">2 × 15 each side</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Previous Program 1</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Cable Rotation (Low to High)</div></div><div class="archive-ex-sets">3 x 10 each side · 3</div></div><div class="archive-ex"><div><div class="archive-ex-name">Med Ball Woodchop (Rotational Power)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift with KB (Hamstring &amp; Stability)</div></div><div class="archive-ex-sets">3 x 8 each · Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable Pallof Press (Anti-Rotation)</div></div><div class="archive-ex-sets">3 x 8 each side · 1</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band Walk (Glute &amp; Abductor Activation)</div></div><div class="archive-ex-sets">To fatigue x2 · Orange band</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ice Skaters (Lateral Knee Stability)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable Straight-Arm Pulldown (Lat Power)</div></div><div class="archive-ex-sets">3 x 10 · 5</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg Raises with Med Ball (Core Running)</div></div><div class="archive-ex-sets">3 x 12 · 1</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Previous Program 2</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Med Ball Burpee (Power &amp; Control)</div></div><div class="archive-ex-sets">2 x10 · 6</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable Abductor Work (Knee Stabilizer)</div></div><div class="archive-ex-sets">2 x  12 each side · 0 / 1</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reaches (Proprioception)</div></div><div class="archive-ex-sets">2 x 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Med Ball Lunge Pass (Rotational &amp; Hamstring)</div></div><div class="archive-ex-sets">2 x 10  each · 4</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row (Unilateral Posterior Chain)</div></div><div class="archive-ex-sets">2 x  10 each · 14</div></div><div class="archive-ex"><div><div class="archive-ex-name">Back Extension Machine (Hamstring Emphasis)</div></div><div class="archive-ex-sets">2 x 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable Triceps (Upper Body Stability)</div></div><div class="archive-ex-sets">3 x 10 · 5 then 6</div></div><div class="archive-ex"><div><div class="archive-ex-name">Med Ball Bicycle Twist (Core Rotation &amp; Control)</div></div><div class="archive-ex-sets">30 seconds x3 · 6</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">19th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Cable Pallof press (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ski</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable straight arm pull down (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable triceps (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ab roll out</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Row (30 30)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable chest press (Cables)</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">15th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Lunge pass (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Wood chops (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Knee drive (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Back extensions</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Sit up pass (Med ball)</div></div><div class="archive-ex-sets">7kg</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">12th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">5th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single arm reverse fly (Dumbbell)</div></div><div class="archive-ex-sets">3kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm clean and press (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ski 30:30</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ab rollout</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Press ups</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Front squats (Plate)</div></div><div class="archive-ex-sets">5kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Seated press (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Row 30:30</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">V ups</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Hand planks</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">1st May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single arm press (DB)</div></div><div class="archive-ex-sets">6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Sit ups (KB)</div></div><div class="archive-ex-sets">6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Romanian (KB)</div></div><div class="archive-ex-sets">14kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm rows (KB)</div></div><div class="archive-ex-sets">14kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Swings (KB)</div></div><div class="archive-ex-sets">8kg</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">28th Apr</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Cable rotation low to high (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg raises</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ski</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable straight arm pull down (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable triceps (Cables)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ab roll out</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Row (30 30)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable chest press (Cables)</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">23rd Apr</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Back lunge knee raise with hop</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Side planks</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral leg raises</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm squats (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ricochets</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Crunches</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">21st Apr</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">7th Apr</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Step ups, various (Step box)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable abductor work (Cable machine)</div></div><div class="archive-ex-sets">1kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Abductor machine</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ice skaters</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Goblet squats for depth (Dumbbell)</div></div><div class="archive-ex-sets">4kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band squats (Step box)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg balances</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">24th Mar</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div></div></div>
+</div>
 </div>
 <script>
 const CLIENT_STREAM = 'in-person';
