@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-AM.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
@@ -82,162 +82,77 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
-  <button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
-  <div class="program-panel active" id="program-0">
-    <div class="program-header"><div class="program-title">Knee-Dominant Strength & Stability</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 8 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single leg deadlift – KB</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg holding a kettlebell in the opposite hand.</p><p><strong>Focus:</strong> Keep your back flat and hips square throughout. Resist the pelvis rotating toward the free leg.</p><p><strong>Movement:</strong> Hinge forward at the hip, lowering the kettlebell toward the floor while your rear leg extends behind as a counterbalance. Drive through your heel to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Bulgarian split squat</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with your rear foot elevated on a bench behind you and your front foot far enough forward that your front shin stays vertical.</p><p><strong>Focus:</strong> Keep your torso upright throughout. Your front knee should not travel excessively forward.</p><p><strong>Movement:</strong> Lower into a deep single leg squat until your rear knee is just above the floor. Drive through your front heel to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Terminal knee extension</div><div class="ex-badges"><span class="badge badge-sets">3 × 15 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Fix a resistance band behind the knee, stand facing the anchor.</p><p><strong>Focus:</strong> Squeeze the front of your thigh hard at full extension. Keep your posture tall.</p><p><strong>Movement:</strong> Straighten knee fully against band resistance. Hold 1–2 seconds, bend knee to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Reverse lunge to knee raise</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Control the lunge before driving the knee. Keep your torso tall throughout.</p><p><strong>Movement:</strong> Perform reverse lunge, then drive rear knee powerfully upward in front. Balance and hip flexor challenge.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Lateral band walks</div><div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Place resistance band above knees, stand in a slight squat.</p><p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p><p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single-Leg Balance Reach (Multi-Directional)</div><div class="ex-badges"><span class="badge badge-sets">3 × 6-8 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with a soft knee. Arms out to the sides for balance if needed.</p><p><strong>Focus:</strong> Keep your standing leg stable. Move smoothly through all directions. The goal is dynamic balance, not static—keep moving, keep thinking.</p><p><strong>Movement:</strong> Reach forward with one arm (or tap the ground in front), return to center. Reach to the side, return. Reach behind, return. Move through these directions in a controlled, flowing manner. Switch legs and repeat.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Pallof press</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Cable</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Calf raises – loaded single leg</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell and stand on edge of a step on one leg.</p><p><strong>Focus:</strong> Lower your heel slowly below the step to full stretch. Feel the Achilles lengthening.</p><p><strong>Movement:</strong> Rise as high as possible on the calf. Progress load when 3x15 is pain-free.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Glute bridges – single leg</div><div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back, one knee bent with foot flat, other leg extended.</p><p><strong>Focus:</strong> Keep hips level — don't let one side drop.</p><p><strong>Movement:</strong> Drive through the bent knee heel to push hips up. Hold 2 seconds, lower with control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Step-Down with Rotation</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Step Box (8-12")</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on a step box (8-12" high) with one foot near the edge and the other leg hanging off the side.</p><p><strong>Focus:</strong> Control the lowering phase (eccentric). As the hanging leg descends, allow your torso to rotate gently toward that side. Keep your standing knee soft and aligned over your toes.</p><p><strong>Movement:</strong> Step down with a gentle twist—as one leg lowers to tap the ground, your torso rotates in that direction. Return to standing by driving through the stepping leg. Complete all reps, then switch sides.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Dead bug – arms and legs</div><div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-1">
-    <div class="program-header"><div class="program-title">Archive</div></div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-program-header">Program 1 — Knee-Dominant Strength &amp; Stability</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single Leg RDL (Knee-Dominant)</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Bulgarian Split Squat (Rear Foot Elevated)</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Suitcase Carry</div></div><div class="archive-ex-sets">3 x 40m each side · Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach (Multi-Directional)</div></div><div class="archive-ex-sets">3 x 6-8 each direction</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pallof Press (Half-Kneeling)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Calf Raise (Single Leg)</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight or Light</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Step-Down with Rotation</div></div><div class="archive-ex-sets">3 x 8 each side · Bodyweight</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute Bridge (Single Leg)</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight or Light</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge to Knee Raise</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Dead Bug with Knee Drive</div></div><div class="archive-ex-sets">3 x 8 each side</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">6th Nov</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">18th Sep</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">1st Aug</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5-10 x2</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 x2 · 2 weights</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn x2</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Step box / side / rotation</div></div><div class="archive-ex-sets">10 each side of each · Low</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single lef deadlift with no support</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Manual hamstring strech</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">15th July</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5-10 x2</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 x2 · 2 weights</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn x2</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Abductor machine</div></div><div class="archive-ex-sets">10-15 x2 · 2 or 3 weights</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg curl machine</div></div><div class="archive-ex-sets">10 · 2 weights</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">7th July</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Seated leg extensions - foam roller behind knee</div></div><div class="archive-ex-sets">To burn</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box leg extensions</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg extension machine</div></div><div class="archive-ex-sets">10 or so · 1 weight</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Leg curl machine</div></div><div class="archive-ex-sets">10 · 2 weights</div></div>
-    </div>
-  </div>
-  </div>
+<div class="program-panel active" id="program-0">
+<div class="program-header"><div class="program-title">Knee-Dominant Strength &amp; Stability</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single leg deadlift – KB</div>
+<div class="ex-badges"><span class="badge badge-sets">To burn x2</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">5kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg holding a kettlebell in the opposite hand.</p><p><strong>Focus:</strong> Keep your back flat and hips square throughout. Resist the pelvis rotating toward the free leg.</p><p><strong>Movement:</strong> Hinge forward at the hip, lowering the kettlebell toward the floor while your rear leg extends behind as a counterbalance. Drive through your heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Bulgarian split squat</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10 each</span><span class="badge badge-equip">Bench</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with your rear foot elevated on a bench behind you and your front foot far enough forward that your front shin stays vertical.</p><p><strong>Focus:</strong> Keep your torso upright throughout. Your front knee should not travel excessively forward.</p><p><strong>Movement:</strong> Lower into a deep single leg squat until your rear knee is just above the floor. Drive through your front heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Terminal knee extension</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 15 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Fix a resistance band behind the knee, stand facing the anchor.</p><p><strong>Focus:</strong> Squeeze the front of your thigh hard at full extension. Keep your posture tall.</p><p><strong>Movement:</strong> Straighten knee fully against band resistance. Hold 1–2 seconds, bend knee to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse lunge to knee raise</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 8 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">2.5kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Control the lunge before driving the knee. Keep your torso tall throughout.</p><p><strong>Movement:</strong> Perform reverse lunge, then drive rear knee powerfully upward in front. Balance and hip flexor challenge.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Lateral band walks</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Place resistance band above knees, stand in a slight squat.</p><p><strong>Focus:</strong> Push knees out against the band. Don't stand upright between steps.</p><p><strong>Movement:</strong> Step sideways in small, controlled steps, staying in the squat position.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single-Leg Balance Reach (Multi-Directional)</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 6-8 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">2.5kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with a soft knee. Arms out to the sides for balance if needed.</p><p><strong>Focus:</strong> Keep your standing leg stable. Move smoothly through all directions. The goal is dynamic balance, not static—keep moving, keep thinking.</p><p><strong>Movement:</strong> Reach forward with one arm (or tap the ground in front), return to center. Reach to the side, return. Reach behind, return. Move through these directions in a controlled, flowing manner. Switch legs and repeat.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Pallof press</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">Cable</span><span class="badge badge-weight">4.25kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Calf raises – loaded single leg</div>
+<div class="ex-badges"><span class="badge badge-sets">3 × 10 each</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell and stand on edge of a step on one leg.</p><p><strong>Focus:</strong> Lower your heel slowly below the step to full stretch. Feel the Achilles lengthening.</p><p><strong>Movement:</strong> Rise as high as possible on the calf. Progress load when 3x15 is pain-free.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single Leg RDL (Knee-Dominant)</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bulgarian Split Squat (Rear Foot Elevated)</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Suitcase Carry</div></div><div class="archive-ex-sets">3 x 40m each side · Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach (Multi-Directional)</div></div><div class="archive-ex-sets">3 x 6-8 each direction</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof Press (Half-Kneeling)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Calf Raise (Single Leg)</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight or Light</div></div><div class="archive-ex"><div><div class="archive-ex-name">Step-Down with Rotation</div></div><div class="archive-ex-sets">3 x 8 each side · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute Bridge (Single Leg)</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight or Light</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge to Knee Raise</div></div><div class="archive-ex-sets">3 x 8 each · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Dead Bug with Knee Drive</div></div><div class="archive-ex-sets">3 x 8 each side</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">6th Nov</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Curtsey lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Step box down</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg extensions</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">18th Sep</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Single arm squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse lunge to knee raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute ham raise</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlifts</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg balance reach</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pivots</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">1st Aug</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5-10 x2</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 x2 · 2 weights</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn x2</div></div><div class="archive-ex"><div><div class="archive-ex-name">Step box / side / rotation</div></div><div class="archive-ex-sets">10 each side of each · Low</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single lef deadlift with no support</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Manual hamstring strech</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">15th July</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">TRX squats</div></div><div class="archive-ex-sets">5-10 x2</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats</div></div><div class="archive-ex-sets">To burn</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg press</div></div><div class="archive-ex-sets">10 x2 · 2 weights</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band crab walks</div></div><div class="archive-ex-sets">Burn x2</div></div><div class="archive-ex"><div><div class="archive-ex-name">Abductor machine</div></div><div class="archive-ex-sets">10-15 x2 · 2 or 3 weights</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg curl machine</div></div><div class="archive-ex-sets">10 · 2 weights</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">7th July</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Lunge matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Squat matrix</div></div><div class="archive-ex-sets">6 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Supported single leg deadlifts</div></div><div class="archive-ex-sets">10 of each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Seated leg extensions - foam roller behind knee</div></div><div class="archive-ex-sets">To burn</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box leg extensions</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg extension machine</div></div><div class="archive-ex-sets">10 or so · 1 weight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute / ham bridges</div></div><div class="archive-ex-sets">10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift</div></div><div class="archive-ex-sets">10 · 6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Leg curl machine</div></div><div class="archive-ex-sets">10 · 2 weights</div></div></div></div>
+</div>
 </div>
 <script>
 const CLIENT_STREAM = 'in-person';
