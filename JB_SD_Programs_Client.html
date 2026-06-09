@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-SD.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
@@ -82,123 +82,76 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
-  <button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
-  <div class="program-panel active" id="program-0">
-    <div class="program-header"><div class="program-title">Back-Safe Strength & Functional Core</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 8 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Dumbbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Goblet squat</div><div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single arm DB row – incline</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie face down on an incline bench with one arm hanging freely. Hold a dumbbell in the hanging hand.</p><p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">DB single-arm press</div><div class="ex-badges"><span class="badge badge-sets">2 × 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p><p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p><p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Waiter carry – single arm</div><div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a dumbbell or kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Wood chop – med ball / DB</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine ball</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a medicine ball or dumbbell with both hands overhead to one side.</p><p><strong>Focus:</strong> Power comes from your hips and obliques — not just arms.</p><p><strong>Movement:</strong> Rotate and chop explosively diagonally down toward opposite hip. Return under control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Ankle dorsiflexion drill</div><div class="ex-badges"><span class="badge badge-sets">2 × 45s each</span><span class="badge badge-equip">Wall</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand facing a wall with your foot close to it.</p><p><strong>Focus:</strong> Keep heel flat on the ground — all movement is at the ankle.</p><p><strong>Movement:</strong> Bend knee forward, trying to touch wall while heel stays flat. Progressively move foot further from wall.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Calf raises – slow eccentric</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with feet flat on the floor.</p><p><strong>Focus:</strong> The single leg eccentric (lowering) phase is the therapeutic component. Go slow.</p><p><strong>Movement:</strong> Rise onto both feet, transfer to one foot. Lower that heel slowly over 4 seconds. Rise on both feet each rep.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Pallof press</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Cable</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-1">
-    <div class="program-header"><div class="program-title">Archive</div></div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-program-header">Program 1 — Hinge, Pull &amp; Functional Core</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Dumbbell Romanian deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Seated row – machine</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Step-ups – forward low</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB single-arm press</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Suitcase carry</div></div><div class="archive-ex-sets">2 × 30 steps</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Ankle dorsiflexion drill</div></div><div class="archive-ex-sets">2 × 45 sec each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Wood chop – med ball / DB</div></div><div class="archive-ex-sets">2 × 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lateral band walks</div></div><div class="archive-ex-sets">2 × 12 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Side plank – knees bent</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div>
-      <div class="archive-program-header">Program 2 — Squat, Push &amp; Ankle Stability</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Box squats – high box</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Waiter carry – single arm</div></div><div class="archive-ex-sets">2 × 30 steps</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg assisted</div></div><div class="archive-ex-sets">2 × 30 sec each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB lateral lunge</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Calf raises – slow eccentric</div></div><div class="archive-ex-sets">2 × 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row – incline</div></div><div class="archive-ex-sets">2 × 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Shoulder press – seated DB</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pivot lunges</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Elbow plank – arm reach</div></div><div class="archive-ex-sets">2 × 8 each</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">Previous Program 1</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">KB Deadlift (Compound Hip Extension - Back Safe)</div></div><div class="archive-ex-sets">3 x 8-10 · Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Goblet Squat &amp; Reach (Functional Core &amp; Hip Opening)</div></div><div class="archive-ex-sets">3 x 8</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pallof Press (Anti-Rotation Functional Core)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift (Hip Hinge &amp; Stability)</div></div><div class="archive-ex-sets">3 x 8 each · Bodyweight or Light</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge &amp; Rotational Throw (Functional Core Rotation)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Back Extension Machine (Lower Back Posterior Chain)</div></div><div class="archive-ex-sets">3 x 10 · Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Curtsey Lunge to Knee Raise (Dynamic Hip &amp; Core)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Dead Bug with Shoulder Reach (Integrated Core Control)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse Crunch (Anti-Extension Core)</div></div><div class="archive-ex-sets">3 x 12</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">Previous Program 2</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">DB Clean &amp; Press (Compound Upper Body Strength)</div></div><div class="archive-ex-sets">3 x 8 · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Arm Squat (DB - Balance Challenge)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach (Ankle Proprioception)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cossack Squat (Ankle Mobility &amp; Hip Opening)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Cable Rotation (Functional Anti-Rotation)</div></div><div class="archive-ex-sets">3 x 10 each side · 3</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge with Knee Drive (Dynamic Balance &amp; Ankle Load)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift with Overhead (Balance &amp; Core)</div></div><div class="archive-ex-sets">3 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Bird Dog (Functional Core + Balance)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lateral Lunge (Ankle Stability &amp; Hip Control)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">14th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Lunge and rotational throw (ViPR)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Goblet and reach (Plate)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Pallof press (Cable)</div></div><div class="archive-ex-sets">—</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Curtsey knee raise</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">11th May</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  </div>
+<div class="program-panel active" id="program-0">
+<div class="program-header"><div class="program-title">Back-Safe Strength &amp; Functional Core</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Romanian deadlift – BB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">25kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding the barbell at hip height with a shoulder-width grip.</p><p><strong>Focus:</strong> Keep your back flat throughout. Feel the hamstring stretch developing as you lower. Keep the bar close to your body.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your thighs to mid-shin. Drive your hips forward to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Goblet squat</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">10kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single arm DB row – incline</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 8 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">16kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie face down on an incline bench with one arm hanging freely. Hold a dumbbell in the hanging hand.</p><p><strong>Focus:</strong> The incline removes all lower back involvement — this is a pure back exercise. Squeeze your shoulder blade at the top.</p><p><strong>Movement:</strong> Row the dumbbell toward your hip by driving your elbow back. Lower under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">DB single-arm press</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">9kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p><p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p><p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Waiter carry – single arm</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">8kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a dumbbell or kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Wood chop – med ball / DB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine ball</span><span class="badge badge-weight">7kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a medicine ball or dumbbell with both hands overhead to one side.</p><p><strong>Focus:</strong> Power comes from your hips and obliques — not just arms.</p><p><strong>Movement:</strong> Rotate and chop explosively diagonally down toward opposite hip. Return under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">External rotation – band</div>
+<div class="ex-badges"><span class="badge badge-sets">To burn each</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Red / yellow band</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a band anchor, elbow bent at 90°, tucked at your side.</p><p><strong>Focus:</strong> Keep elbow still and tucked. Never sacrifice range for resistance.</p><p><strong>Movement:</strong> Rotate forearm outward against the band. Return slowly.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse crunches</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x burn</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands at sides or under lower back.</p><p><strong>Focus:</strong> Reset your core and lower back position each time your feet touch the floor — don't rush into the next rep.</p><p><strong>Movement:</strong> Draw knees toward your chest, lifting hips slightly off the floor. Lower feet back down to touch, pause and reset, then repeat.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Dumbbell Romanian deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Seated row – machine</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Step-ups – forward low</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB single-arm press</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Suitcase carry</div></div><div class="archive-ex-sets">2 × 30 steps</div></div><div class="archive-ex"><div><div class="archive-ex-name">Ankle dorsiflexion drill</div></div><div class="archive-ex-sets">2 × 45 sec each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Wood chop – med ball / DB</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral band walks</div></div><div class="archive-ex-sets">2 × 12 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Side plank – knees bent</div></div><div class="archive-ex-sets">2 × 20 sec each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Box squats – high box</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Waiter carry – single arm</div></div><div class="archive-ex-sets">2 × 30 steps</div></div><div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg assisted</div></div><div class="archive-ex-sets">2 × 30 sec each</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB lateral lunge</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Calf raises – slow eccentric</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row – incline</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Shoulder press – seated DB</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pivot lunges</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Elbow plank – arm reach</div></div><div class="archive-ex-sets">2 × 8 each</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Previous Program 1</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">KB Deadlift (Compound Hip Extension - Back Safe)</div></div><div class="archive-ex-sets">3 x 8-10 · Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Goblet Squat &amp; Reach (Functional Core &amp; Hip Opening)</div></div><div class="archive-ex-sets">3 x 8</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof Press (Anti-Rotation Functional Core)</div></div><div class="archive-ex-sets">3 x 8 each side · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift (Hip Hinge &amp; Stability)</div></div><div class="archive-ex-sets">3 x 8 each · Bodyweight or Light</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lunge &amp; Rotational Throw (Functional Core Rotation)</div></div><div class="archive-ex-sets">3 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Back Extension Machine (Lower Back Posterior Chain)</div></div><div class="archive-ex-sets">3 x 10 · Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Curtsey Lunge to Knee Raise (Dynamic Hip &amp; Core)</div></div><div class="archive-ex-sets">3 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Dead Bug with Shoulder Reach (Integrated Core Control)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse Crunch (Anti-Extension Core)</div></div><div class="archive-ex-sets">3 x 12</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Previous Program 2</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">DB Clean &amp; Press (Compound Upper Body Strength)</div></div><div class="archive-ex-sets">3 x 8 · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Arm Squat (DB - Balance Challenge)</div></div><div class="archive-ex-sets">3 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Balance Reach (Ankle Proprioception)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cossack Squat (Ankle Mobility &amp; Hip Opening)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cable Rotation (Functional Anti-Rotation)</div></div><div class="archive-ex-sets">3 x 10 each side · 3</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse Lunge with Knee Drive (Dynamic Balance &amp; Ankle Load)</div></div><div class="archive-ex-sets">3 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift with Overhead (Balance &amp; Core)</div></div><div class="archive-ex-sets">3 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bird Dog (Functional Core + Balance)</div></div><div class="archive-ex-sets">3 x 10 each side</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral Lunge (Ankle Stability &amp; Hip Control)</div></div><div class="archive-ex-sets">3 x 8 each side</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">14th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Lunge and rotational throw (ViPR)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single leg deadlift</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse crunches</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Goblet and reach (Plate)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof press (Cable)</div></div><div class="archive-ex-sets">—</div></div><div class="archive-ex"><div><div class="archive-ex-name">Curtsey knee raise</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">11th May</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">No exercises recorded</div></div><div class="archive-ex-sets">—</div></div></div></div>
+</div>
 </div>
 <script>
 const CLIENT_STREAM = 'in-person';
