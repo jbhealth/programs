@@ -14,7 +14,7 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-BW.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
@@ -52,6 +52,15 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .badge-sets{background:var(--navy);color:#fff;}
 .badge-equip{background:var(--accent);color:var(--blue);}
 .badge-weight{background:#FBEFD8;color:#9A6700;}
+.badge-weight.placeholder{background:#EEF2F6;color:#9AA5B1;font-style:italic;}
+.ex-collapse-chevron{display:inline-block;color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:3px 9px;margin:-2px 0 0 -9px;border-radius:6px;user-select:none;-webkit-user-select:none;transition:transform 0.2s;}
+.ex-collapse-chevron:hover{background:var(--accent);}
+.exercise-card.collapsed .ex-collapse-chevron{transform:rotate(-90deg);}
+.exercise-card.collapsed .ex-desc,.exercise-card.collapsed .ex-note{display:none;}
+.exercise-card .ex-name{cursor:pointer;}
+.exercise-card.collapsed{padding-bottom:14px;}
+.cue-toggle{margin-top:10px;background:transparent;border:1px solid var(--border);color:var(--blue);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:background 0.15s;}
+.cue-toggle:hover{background:var(--accent);}
 .ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
 .ex-desc p{margin-bottom:6px;}
 .ex-desc strong{color:var(--navy);font-weight:500;}
@@ -82,122 +91,114 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button>
-  <button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
-  <div class="program-panel active" id="program-0">
-    <div class="program-header"><div class="program-title">Barbell Strength & Variety</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 8 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Barbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, barbell in a double overhand grip just outside your legs. Stand tall with the bar at hip height.</p><p><strong>Focus:</strong> This is a hip hinge — keep your knees soft but nearly straight. Feel the hamstring stretch as you lower. Keep the bar close to your body throughout.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your legs until you feel a strong hamstring stretch. Drive your hips forward to return to standing, squeezing your glutes at the top.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Goblet squat</div><div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">DB lateral lunge</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall holding dumbbells at your sides.</p><p><strong>Focus:</strong> Keep the lunging knee tracking over your foot. Chest tall throughout.</p><p><strong>Movement:</strong> Take a wide step to one side, bend that knee while keeping the other leg straight. Push through the bent heel to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Reverse lunge – bodyweight</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Keep your front knee over your ankle and torso upright. Control the descent.</p><p><strong>Movement:</strong> Step one foot back into a lunge, lowering rear knee toward floor. Push through front heel to return.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">DB single-arm press</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p><p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p><p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Single arm row – DB</div><div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Place one knee and hand on a bench. Hold dumbbell in other hand, arm hanging straight down.</p><p><strong>Focus:</strong> Drive elbow directly back, squeeze shoulder blade at top.</p><p><strong>Movement:</strong> Row dumbbell up toward ceiling. Lower under control — don't let weight drop.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Reverse fly – DB</div><div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with a slight hip hinge or lie face down.</p><p><strong>Focus:</strong> Squeeze shoulder blades together at top. Control the lowering phase.</p><p><strong>Movement:</strong> Raise both arms out to the sides to shoulder height. Lead with slight external rotation of upper arm.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Lateral raises – slow eccentric</div><div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall with dumbbells at your sides, shoulders pressed down away from ears.</p><p><strong>Focus:</strong> The slow eccentric lowering is the therapeutic part — particularly good for supraspinatus health. Keep shoulders down throughout.</p><p><strong>Movement:</strong> Raise the dumbbells to shoulder height at normal speed. Lower over 4 seconds under full control. Repeat.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Waiter carry – single arm</div><div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a dumbbell or kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Wall slides</div><div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Wall</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Back, head and arms touching wall. Feet few cm away. Elbows at 90°, arms in goalpost.</p><p><strong>Focus:</strong> Keep entire back and both arms in wall contact throughout — no loss of contact.</p><p><strong>Movement:</strong> Slide arms up slowly toward overhead while maintaining wall contact. Slide back down with control.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Balance – single leg free</div><div class="ex-badges"><span class="badge badge-sets">2 × 30s each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with no support.</p><p><strong>Focus:</strong> Fix your gaze on a still point ahead. Keep a soft bend in the standing knee.</p><p><strong>Movement:</strong> Stand tall and breathe steadily. Spread your foot wide for stability.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Glute bridges – march</div><div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip stability.</p></div>
-    </div>
-    <div class="exercise-card main">
-      <div class="ex-top"><div class="ex-name">Bicycle twists</div><div class="ex-badges"><span class="badge badge-sets">2 × 15 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">–</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-1">
-    <div class="program-header"><div class="program-title">Archive</div></div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-program-header">Program 1 — Barbell Strength &amp; Variety</div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Barbell Romanian deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Barbell back squat</div></div><div class="archive-ex-sets">2 × 8</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB lateral lunge</div></div><div class="archive-ex-sets">2 × 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB single-arm press</div></div><div class="archive-ex-sets">2 × 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Suitcase carry</div></div><div class="archive-ex-sets">2 × 30 steps</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Lateral raises – DB</div></div><div class="archive-ex-sets">2 × 12</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Reverse fly – DB</div></div><div class="archive-ex-sets">2 × 12</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg free</div></div><div class="archive-ex-sets">2 × 30 sec each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists</div></div><div class="archive-ex-sets">2 × 15 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise – plate</div></div><div class="archive-ex-sets">2 × 12</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Glute bridges – march</div></div><div class="archive-ex-sets">2 × 12 each</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">Previous Program</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Barbell Deadlift</div></div><div class="archive-ex-sets">2 x 6-8 · 25</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row</div></div><div class="archive-ex-sets">8 each · 5</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Barbell Bench Press</div></div><div class="archive-ex-sets">3 x 5 · 15</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">DB Bicep Curl</div></div><div class="archive-ex-sets">2 x 10 each · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Barbell Squat</div></div><div class="archive-ex-sets">2 x 8-10 · Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Box Squat</div></div><div class="archive-ex-sets">2 x 8 each · Bodyweight or Light</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Weighted Bridge (Single-Leg)</div></div><div class="archive-ex-sets">2 x 10 each · Light-Moderate</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift (with Support)</div></div><div class="archive-ex-sets">2 x 8 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Farmer's Carry (Plates)</div></div><div class="archive-ex-sets">2 x 40m · Moderate</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">26th Feb</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Plate</div></div><div class="archive-ex-sets">—</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">19th Feb</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Plate (10)</div></div><div class="archive-ex-sets">10kg</div></div>
-    </div>
-  </div>
-  <div class="archive-month">
-    <div class="archive-month-header" onclick="this.parentElement.classList.toggle('open')"><span class="archive-month-title">12th Feb</span><span class="archive-chevron">▼</span></div>
-    <div class="archive-month-body">
-      <div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">Harder on right leg · 10 each</div></div>
-      <div class="archive-ex"><div><div class="archive-ex-name">Plate (10)</div></div><div class="archive-ex-sets">10kg</div></div>
-    </div>
-  </div>
-  </div>
+<div class="program-panel active" id="program-0">
+<div class="program-header"><div class="program-title">Barbell Strength & Variety</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Barbell Romanian deadlift</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, barbell in a double overhand grip just outside your legs. Stand tall with the bar at hip height.</p><p><strong>Focus:</strong> This is a hip hinge — keep your knees soft but nearly straight. Feel the hamstring stretch as you lower. Keep the bar close to your body throughout.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your legs until you feel a strong hamstring stretch. Drive your hips forward to return to standing, squeezing your glutes at the top.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Goblet squat</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">DB lateral lunge</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding dumbbells at your sides.</p><p><strong>Focus:</strong> Keep the lunging knee tracking over your foot. Chest tall throughout.</p><p><strong>Movement:</strong> Take a wide step to one side, bend that knee while keeping the other leg straight. Push through the bent heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse lunge – bodyweight</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Keep your front knee over your ankle and torso upright. Control the descent.</p><p><strong>Movement:</strong> Step one foot back into a lunge, lowering rear knee toward floor. Push through front heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">DB single-arm press</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand or sit with a dumbbell in one hand at shoulder height, palm facing forward. Brace your core to resist the lateral pull of the uneven load.</p><p><strong>Focus:</strong> Resist any lean to the weighted side — the anti-lateral flexion challenge is part of the exercise. Keep your torso upright throughout.</p><p><strong>Movement:</strong> Press the dumbbell directly overhead until your arm is fully extended. Lower with control back to shoulder height. Complete all reps on one side before switching.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Single arm row – DB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Place one knee and hand on a bench. Hold dumbbell in other hand, arm hanging straight down.</p><p><strong>Focus:</strong> Drive elbow directly back, squeeze shoulder blade at top.</p><p><strong>Movement:</strong> Row dumbbell up toward ceiling. Lower under control — don't let weight drop.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse fly – DB</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with a slight hip hinge or lie face down.</p><p><strong>Focus:</strong> Squeeze shoulder blades together at top. Control the lowering phase.</p><p><strong>Movement:</strong> Raise both arms out to the sides to shoulder height. Lead with slight external rotation of upper arm.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Lateral raises – slow eccentric</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall with dumbbells at your sides, shoulders pressed down away from ears.</p><p><strong>Focus:</strong> The slow eccentric lowering is the therapeutic part — particularly good for supraspinatus health. Keep shoulders down throughout.</p><p><strong>Movement:</strong> Raise the dumbbells to shoulder height at normal speed. Lower over 4 seconds under full control. Repeat.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Waiter carry – single arm</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30 steps</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a dumbbell or kettlebell overhead in one hand like a waiter carrying a tray, arm locked out.</p><p><strong>Focus:</strong> Resist trunk rotation and lateral flexion throughout. Keep your arm locked straight overhead.</p><p><strong>Movement:</strong> Walk for the prescribed distance maintaining the overhead position. Keep your torso completely upright.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Wall slides</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Wall</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Back, head and arms touching wall. Feet few cm away. Elbows at 90°, arms in goalpost.</p><p><strong>Focus:</strong> Keep entire back and both arms in wall contact throughout — no loss of contact.</p><p><strong>Movement:</strong> Slide arms up slowly toward overhead while maintaining wall contact. Slide back down with control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Balance – single leg free</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 30s each</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with no support.</p><p><strong>Focus:</strong> Fix your gaze on a still point ahead. Keep a soft bend in the standing knee.</p><p><strong>Movement:</strong> Stand tall and breathe steadily. Spread your foot wide for stability.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Glute bridges – march</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip stability.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Bicycle twists</div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 15 each</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight placeholder">weight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands lightly behind your head and knees bent at 90°.</p><p><strong>Focus:</strong> Rotation comes from your trunk — not from pulling your neck with your hands. Keep the movement controlled, not rushed.</p><p><strong>Movement:</strong> Extend one leg while rotating your torso toward the bent knee, bringing the opposite elbow toward it. Alternate sides in a controlled cycling motion.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 1 Jun 2026</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Barbell Romanian deadlift</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Barbell back squat</div></div><div class="archive-ex-sets">2 × 8</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB lateral lunge</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB single-arm press</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Suitcase carry</div></div><div class="archive-ex-sets">2 × 30 steps</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral raises – DB</div></div><div class="archive-ex-sets">2 × 12</div></div><div class="archive-ex"><div><div class="archive-ex-name">Reverse fly – DB</div></div><div class="archive-ex-sets">2 × 12</div></div><div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg free</div></div><div class="archive-ex-sets">2 × 30 sec each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bicycle twists</div></div><div class="archive-ex-sets">2 × 15 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise – plate</div></div><div class="archive-ex-sets">2 × 12</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute bridges – march</div></div><div class="archive-ex-sets">2 × 12 each</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Previous Program</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Barbell Deadlift</div></div><div class="archive-ex-sets">2 x 6-8 · 25</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB Single-Arm Row</div></div><div class="archive-ex-sets">8 each · 5</div></div><div class="archive-ex"><div><div class="archive-ex-name">Barbell Bench Press</div></div><div class="archive-ex-sets">3 x 5 · 15</div></div><div class="archive-ex"><div><div class="archive-ex-name">DB Bicep Curl</div></div><div class="archive-ex-sets">2 x 10 each · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Barbell Squat</div></div><div class="archive-ex-sets">2 x 8-10 · Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Box Squat</div></div><div class="archive-ex-sets">2 x 8 each · Bodyweight or Light</div></div><div class="archive-ex"><div><div class="archive-ex-name">Weighted Bridge (Single-Leg)</div></div><div class="archive-ex-sets">2 x 10 each · Light-Moderate</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single-Leg Deadlift (with Support)</div></div><div class="archive-ex-sets">2 x 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Farmer's Carry (Plates)</div></div><div class="archive-ex-sets">2 x 40m · Moderate</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">26th Feb</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Plate</div></div><div class="archive-ex-sets">—</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">19th Feb</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Plate (10)</div></div><div class="archive-ex-sets">10kg</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">12th Feb</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Bench</div></div><div class="archive-ex-sets">Harder on right leg · 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Plate (10)</div></div><div class="archive-ex-sets">10kg</div></div></div></div>
+</div>
 </div>
 <script>
+const CLIENT_CODE = 'BW';
 const CLIENT_STREAM = 'in-person';
 function showProgram(index, btn) {
   const panels = document.querySelectorAll('.program-panel');
@@ -207,7 +208,54 @@ function showProgram(index, btn) {
   const target = document.getElementById('program-' + index);
   if (target) { target.classList.add('active'); btn.classList.add('active'); }
 }
+// --- Collapsible coaching cues (Start / Focus / Movement) ---
+function cueKey(){ return 'jb:' + CLIENT_CODE + ':cues-hidden'; }
+function cuesHidden(){ try { return localStorage.getItem(cueKey()) === '1'; } catch(e){ return false; } }
+function detailCards(){
+  return Array.from(document.querySelectorAll('.exercise-card'))
+    .filter(c => c.querySelector('.ex-desc') || c.querySelector('.ex-note'));
+}
+function applyCues(hidden){
+  detailCards().forEach(c => c.classList.toggle('collapsed', hidden));
+  document.querySelectorAll('.cue-toggle').forEach(b => {
+    b.textContent = hidden ? 'Show coaching cues' : 'Hide coaching cues';
+  });
+}
+function toggleCard(card){ card.classList.toggle('collapsed'); }
+function initCues(){
+  detailCards().forEach(card => {
+    const top = card.querySelector('.ex-top');
+    if (top && !top.querySelector('.ex-collapse-chevron')) {
+      const ch = document.createElement('span');
+      ch.className = 'ex-collapse-chevron'; ch.textContent = '\u2304';
+      ch.setAttribute('aria-label', 'Toggle details');
+      ch.addEventListener('click', e => { e.stopPropagation(); toggleCard(card); });
+      top.insertBefore(ch, top.firstChild);
+    }
+    const nm = card.querySelector('.ex-name');
+    if (nm && !nm.dataset.cueBound) {
+      nm.dataset.cueBound = '1';
+      nm.addEventListener('click', () => toggleCard(card));
+    }
+  });
+  document.querySelectorAll('.program-panel').forEach(panel => {
+    const hasDetail = panel.querySelector('.ex-desc') || panel.querySelector('.ex-note');
+    const header = panel.querySelector('.program-header');
+    if (hasDetail && header && !header.querySelector('.cue-toggle')) {
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'cue-toggle';
+      btn.onclick = () => {
+        const next = !cuesHidden();
+        try { localStorage.setItem(cueKey(), next ? '1' : '0'); } catch(e){}
+        applyCues(next);
+      };
+      header.appendChild(btn);
+    }
+  });
+  applyCues(cuesHidden());
+}
 document.addEventListener('DOMContentLoaded', function() {
+  initCues();
   document.querySelectorAll('.archive-month-header').forEach(function(header){
     header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
   });
