@@ -277,7 +277,13 @@ document.addEventListener('DOMContentLoaded', function() {
   try{
     var code=typeof CLIENT_CODE!=="undefined"?CLIENT_CODE:"";
     var t=encodeURIComponent("Hi James, quick question about my programme ("+code+")");
-    document.getElementById("jb-wa").href="https://wa.me/447469001785?text="+t;
+    var wa=document.getElementById("jb-wa");
+    if(/iPhone|iPad|iPod/.test(navigator.userAgent)){
+      wa.href="whatsapp://send?phone=447469001785&text="+t;
+    } else {
+      wa.href="https://wa.me/447469001785?text="+t;
+      wa.target="_blank"; wa.rel="noopener";
+    }
     document.getElementById("jb-em").href="mailto:james@jbhealth.co.uk?subject="+encodeURIComponent("Question about my programme ("+code+")");
   }catch(e){}
 })();
