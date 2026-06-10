@@ -80,6 +80,38 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 </style>
 </head>
 <body>
+<div id="a2hs" style="display:none;background:#1B3F6B;color:#fff;padding:12px 14px;font-size:15px;line-height:1.45;align-items:center;gap:10px;">
+  <div id="a2hs-msg" style="flex:1;"></div>
+  <button id="a2hs-go" style="display:none;background:#2E86C1;color:#fff;border:none;border-radius:8px;padding:10px 14px;font-size:15px;font-weight:600;white-space:nowrap;">Add to Home Screen</button>
+  <button id="a2hs-no" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:14px;padding:8px;white-space:nowrap;">Not now</button>
+</div>
+<script>
+(function(){
+  try{
+    var bar=document.getElementById('a2hs'), msg=document.getElementById('a2hs-msg'), go=document.getElementById('a2hs-go'), no=document.getElementById('a2hs-no');
+    var standalone=window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;
+    var dismissed=false; try{ dismissed=localStorage.getItem('jbh_a2hs_dismissed')==='1'; }catch(e){}
+    if(standalone||dismissed) return;
+    var ua=navigator.userAgent, isIOS=/iPhone|iPad|iPod/.test(ua), isSafari=isIOS&&/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+    no.onclick=function(){ bar.style.display='none'; try{ localStorage.setItem('jbh_a2hs_dismissed','1'); }catch(e){} };
+    if(isIOS&&isSafari){
+      msg.innerHTML='<b>Save this as an app:</b> tap the <b>Share</b> button <svg width="16" height="16" viewBox="0 0 16 16" style="vertical-align:-2px"><path d="M8 1l3 3h-2v6H7V4H5l3-3zM3 7v7h10V7h-2v5H5V7H3z" fill="#fff"/></svg> below, then <b>"Add to Home Screen"</b>.';
+      bar.style.display='flex';
+    } else if(isIOS){
+      msg.innerHTML='<b>Tip:</b> open this link in <b>Safari</b> to save it as an app on your home screen.';
+      bar.style.display='flex';
+    } else {
+      window.addEventListener('beforeinstallprompt',function(e){
+        e.preventDefault();
+        msg.innerHTML='<b>Save this as an app</b> for one-tap access:';
+        go.style.display='inline-block'; bar.style.display='flex';
+        go.onclick=function(){ bar.style.display='none'; e.prompt(); };
+      });
+    }
+  }catch(e){}
+})();
+</script>
+
 <div class="header">
 <div class="header-top">
 <div class="header-info">
