@@ -127,7 +127,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Static Program</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
 </div>
 <div class="content">
 <div class="program-panel active" id="program-0">
@@ -196,7 +196,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="ex-desc"><p><strong>Start:</strong> Hinge into a single leg RDL position with your torso roughly parallel to the floor and one leg extended behind.</p><p><strong>Focus:</strong> Feel the posterior chain endurance demand. Keep your back flat and hips square throughout.</p><p><strong>Movement:</strong> Hold the position for the prescribed time. Use a light dumbbell in one or both hands.</p></div>
 </div>
 </div>
-<div class="program-panel" id="program-1">
+<div class="program-panel" data-static="true" id="program-1"><!-- STATIC PROGRAM — permanent, do not remove -->
 <div class="program-header"><div class="program-title">Static Program</div></div>
 <div class="exercise-card main">
 <div class="ex-top">
