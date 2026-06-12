@@ -25,6 +25,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
+.bal-pill{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
+.bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
+.bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
+.bal-pill.bp-n{background:rgba(46,134,193,0.18);color:#9CCDEE;border:1px solid rgba(46,134,193,0.45);}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
@@ -320,6 +324,27 @@ document.addEventListener('DOMContentLoaded', function() {
     wa.href="https://wa.me/447469001785?text="+t;
     wa.target="_blank"; wa.rel="noopener";
     document.getElementById("jb-em").href="mailto:james@jbhealth.co.uk?subject="+encodeURIComponent("Question about my programme ("+code+")");
+  }catch(e){}
+})();
+</script>
+<script>
+(function(){
+  try{
+    var code=typeof CLIENT_CODE!=="undefined"?CLIENT_CODE:"";
+    if(!code) return;
+    fetch("balances/JB_"+code+".json",{cache:"no-cache"}).then(function(r){
+      if(!r.ok) throw 0;
+      return r.json();
+    }).then(function(j){
+      if(!j || typeof j.b!=="number") return;
+      var b=Math.round(j.b*100)/100;
+      var pill=document.createElement("div");
+      if(b>0){ pill.className="bal-pill bp-g"; pill.textContent=String(b); }
+      else if(b<0){ pill.className="bal-pill bp-r"; pill.textContent=String(-b); }
+      else { pill.className="bal-pill bp-n"; pill.textContent="Settled"; }
+      var anchor=document.querySelector(".header-info .month-label")||document.querySelector(".header-info");
+      if(anchor && anchor.parentNode) anchor.parentNode.appendChild(pill);
+    }).catch(function(){});
   }catch(e){}
 })();
 </script>
