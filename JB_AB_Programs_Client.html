@@ -25,6 +25,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
 .header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .header-info{flex:1;}
+.bal-pill{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
+.bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
+.bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
+.bal-pill.bp-n{background:rgba(46,134,193,0.18);color:#9CCDEE;border:1px solid rgba(46,134,193,0.45);}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
 .client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
 .month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
@@ -235,58 +239,44 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Barbell Romanian deadlift</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight">10kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart, barbell in a double overhand grip just outside your legs. Stand tall with the bar at hip height.</p><p><strong>Focus:</strong> This is a hip hinge — keep your knees soft but nearly straight. Feel the hamstring stretch as you lower. Keep the bar close to your body throughout.</p><p><strong>Movement:</strong> Push your hips back and lower the bar down the front of your legs until you feel a strong hamstring stretch. Drive your hips forward to return to standing, squeezing your glutes at the top.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Goblet squat</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 12</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">8kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">DB chest press</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">2 x 4kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Lie on a flat bench with dumbbells at shoulder height, palms facing forward.</p><p><strong>Focus:</strong> Use the full range of motion. Control the lowering phase — don't let the dumbbells drop.</p><p><strong>Movement:</strong> Press both dumbbells upward to full arm extension, allowing them to naturally travel slightly inward at the top. Lower under control.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Med ball rotational throw</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine ball</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine ball</span><span class="badge badge-weight">4kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand sideways to a wall holding a medicine ball at hip height.</p><p><strong>Focus:</strong> Power comes from your hip rotation — not just your arms. Load your hips by rotating away first.</p><p><strong>Movement:</strong> Rotate away to load, then explosively rotate and throw the ball against the wall. Catch the rebound and repeat.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">Lunge and rotate</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">10 each</span><span class="badge badge-equip">Dumbbell</span><span class="badge badge-weight">6kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand tall ready to step into a lunge.</p><p><strong>Focus:</strong> Rotation comes from your thoracic spine, not arm swinging. Control both movements.</p><p><strong>Movement:</strong> Step into lunge, at bottom rotate torso toward front leg while holding weight. Return to centre, push back.</p></div>
 </div>
 <div class="exercise-card main">
 <div class="ex-top">
 <div class="ex-name">KB swings</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight placeholder">weight</span></div>
+<div class="ex-badges"><span class="badge badge-sets">2 × 15</span><span class="badge badge-equip">Kettlebell</span><span class="badge badge-weight">8kg</span></div>
 </div>
 <div class="ex-desc"><p><strong>Start:</strong> Stand with feet slightly wider than hip-width, kettlebell on the floor just ahead of you.</p><p><strong>Focus:</strong> Power comes entirely from your hip snap — not your arms. Think explosive hip extension, not shoulder raise.</p><p><strong>Movement:</strong> Hinge at the hips and hike the kettlebell back between your legs. Explosively snap your hips forward to drive the kettlebell up to shoulder height. Let it fall back and repeat.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Bent-over rows – BB</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10</span><span class="badge badge-equip">Barbell</span><span class="badge badge-weight placeholder">weight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand with feet hip-width apart. Hinge forward to roughly 45° with a flat back. Grip the barbell with an overhand grip.</p><p><strong>Focus:</strong> Keep your core braced throughout — don't let your lower back round. Squeeze your shoulder blades at the top.</p><p><strong>Movement:</strong> Pull the barbell toward your lower ribs, driving your elbows back. Lower under control.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Lunge pass – med ball</div>
-<div class="ex-badges"><span class="badge badge-sets">2 × 10 each</span><span class="badge badge-equip">Medicine ball</span><span class="badge badge-weight placeholder">weight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand tall holding a medicine ball at chest height.</p><p><strong>Focus:</strong> Control the rotation during the pass — don't rush it. The pass under your leg is a stability challenge as much as a strength one.</p><p><strong>Movement:</strong> Step into a lunge and at the bottom pass the ball from hand to hand under your front leg. Stand, return, repeat on the same or alternating leg.</p></div>
 </div>
 </div>
 <div class="program-panel" id="program-3">
@@ -378,6 +368,27 @@ document.addEventListener('DOMContentLoaded', function() {
     wa.href="https://wa.me/447469001785?text="+t;
     wa.target="_blank"; wa.rel="noopener";
     document.getElementById("jb-em").href="mailto:james@jbhealth.co.uk?subject="+encodeURIComponent("Question about my programme ("+code+")");
+  }catch(e){}
+})();
+</script>
+<script>
+(function(){
+  try{
+    var code=typeof CLIENT_CODE!=="undefined"?CLIENT_CODE:"";
+    if(!code) return;
+    fetch("balances/JB_"+code+".json",{cache:"no-cache"}).then(function(r){
+      if(!r.ok) throw 0;
+      return r.json();
+    }).then(function(j){
+      if(!j || typeof j.b!=="number") return;
+      var b=Math.round(j.b*100)/100;
+      var pill=document.createElement("div");
+      if(b>0){ pill.className="bal-pill bp-g"; pill.textContent=String(b); }
+      else if(b<0){ pill.className="bal-pill bp-r"; pill.textContent=String(-b); }
+      else { pill.className="bal-pill bp-n"; pill.textContent="Settled"; }
+      var anchor=document.querySelector(".header-info .month-label")||document.querySelector(".header-info");
+      if(anchor && anchor.parentNode) anchor.parentNode.appendChild(pill);
+    }).catch(function(){});
   }catch(e){}
 })();
 </script>
