@@ -127,20 +127,46 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 </div>
 <div class="tab-nav">
-<button class="tab-btn active" onclick="showProgram(0,this)">Welcome</button>
+<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
 </div>
 <div class="content">
-<div class="program-panel active" id="program-0">
-<div class="program-header">
-<div class="program-title">Welcome, AB</div>
-</div>
-<div class="exercise-card main">
-<div class="ex-desc">
-<p><strong>This is your training home.</strong> Every program I build for you will live here from now on.</p>
-<p>There's nothing to see just yet, your first set of programs will land here shortly.</p>
-<p>The link never changes, so save it once and it'll always be current. An archive of past programs builds up here over time too, so it only gets more useful the longer we work together.</p>
-</div>
-</div>
+<div class="content">
+  <div class="program-panel active" id="program-0">
+    <div class="program-header"><div class="program-title">Program 1</div></div>
+    <div class="section-label">Main Circuit</div>
+    <div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;"><div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">How to run it</div><div style="font-size:13px;color:var(--grey);">Two rounds of the circuit. Move through in order, slow and controlled, full range. Quality over speed, rest whenever you need to.</div></div>
+    <div class="exercise-card main" data-id="p0-ex0">
+      <div class="ex-top"><div class="ex-name">Glute bridges – bilateral</div><div class="ex-badges"><span class="badge badge-sets">2 x 12</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back, knees bent, feet flat on the floor.</p><p><strong>Focus:</strong> Squeeze your glutes hard at the top. Brace your core throughout.</p><p><strong>Movement:</strong> Drive your heels into the floor and push hips toward the ceiling, squeeze glutes, hold 2 seconds, lower with control.</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex1">
+      <div class="ex-top"><div class="ex-name">Hip abduction – clamshell</div><div class="ex-badges"><span class="badge badge-sets">2 x 12 each side</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Light</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex2">
+      <div class="ex-top"><div class="ex-name">Goblet squat – pause at bottom</div><div class="ex-badges"><span class="badge badge-sets">2 x 8</span><span class="badge badge-equip">KB/DB</span><span class="badge badge-weight">5kg</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell in front of chest.</p><p><strong>Focus:</strong> At the bottom, keep your chest tall and lower back neutral. Hold the tension.</p><p><strong>Movement:</strong> Squat down and pause 3 seconds at bottom. Drive through heels to stand.</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex3">
+      <div class="ex-top"><div class="ex-name">Dumbbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">DB</span><span class="badge badge-weight">Light</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex4">
+      <div class="ex-top"><div class="ex-name">Bird-dog</div><div class="ex-badges"><span class="badge badge-sets">2 x 8 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Start on all fours with a neutral spine.</p><p><strong>Focus:</strong> Keep your spine completely still — no rotation or hip drop.</p><p><strong>Movement:</strong> Extend opposite arm forward and opposite leg behind. Hold 3 seconds, return under control.</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex5">
+      <div class="ex-top"><div class="ex-name">Pallof press</div><div class="ex-badges"><span class="badge badge-sets">2 x 10 each side</span><span class="badge badge-equip">Cable/Band</span><span class="badge badge-weight">Light</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p></div>
+    </div>
+    <div class="exercise-card main" data-id="p0-ex6">
+      <div class="ex-top"><div class="ex-name">Side plank – knees bent</div><div class="ex-badges"><span class="badge badge-sets">2 x 20s each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div></div>
+      <div class="ex-desc"><p><strong>Start:</strong> Lie on your side with knees bent, bottom elbow under your shoulder.</p><p><strong>Focus:</strong> Keep your hips straight — don't let your top hip roll backward. Stay in a straight line.</p><p><strong>Movement:</strong> Lift your hips to form a straight line from knees to head. Hold for the prescribed time.</p></div>
+    </div>
+    <div class="section-label">Cardio Finisher</div>
+    <div class="cardio-block" style="background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px;"><div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">5-minute run</div><div style="font-size:13px;color:var(--grey);">Easy, flat pace, nice and relaxed. A gentle way to finish. If your knees or ankles feel sore, ease right off or stop.</div></div>
+  </div>
+  <div class="program-panel" id="program-1"><div class="program-header"><div class="program-title">Archive</div></div></div>
 </div>
 </div>
 <script>
