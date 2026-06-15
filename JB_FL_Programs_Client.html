@@ -130,76 +130,121 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 <button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn" onclick="showProgram(1,this)">Program 2</button><button class="tab-btn archive-tab" onclick="showProgram(2,this)">Archive</button>
 </div>
 <div class="content">
-<div class="content">
-  <div class="program-panel active" id="program-0">
-    <div class="program-header"><div class="program-title">Knee-Safe Strength Foundations</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 15 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main" data-id="p0-ex0">
-      <div class="ex-top"><div class="ex-name">Goblet squat</div><div class="ex-badges"><span class="badge badge-sets">3 x 10</span><span class="badge badge-equip">KB/DB</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex1">
-      <div class="ex-top"><div class="ex-name">Dumbbell Romanian deadlift</div><div class="ex-badges"><span class="badge badge-sets">3 x 10</span><span class="badge badge-equip">DB</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex2">
-      <div class="ex-top"><div class="ex-name">Seated row – machine</div><div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Seated row machine</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit at seated row machine with slight forward lean.</p><p><strong>Focus:</strong> Keep torso relatively upright. Squeeze shoulder blades together at end of pull.</p><p><strong>Movement:</strong> Pull handle toward lower ribs, drive elbows back. Return under control.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex3">
-      <div class="ex-top"><div class="ex-name">Step-ups – lateral low</div><div class="ex-badges"><span class="badge badge-sets">2 x 10 each leg</span><span class="badge badge-equip">Step box</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand to the side of a low step box.</p><p><strong>Focus:</strong> Keep heel fully in contact with the step — don't let it hang off.</p><p><strong>Movement:</strong> Step nearest foot up and sideways. Drive through that heel to stand fully. Lower under control.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex4">
-      <div class="ex-top"><div class="ex-name">Balance – single leg with arm reach</div><div class="ex-badges"><span class="badge badge-sets">3 x 20s each side</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft knee bend.</p><p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p><p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex5">
-      <div class="ex-top"><div class="ex-name">Glute bridges – march</div><div class="ex-badges"><span class="badge badge-sets">2 x 10 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip stability.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p0-ex6">
-      <div class="ex-top"><div class="ex-name">Dead bug – arms and legs</div><div class="ex-badges"><span class="badge badge-sets">2 x 8 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-1">
-    <div class="program-header"><div class="program-title">Low-Impact Strength &amp; Control</div><div style="font-size:13px;color:var(--grey);margin-top:4px;">Week commencing: 15 June 2026</div></div>
-    <div class="section-label">Main Circuit</div>
-    <div class="exercise-card main" data-id="p1-ex0">
-      <div class="ex-top"><div class="ex-name">Reverse lunge – bodyweight</div><div class="ex-badges"><span class="badge badge-sets">2 x 8 each leg</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Keep your front knee over your ankle and torso upright. Control the descent.</p><p><strong>Movement:</strong> Step one foot back into a lunge, lowering rear knee toward floor. Push through front heel to return.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex1">
-      <div class="ex-top"><div class="ex-name">Cable pull-through – hip hinge</div><div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Cable machine</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Set up at a cable pull-through station.</p><p><strong>Focus:</strong> On the way down, feel the hamstring stretch. Control the descent.</p><p><strong>Movement:</strong> Hip hinge slowly, then drive hips forward smoothly. Reinforces hip hinge mechanics.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex2">
-      <div class="ex-top"><div class="ex-name">Chest press machine – bilateral</div><div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Chest press machine</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit at chest press machine and grip handles at chest height.</p><p><strong>Focus:</strong> Feel your chest working. Controlled tempo — don't rush the movement.</p><p><strong>Movement:</strong> Press to full arm extension and return under control.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex3">
-      <div class="ex-top"><div class="ex-name">Lat pulldown</div><div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Lat pulldown machine</span><span class="badge badge-weight">Moderate</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Sit at lat pulldown machine, grip bar slightly wider than shoulder width.</p><p><strong>Focus:</strong> Drive elbows down toward hips. Don't use momentum.</p><p><strong>Movement:</strong> Lean back slightly and pull bar to chin level. Squeeze at bottom, control return to full extension.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex4">
-      <div class="ex-top"><div class="ex-name">Calf raises – slow eccentric</div><div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand with feet flat on the floor.</p><p><strong>Focus:</strong> The single leg eccentric (lowering) phase is the therapeutic component. Go slow.</p><p><strong>Movement:</strong> Rise onto both feet, transfer to one foot. Lower that heel slowly over 4 seconds. Rise on both feet each rep.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex5">
-      <div class="ex-top"><div class="ex-name">Hip abduction – clamshell</div><div class="ex-badges"><span class="badge badge-sets">2 x 12 each side</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Light</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex6">
-      <div class="ex-top"><div class="ex-name">Balance – single leg free</div><div class="ex-badges"><span class="badge badge-sets">3 x 20s each side</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with no support.</p><p><strong>Focus:</strong> Fix your gaze on a still point ahead. Keep a soft bend in the standing knee.</p><p><strong>Movement:</strong> Stand tall and breathe steadily. Spread your foot wide for stability.</p></div>
-    </div>
-    <div class="exercise-card main" data-id="p1-ex7">
-      <div class="ex-top"><div class="ex-name">Reverse crunches</div><div class="ex-badges"><span class="badge badge-sets">2 x 12</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div></div>
-      <div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands at sides or under lower back.</p><p><strong>Focus:</strong> Reset your core and lower back position each time your feet touch the floor — don't rush into the next rep.</p><p><strong>Movement:</strong> Draw knees toward your chest, lifting hips slightly off the floor. Lower feet back down to touch, pause and reset, then repeat.</p></div>
-    </div>
-  </div>
-  <div class="program-panel" id="program-2"><div class="program-header"><div class="program-title">Archive</div></div><div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 8 Jun 2026 · Control &amp; Strength</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Box squats – high box</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row</div></div><div class="archive-ex-sets">2 x 10 each · 8kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg assisted</div></div><div class="archive-ex-sets">2 × 20s each · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cross trainer</div></div><div class="archive-ex-sets">5 mins · Moderate difficulty</div></div><div class="archive-ex"><div><div class="archive-ex-name">Calf raises – bilateral</div></div><div class="archive-ex-sets">12 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute bridges – bilateral</div></div><div class="archive-ex-sets">2 × 12 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bird-dog</div></div><div class="archive-ex-sets">2 x 4 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pad work</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight</div></div></div></div><div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 8 Jun 2026 · Mobility &amp; Movement</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Step-ups – forward low</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise – plate</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral band walks</div></div><div class="archive-ex-sets">2 × 10 each way</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band hip hinge</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof press</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Dead bug – arms only</div></div><div class="archive-ex-sets">2 × 8 each</div></div></div></div></div>
+<div class="program-panel active" id="program-0">
+<div class="program-header"><div class="program-title">Knee-Safe Strength Foundations</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Goblet squat</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">KB/DB</span><span class="badge badge-weight">4kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell vertically at chest height with both hands.</p><p><strong>Focus:</strong> Keep chest tall throughout. Keep elbows inside your knees at the bottom.</p><p><strong>Movement:</strong> Squat down, pushing knees apart with elbows at the bottom. Stand fully.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Dumbbell Romanian deadlift</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">DB</span><span class="badge badge-weight">2x 5kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Seated row – machine</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">Seated row machine</span><span class="badge badge-weight">13.75kg</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Sit at seated row machine with slight forward lean.</p><p><strong>Focus:</strong> Keep torso relatively upright. Squeeze shoulder blades together at end of pull.</p><p><strong>Movement:</strong> Pull handle toward lower ribs, drive elbows back. Return under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Step-ups – lateral low</div>
+<div class="ex-badges"><span class="badge badge-sets">10 each</span><span class="badge badge-equip">Step box</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand to the side of a low step box.</p><p><strong>Focus:</strong> Keep heel fully in contact with the step — don't let it hang off.</p><p><strong>Movement:</strong> Step nearest foot up and sideways. Drive through that heel to stand fully. Lower under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Balance – single leg with arm reach</div>
+<div class="ex-badges"><span class="badge badge-sets">2 mins each side </span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with soft knee bend.</p><p><strong>Focus:</strong> Control the movement slowly. The arm reach is the challenge, not speed.</p><p><strong>Movement:</strong> Reach opposite arm in three directions: forward, out to side, diagonally behind. Return between each reach.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Glute bridges – march</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 10 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Hold a glute bridge at the top with hips fully extended.</p><p><strong>Focus:</strong> Keep hips absolutely still — no rocking or dropping during the march.</p><p><strong>Movement:</strong> Alternately lift each foot slightly off the floor in a marching motion. Maintain hip stability.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Dead bug – arms and legs</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 8 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hips and knees at 90°.</p><p><strong>Focus:</strong> Keep your lower back pressed into the floor throughout. Brace your core.</p><p><strong>Movement:</strong> Extend opposite arm overhead and opposite leg toward floor. Use a slow 4-count tempo. Alternate sides.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-1">
+<div class="program-header"><div class="program-title">Low-Impact Strength &amp; Control</div></div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse lunge – bodyweight</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 8 each leg</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand tall with good posture.</p><p><strong>Focus:</strong> Keep your front knee over your ankle and torso upright. Control the descent.</p><p><strong>Movement:</strong> Step one foot back into a lunge, lowering rear knee toward floor. Push through front heel to return.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Cable pull-through – hip hinge</div>
+<div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Cable machine</span><span class="badge badge-weight">Moderate</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Set up at a cable pull-through station.</p><p><strong>Focus:</strong> On the way down, feel the hamstring stretch. Control the descent.</p><p><strong>Movement:</strong> Hip hinge slowly, then drive hips forward smoothly. Reinforces hip hinge mechanics.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Chest press machine – bilateral</div>
+<div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Chest press machine</span><span class="badge badge-weight">Moderate</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Sit at chest press machine and grip handles at chest height.</p><p><strong>Focus:</strong> Feel your chest working. Controlled tempo — don't rush the movement.</p><p><strong>Movement:</strong> Press to full arm extension and return under control.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Lat pulldown</div>
+<div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Lat pulldown machine</span><span class="badge badge-weight">Moderate</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Sit at lat pulldown machine, grip bar slightly wider than shoulder width.</p><p><strong>Focus:</strong> Drive elbows down toward hips. Don't use momentum.</p><p><strong>Movement:</strong> Lean back slightly and pull bar to chin level. Squeeze at bottom, control return to full extension.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Calf raises – slow eccentric</div>
+<div class="ex-badges"><span class="badge badge-sets">3 x 12</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand with feet flat on the floor.</p><p><strong>Focus:</strong> The single leg eccentric (lowering) phase is the therapeutic component. Go slow.</p><p><strong>Movement:</strong> Rise onto both feet, transfer to one foot. Lower that heel slowly over 4 seconds. Rise on both feet each rep.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Hip abduction – clamshell</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 12 each side</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Light</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Balance – single leg free</div>
+<div class="ex-badges"><span class="badge badge-sets">3 x 20s each side</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Stand on one leg with no support.</p><p><strong>Focus:</strong> Fix your gaze on a still point ahead. Keep a soft bend in the standing knee.</p><p><strong>Movement:</strong> Stand tall and breathe steadily. Spread your foot wide for stability.</p></div>
+</div>
+<div class="exercise-card main">
+<div class="ex-top">
+<div class="ex-name">Reverse crunches</div>
+<div class="ex-badges"><span class="badge badge-sets">2 x 12</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div>
+</div>
+<div class="ex-desc"><p><strong>Start:</strong> Lie on your back with hands at sides or under lower back.</p><p><strong>Focus:</strong> Reset your core and lower back position each time your feet touch the floor — don't rush into the next rep.</p><p><strong>Movement:</strong> Draw knees toward your chest, lifting hips slightly off the floor. Lower feet back down to touch, pause and reset, then repeat.</p></div>
+</div>
+</div>
+<div class="program-panel" id="program-2">
+<div class="program-header"><div class="program-title">Archive</div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 8 Jun 2026 · Control &amp; Strength</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Box squats – high box</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm DB row</div></div><div class="archive-ex-sets">2 x 10 each · 8kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Balance – single leg assisted</div></div><div class="archive-ex-sets">2 × 20s each · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Cross trainer</div></div><div class="archive-ex-sets">5 mins · Moderate difficulty</div></div><div class="archive-ex"><div><div class="archive-ex-name">Calf raises – bilateral</div></div><div class="archive-ex-sets">12 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute bridges – bilateral</div></div><div class="archive-ex-sets">2 × 12 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Bird-dog</div></div><div class="archive-ex-sets">2 x 4 · Bodyweight</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pad work</div></div><div class="archive-ex-sets">3 x 10 each · Bodyweight</div></div></div></div>
+<div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">w/c 8 Jun 2026 · Mobility &amp; Movement</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Step-ups – forward low</div></div><div class="archive-ex-sets">2 × 8 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Straight arm raise – plate</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Lateral band walks</div></div><div class="archive-ex-sets">2 × 10 each way</div></div><div class="archive-ex"><div><div class="archive-ex-name">Band hip hinge</div></div><div class="archive-ex-sets">2 × 10</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof press</div></div><div class="archive-ex-sets">2 × 10 each</div></div><div class="archive-ex"><div><div class="archive-ex-name">Dead bug – arms only</div></div><div class="archive-ex-sets">2 × 8 each</div></div></div></div>
 </div>
 </div>
 <script>
