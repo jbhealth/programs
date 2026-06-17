@@ -95,7 +95,7 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 </script>
 <div class="header"><div class="header-info">
 <div class="brand">JB Health</div>
-<div class="client-name">Gemma</div>
+<div class="client-name">GC</div>
 <div class="month-label">Log what you lift</div>
 </div></div>
 <div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Lean Strength</button>
@@ -108,7 +108,7 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 <div class="program-panel" id="program-3"><div class="program-header"><div class="program-title">Archive</div></div><div class="archive-month"><div class="archive-month-header"><span class="archive-month-title">Weight log · 16 Jun 2026 · Lean Strength</span><span class="archive-chevron">&#9660;</span></div><div class="archive-month-body"><div class="archive-ex"><div><div class="archive-ex-name">Romanian deadlift – BB</div></div><div class="archive-ex-sets">8-10 · 15kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Single arm row – DB</div></div><div class="archive-ex-sets">10-12 each · 6kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Suitcase carry</div></div><div class="archive-ex-sets">20m each · 20kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Glute bridges – weighted</div></div><div class="archive-ex-sets">10-12 · 15kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Face pull – kneeling</div></div><div class="archive-ex-sets">12-15 · 5kg</div></div><div class="archive-ex"><div><div class="archive-ex-name">Pallof press</div></div><div class="archive-ex-sets">10 each · 7.5kg</div></div></div></div></div></div>
 <p class="note">Your main lifts have a <strong>logged weight</strong> box for what you actually used. Tap any move name for coaching cues. Entries save on this phone; tap <strong>Share logged weights with James</strong> when done.</p><div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time &mdash; I'd rather you ask than guess.</div><div class="sendbar"><div class="sendbar-inner"><span class="count" id="count">0 logged</span><button class="share-btn" id="share" disabled><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M12 2l4 4h-3v8h-2V6H8l4-4zM5 10h3v9h8v-9h3v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9z"/></svg>Share logged weights with James</button></div></div><div class="overlay" id="overlay"><div class="modal"><h3>Send to James</h3><p>Copy this and paste it to James (WhatsApp or email). It has everything he needs.</p><pre class="blockbox" id="blockbox"></pre><div class="modal-btns"><button class="m-copy" id="mcopy">Copy</button><button class="m-close" id="mclose">Close</button></div></div></div>
 <script>
-const CLIENT="OL_GC", NAME="Gemma";
+const CLIENT="OL_GC";
 function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");}
 function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
 function today(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
@@ -117,14 +117,14 @@ inputs.forEach(function(inp){var k=inp.dataset.k,v="";try{v=localStorage.getItem
   inp.addEventListener("input",function(){var t=inp.value.trim();try{t?localStorage.setItem(k,t):localStorage.removeItem(k);}catch(e){}inp.classList.toggle("filled",!!t);refresh();});});
 function buildBlock(){var byProg={},order=[];inputs.forEach(function(inp){var v=inp.value.trim();if(!v)return;var p=inp.dataset.prog;if(!byProg[p]){byProg[p]=[];order.push(p);}byProg[p].push("- "+inp.dataset.name+" ("+inp.dataset.sets+") = "+v);});
   if(!order.length)return "";var groups=order.map(function(p){return p+"\n"+byProg[p].join("\n");});
-  return "JBHEALTH-LOG | "+CLIENT+" | "+NAME+" | "+today()+"\nAction: log these completed loads to "+CLIENT+" archive (feeds weight history).\n\n"+groups.join("\n\n");}
+  return "JBHEALTH-LOG | "+CLIENT+" | "+today()+"\nAction: log these completed loads to "+CLIENT+" archive (feeds weight history).\n\n"+groups.join("\n\n");}
 function refresh(){var n=inputs.filter(function(i){return i.value.trim();}).length;document.getElementById("count").textContent=n+" logged";document.getElementById("share").disabled=n===0;}
 var overlay=document.getElementById("overlay");
 function openModal(b){document.getElementById("blockbox").textContent=b;var mc=document.getElementById("mcopy");mc.textContent="Copy";mc.classList.remove("done");overlay.classList.add("show");}
 document.getElementById("mclose").onclick=function(){overlay.classList.remove("show");};
 overlay.onclick=function(e){if(e.target===overlay)overlay.classList.remove("show");};
 document.getElementById("mcopy").onclick=async function(){var pre=document.getElementById("blockbox"),txt=pre.textContent,ok=false;try{await navigator.clipboard.writeText(txt);ok=true;}catch(e){try{var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);ok=document.execCommand("copy");}catch(_){}}if(ok){var b=document.getElementById("mcopy");b.textContent="Copied \u2713";b.classList.add("done");}};
-document.getElementById("share").onclick=async function(){var b=buildBlock();if(!b)return;if(navigator.share){try{await navigator.share({title:"Loads update \u2014 "+NAME,text:b});return;}catch(e){if(e&&e.name==="AbortError")return;}}openModal(b);};
+document.getElementById("share").onclick=async function(){var b=buildBlock();if(!b)return;if(navigator.share){try{await navigator.share({title:"Loads update for James",text:b});return;}catch(e){if(e&&e.name==="AbortError")return;}}openModal(b);};
 (function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
 refresh();
 </script>
