@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<title>ABa | JB Health</title>
-<!-- PWA / app-like -->
+<title>JB Health</title>
 <meta name="theme-color" content="#1B3F6B"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="mobile-web-app-capable" content="yes"/>
@@ -14,284 +12,122 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-ABa.webmanifest"/>
+<link rel="manifest" href="manifest-JB_ABa.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
-:root {--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
+:root{--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{-webkit-text-size-adjust:100%;}
-body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none;}
-.header{background:var(--navy);padding:calc(28px + env(safe-area-inset-top)) calc(24px + env(safe-area-inset-right)) 22px calc(24px + env(safe-area-inset-left));position:relative;overflow:hidden;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none;padding-bottom:120px;}
+.header{background:var(--navy);padding:calc(28px + env(safe-area-inset-top)) 24px 22px;position:relative;overflow:hidden;}
 .header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
-.header-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1;max-width:800px;margin:0 auto;}
-.header-info{flex:1;}
-.bal-pill{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
-.bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
-.bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
-.bal-pill.bp-n{background:rgba(46,134,193,0.18);color:#9CCDEE;border:1px solid rgba(46,134,193,0.45);}
+.header-info{position:relative;z-index:1;max-width:800px;margin:0 auto;}
 .brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
-.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;margin-bottom:4px;line-height:1.1;}
-.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);}
-
-
-.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:0;overflow-x:auto;position:sticky;top:0;z-index:50;-webkit-overflow-scrolling:touch;}
-.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
-.tab-btn:hover{color:rgba(255,255,255,0.7);}
+.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;line-height:1.1;}
+.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);margin-top:4px;}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;overflow-x:auto;position:sticky;top:0;z-index:50;-webkit-overflow-scrolling:touch;}
+.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;}
 .tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
-.tab-btn.archive-tab{color:rgba(255,255,255,0.45);font-size:12px;}
-.tab-btn.archive-tab.active{color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.3);}
-.content{max-width:800px;margin:0 auto;padding:28px 20px 80px;}
-.program-panel{display:none;}
-.program-panel.active{display:block;}
-.program-header{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.content{max-width:800px;margin:0 auto;padding:24px 20px 30px;}
+.program-panel{display:none;} .program-panel.active{display:block;}
+.program-header{margin-bottom:6px;padding-bottom:14px;border-bottom:1px solid var(--border);}
 .program-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.lead{font-size:13px;color:var(--grey);line-height:1.5;}
 .section-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey);margin:22px 0 10px;}
-.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px;transition:box-shadow 0.2s;}
-.exercise-card:hover{box-shadow:0 4px 18px rgba(27,63,107,0.07);}
-.exercise-card.main{border-left:3px solid var(--blue);}
-.ex-top{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:10px;}
-.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.2;flex:1;}
-.ex-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;}
-.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;}
-.badge-sets{background:var(--navy);color:#fff;}
-.badge-equip{background:var(--accent);color:var(--blue);}
-.badge-weight{background:#FBEFD8;color:#9A6700;}
-.badge-weight.placeholder{background:#EEF2F6;color:#9AA5B1;font-style:italic;}
-.ex-collapse-chevron{display:inline-block;color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:3px 9px;margin:-2px 0 0 -9px;border-radius:6px;user-select:none;-webkit-user-select:none;transition:transform 0.2s;}
-.ex-collapse-chevron:hover{background:var(--accent);}
-.exercise-card.collapsed .ex-collapse-chevron{transform:rotate(-90deg);}
-.exercise-card.collapsed .ex-desc,.exercise-card.collapsed .ex-note{display:none;}
-.exercise-card .ex-name{cursor:pointer;}
-.exercise-card.collapsed{padding-bottom:14px;}
-.cue-toggle{margin-top:10px;background:transparent;border:1px solid var(--border);color:var(--blue);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:background 0.15s;}
-.cue-toggle:hover{background:var(--accent);}
-.ex-desc{font-size:13px;line-height:1.65;color:#444;margin:8px 0;}
-.ex-desc p{margin-bottom:6px;}
-.ex-desc strong{color:var(--navy);font-weight:500;}
-.archive-month{border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;}
-.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:white;cursor:pointer;transition:background 0.15s;}
-.archive-month-header:hover{background:var(--accent);}
-.archive-month-title{font-weight:500;color:var(--navy);font-size:14px;}
-.archive-chevron{color:var(--grey);transition:transform 0.2s;font-size:12px;}
-.archive-month.open .archive-chevron{transform:rotate(180deg);}
-.archive-month-body{display:none;padding:16px 18px;background:#FAFCFE;border-top:1px solid var(--border);}
-.archive-month.open .archive-month-body{display:block;}
-.archive-program-header{font-weight:600;color:var(--navy);font-size:13px;margin:10px 0 6px;}
-.archive-ex{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(27,63,107,0.08);}
-.archive-ex:last-child{border-bottom:none;}
-.archive-ex-name{font-size:13px;color:var(--navy);font-weight:500;line-height:1.3;}
-.archive-ex-sets{font-size:12px;color:var(--grey);white-space:nowrap;flex-shrink:0;text-align:right;}
+.cardio-info{background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:10px;}
+.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;border-left:3px solid var(--blue);}
+.ex-top{display:flex;align-items:flex-start;gap:8px;}
+.chev{color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:0 4px;user-select:none;-webkit-user-select:none;transition:transform .2s;margin-top:-1px;}
+.exercise-card.collapsed .chev{transform:rotate(-90deg);}
+.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.25;cursor:pointer;flex:1;}
+.meta{margin-top:10px;}
+.metarow{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap;}
+.metarow:last-child{margin-bottom:0;}
+.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;white-space:nowrap;}
+.badge-sets{background:var(--navy);color:#fff;} .badge-equip{background:var(--accent);color:var(--blue);} .badge-weight{background:#FBEFD8;color:#9A6700;}
+.ex-desc{font-size:13px;line-height:1.65;color:#444;margin-top:8px;}
+.ex-desc p{margin-bottom:5px;} .ex-desc strong{color:var(--navy);font-weight:500;}
+.exercise-card.collapsed .ex-desc{display:none;}
+.archive-month{margin-bottom:10px;border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#fff;cursor:pointer;}
+.archive-month-title{font-weight:600;color:var(--navy);font-size:14px;}
+.archive-month-body{padding:0 14px 10px;}
+.archive-ex{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--border);font-size:13px;}
+.archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);}
+#jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
+#jb-contact a{color:var(--blue);text-decoration:none;font-weight:500;}
+
+.mlabel{font-size:11px;color:var(--grey);width:96px;flex-shrink:0;line-height:1.3;}
+.mlabel .hint{display:block;font-size:10px;color:#9AABB9;}
+.log-input{border:1px solid var(--border);border-radius:8px;padding:6px 11px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--navy);background:#fff;width:118px;}
+.log-input:focus{outline:none;border-color:var(--blue);}
+.log-input.filled{border-color:var(--blue);background:#F4FAFF;}
+.log-check{color:#27AE60;font-size:15px;opacity:0;transition:opacity .15s;}
+.log-input.filled ~ .log-check{opacity:1;}
+.sendbar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--border);padding:12px 16px calc(12px + env(safe-area-inset-bottom));z-index:60;}
+.sendbar-inner{max-width:800px;margin:0 auto;display:flex;align-items:center;gap:12px;}
+.count{font-size:13px;color:var(--grey);white-space:nowrap;}
+.share-btn{flex:1;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:14px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;}
+.share-btn:disabled{background:#C7D2DC;cursor:default;}
+.overlay{position:fixed;inset:0;background:rgba(20,35,55,0.55);display:none;align-items:center;justify-content:center;padding:20px;z-index:80;}
+.overlay.show{display:flex;}
+.modal{background:#fff;border-radius:16px;max-width:520px;width:100%;padding:22px;}
+.modal h3{font-family:'Playfair Display',serif;font-size:19px;color:var(--navy);margin-bottom:6px;}
+.modal p{font-size:13px;color:var(--grey);line-height:1.5;margin-bottom:14px;}
+.blockbox{width:100%;height:190px;overflow:auto;border:1px solid var(--border);border-radius:10px;padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--navy);background:var(--warm);line-height:1.5;white-space:pre-wrap;}
+.modal-btns{display:flex;gap:10px;margin-top:14px;}
+.m-copy{flex:1;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:600;cursor:pointer;} .m-copy.done{background:#27AE60;}
+.m-close{background:none;border:1px solid var(--border);color:var(--grey);border-radius:10px;padding:13px 18px;font-size:15px;cursor:pointer;}
+.note{max-width:800px;margin:0 auto;padding:0 20px;font-size:12px;color:var(--grey);line-height:1.5;}
 </style>
 </head>
 <body>
 <div id="a2hs" style="display:none;background:#1B3F6B;color:#fff;padding:12px 14px;font-size:15px;line-height:1.45;align-items:center;gap:10px;">
   <div id="a2hs-msg" style="flex:1;"></div>
-  <button id="a2hs-go" style="display:none;background:#2E86C1;color:#fff;border:none;border-radius:8px;padding:10px 14px;font-size:15px;font-weight:600;white-space:nowrap;">Add to Home Screen</button>
   <button id="a2hs-no" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:14px;padding:8px;white-space:nowrap;">Not now</button>
 </div>
 <script>
-(function(){
-  try{
-    var bar=document.getElementById('a2hs'), msg=document.getElementById('a2hs-msg'), go=document.getElementById('a2hs-go'), no=document.getElementById('a2hs-no');
-    var standalone=window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;
-    var dismissed=false; try{ dismissed=localStorage.getItem('jbh_a2hs_dismissed')==='1'; }catch(e){}
-    if(standalone||dismissed) return;
-    var ua=navigator.userAgent, isIOS=/iPhone|iPad|iPod/.test(ua), isSafari=isIOS&&/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
-    no.onclick=function(){ bar.style.display='none'; try{ localStorage.setItem('jbh_a2hs_dismissed','1'); }catch(e){} };
-    if(isIOS&&isSafari){
-      msg.innerHTML='<b>Save this as an app:</b> tap the <b>Share</b> button <svg width="16" height="16" viewBox="0 0 16 16" style="vertical-align:-2px"><path d="M8 1l3 3h-2v6H7V4H5l3-3zM3 7v7h10V7h-2v5H5V7H3z" fill="#fff"/></svg> below, then <b>"Add to Home Screen"</b>.';
-      bar.style.display='flex';
-    } else if(isIOS){
-      msg.innerHTML='<b>Tip:</b> open this link in <b>Safari</b> to save it as an app on your home screen.';
-      bar.style.display='flex';
-    } else {
-      window.addEventListener('beforeinstallprompt',function(e){
-        e.preventDefault();
-        msg.innerHTML='<b>Save this as an app</b> for one-tap access:';
-        go.style.display='inline-block'; bar.style.display='flex';
-        go.onclick=function(){ bar.style.display='none'; e.prompt(); };
-      });
-    }
-  }catch(e){}
-})();
+(function(){try{var bar=document.getElementById('a2hs'),msg=document.getElementById('a2hs-msg'),no=document.getElementById('a2hs-no');
+var standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;var dismissed=false;try{dismissed=localStorage.getItem('jbh_a2hs_dismissed')==='1';}catch(e){}
+if(standalone||dismissed)return;var ua=navigator.userAgent,isIOS=/iPhone|iPad|iPod/.test(ua),isSafari=isIOS&&/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+no.onclick=function(){bar.style.display='none';try{localStorage.setItem('jbh_a2hs_dismissed','1');}catch(e){}};
+if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> then <b>Add to Home Screen</b>.';bar.style.display='flex';}}catch(e){}})();
 </script>
-
-<div class="header">
-<div class="header-top">
-<div class="header-info">
+<div class="header"><div class="header-info">
 <div class="brand">JB Health</div>
 <div class="client-name">ABa</div>
-<div class="month-label"></div>
-</div>
-</div>
-
-</div>
-<div class="tab-nav">
-<button class="tab-btn active" onclick="showProgram(0,this)">Program 1</button><button class="tab-btn archive-tab" onclick="showProgram(1,this)">Archive</button>
-</div>
-<div class="content">
-<div class="program-panel active" id="program-0">
-<div class="program-header"><div class="program-title">Golf Foundations: Hips &amp; Core</div></div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Glute bridges – bilateral</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 12</span><span class="badge badge-equip">Bodyweight</span><span class="badge badge-weight">Bodyweight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your back, knees bent, feet flat on the floor.</p><p><strong>Focus:</strong> Squeeze your glutes hard at the top. Brace your core throughout.</p><p><strong>Movement:</strong> Drive your heels into the floor and push hips toward the ceiling, squeeze glutes, hold 2 seconds, lower with control.</p><p><strong>For your game:</strong> Strong glutes give you the hip drive that powers your swing through the ball.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Hip abduction – clamshell</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 12 each side</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Green band</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p><p><strong>For your game:</strong> Stable hips keep your lower body steady so you don't sway off the ball in the backswing.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Goblet squat – pause at bottom</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 8</span><span class="badge badge-equip">KB/DB</span><span class="badge badge-weight">Bodyweight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell in front of chest.</p><p><strong>Focus:</strong> At the bottom, keep your chest tall and lower back neutral. Hold the tension.</p><p><strong>Movement:</strong> Squat down and pause 3 seconds at bottom. Drive through heels to stand.</p><p><strong>For your game:</strong> Loading into your legs and holding steady is the control you want at the top of your backswing.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Dumbbell Romanian deadlift</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">DB</span><span class="badge badge-weight">Bodyweight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p><p><strong>For your game:</strong> Hinging from the hips, not the back, is exactly how you hold your posture over the ball.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Bird-dog</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 8 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Start on all fours with a neutral spine.</p><p><strong>Focus:</strong> Keep your spine completely still — no rotation or hip drop.</p><p><strong>Movement:</strong> Extend opposite arm forward and opposite leg behind. Hold 3 seconds, return under control.</p><p><strong>For your game:</strong> Keeping your spine still while an arm and leg move is the anti-rotation control that protects your back in a full swing.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Pallof press</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 10 each side</span><span class="badge badge-equip">Cable/Band</span><span class="badge badge-weight">Yellow band</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p><p><strong>For your game:</strong> Resisting the pull trains your core to control rotation, so your swing stays repeatable.</p></div>
-</div>
-<div class="exercise-card main">
-<div class="ex-top">
-<div class="ex-name">Side plank – knees bent</div>
-<div class="ex-badges"><span class="badge badge-sets">2 x 20s each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div>
-</div>
-<div class="ex-desc"><p><strong>Start:</strong> Lie on your side with knees bent, bottom elbow under your shoulder.</p><p><strong>Focus:</strong> Keep your hips straight — don't let your top hip roll backward. Stay in a straight line.</p><p><strong>Movement:</strong> Lift your hips to form a straight line from knees to head. Hold for the prescribed time.</p><p><strong>For your game:</strong> Side-core strength steadies your trunk and keeps you balanced over the ball.</p></div>
-</div>
-</div>
-<div class="program-panel" id="program-1">
-<div class="program-header"><div class="program-title">Archive</div></div>
-
-</div>
-</div>
+<div class="month-label">Log what you lift</div>
+</div></div>
+<div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Golf Foundations: Hips &amp; Core</button>
+<button class="tab-btn archive-tab" onclick="show(1,this)">Archive</button></div>
+<div class="content"><div class="program-panel active" id="program-0"><div class="program-header"><div class="program-title">Golf Foundations: Hips &amp; Core</div><div class="lead">Log the weight you used on the main lifts. Tap a move for cues.</div></div><div class="section-label">Main Circuit</div><div class="cardio-info"><div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">How to run it</div><div style="font-size:13px;color:var(--grey);">Two rounds of the circuit. Move through in order, slow and controlled, full range. Quality over speed, rest whenever you need to.</div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Glute bridges – bilateral</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 12</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Bodyweight</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Glute bridges – bilateral" data-sets="2 x 12" data-k="jb:JB_ABa:actual:0:Glute bridges – bilateral"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Lie on your back, knees bent, feet flat on the floor.</p><p><strong>Focus:</strong> Squeeze your glutes hard at the top. Brace your core throughout.</p><p><strong>Movement:</strong> Drive your heels into the floor and push hips toward the ceiling, squeeze glutes, hold 2 seconds, lower with control.</p><p><strong>For your game:</strong> Strong glutes give you the hip drive that powers your swing through the ball.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Hip abduction – clamshell</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 12 each side</span><span class="badge badge-equip">Band</span><span class="badge badge-weight">Green band</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Hip abduction – clamshell" data-sets="2 x 12 each side" data-k="jb:JB_ABa:actual:0:Hip abduction – clamshell"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Lie on your side, hips stacked, knees bent to about 45°, feet together.</p><p><strong>Focus:</strong> Don't let hips roll backward — movement is only in the hip joint.</p><p><strong>Movement:</strong> Open your top knee upward like a clamshell. Pause, close. Repeat. Add a band above knees for more resistance.</p><p><strong>For your game:</strong> Stable hips keep your lower body steady so you don't sway off the ball in the backswing.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Goblet squat – pause at bottom</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 8</span><span class="badge badge-equip">KB/DB</span><span class="badge badge-weight">Bodyweight</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Goblet squat – pause at bottom" data-sets="2 x 8" data-k="jb:JB_ABa:actual:0:Goblet squat – pause at bottom"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Hold a kettlebell or dumbbell in front of chest.</p><p><strong>Focus:</strong> At the bottom, keep your chest tall and lower back neutral. Hold the tension.</p><p><strong>Movement:</strong> Squat down and pause 3 seconds at bottom. Drive through heels to stand.</p><p><strong>For your game:</strong> Loading into your legs and holding steady is the control you want at the top of your backswing.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Dumbbell Romanian deadlift</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 10</span><span class="badge badge-equip">DB</span><span class="badge badge-weight">Bodyweight</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Dumbbell Romanian deadlift" data-sets="2 x 10" data-k="jb:JB_ABa:actual:0:Dumbbell Romanian deadlift"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Hold dumbbells in front of your thighs and hinge at the hips, pushing them back while lowering the weights dow</p><p><strong>Focus:</strong> Keep a flat back and feel the hamstring stretch before driving your hips forward to return</p><p><strong>Movement:</strong> Keep the dumbbells close to your legs throughout. Dumbbells allow a slightly freer range of motion than a barbell</p><p><strong>For your game:</strong> Hinging from the hips, not the back, is exactly how you hold your posture over the ball.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Bird-dog</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 8 each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Bird-dog" data-sets="2 x 8 each side" data-k="jb:JB_ABa:actual:0:Bird-dog"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Start on all fours with a neutral spine.</p><p><strong>Focus:</strong> Keep your spine completely still — no rotation or hip drop.</p><p><strong>Movement:</strong> Extend opposite arm forward and opposite leg behind. Hold 3 seconds, return under control.</p><p><strong>For your game:</strong> Keeping your spine still while an arm and leg move is the anti-rotation control that protects your back in a full swing.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Pallof press</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 10 each side</span><span class="badge badge-equip">Cable/Band</span><span class="badge badge-weight">Yellow band</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Pallof press" data-sets="2 x 10 each side" data-k="jb:JB_ABa:actual:0:Pallof press"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Stand side-on to a cable or band anchor at chest height.</p><p><strong>Focus:</strong> Resist the rotation — the cable wants to pull you. Stay facing forward.</p><p><strong>Movement:</strong> Hold cable at chest, press directly out to full arm extension. Return to chest, repeat.</p><p><strong>For your game:</strong> Resisting the pull trains your core to control rotation, so your swing stays repeatable.</p></div></div><div class="exercise-card collapsed"><div class="ex-top"><span class="chev" onclick="tog(this)">⌄</span><div class="ex-name" onclick="tog(this)">Side plank – knees bent</div></div><div class="meta"><div class="metarow"><span class="badge badge-sets">2 x 20s each side</span><span class="badge badge-equip">Mat</span><span class="badge badge-weight">Bodyweight</span></div><div class="metarow"><span class="mlabel">Logged weight <span class="hint">(if necessary)</span></span><input class="log-input" type="text" placeholder="e.g. 12kg" data-prog="Golf Foundations: Hips &amp; Core" data-name="Side plank – knees bent" data-sets="2 x 20s each side" data-k="jb:JB_ABa:actual:0:Side plank – knees bent"><span class="log-check">✓</span></div></div><div class="ex-desc"><p><strong>Start:</strong> Lie on your side with knees bent, bottom elbow under your shoulder.</p><p><strong>Focus:</strong> Keep your hips straight — don't let your top hip roll backward. Stay in a straight line.</p><p><strong>Movement:</strong> Lift your hips to form a straight line from knees to head. Hold for the prescribed time.</p><p><strong>For your game:</strong> Side-core strength steadies your trunk and keeps you balanced over the ball.</p></div></div><div class="section-label">Cardio Finisher</div><div class="cardio-info"><div style="font-weight:500;color:var(--navy);font-size:14px;margin-bottom:4px;">5-minute run</div><div style="font-size:13px;color:var(--grey);">Easy, flat pace, nice and relaxed. A gentle way to finish. If your knees or ankles feel sore, ease right off or stop.</div></div></div>
+<div class="program-panel" id="program-1"><div class="program-header"><div class="program-title">Archive</div></div></div></div>
+<p class="note">Your main lifts have a <strong>logged weight</strong> box for what you actually used. Tap any move name for coaching cues. Entries save on this phone; tap <strong>Share logged weights</strong> when done.</p><div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time &mdash; I'd rather you ask than guess.</div><div class="sendbar"><div class="sendbar-inner"><span class="count" id="count">0 logged</span><button class="share-btn" id="share" disabled><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M12 2l4 4h-3v8h-2V6H8l4-4zM5 10h3v9h8v-9h3v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9z"/></svg>Share logged weights with James</button></div></div><div class="overlay" id="overlay"><div class="modal"><h3>Send to James</h3><p>Copy this and paste it to James (WhatsApp or email). It has everything he needs.</p><pre class="blockbox" id="blockbox"></pre><div class="modal-btns"><button class="m-copy" id="mcopy">Copy</button><button class="m-close" id="mclose">Close</button></div></div></div>
 <script>
-const CLIENT_CODE = 'ABa';
-const CLIENT_STREAM = 'in-person';
-function showProgram(index, btn) {
-  const panels = document.querySelectorAll('.program-panel');
-  const btns = document.querySelectorAll('.tab-btn');
-  panels.forEach(p => p.classList.remove('active'));
-  btns.forEach(b => b.classList.remove('active'));
-  const target = document.getElementById('program-' + index);
-  if (target) { target.classList.add('active'); btn.classList.add('active'); }
-}
-// --- Collapsible coaching cues (Start / Focus / Movement) ---
-function clientNS(){ return ((typeof CLIENT_STREAM!=='undefined' && CLIENT_STREAM==='online') ? 'OL_' : 'JB_') + CLIENT_CODE; }
-function cueKey(){ return 'jb:' + clientNS() + ':cues-hidden'; }
-function cuesHidden(){ try { return localStorage.getItem(cueKey()) === '1'; } catch(e){ return false; } }
-function detailCards(){
-  return Array.from(document.querySelectorAll('.exercise-card'))
-    .filter(c => c.querySelector('.ex-desc') || c.querySelector('.ex-note'));
-}
-function applyCues(hidden){
-  detailCards().forEach(c => c.classList.toggle('collapsed', hidden));
-  document.querySelectorAll('.cue-toggle').forEach(b => {
-    b.textContent = hidden ? 'Show coaching cues' : 'Hide coaching cues';
-  });
-}
-function toggleCard(card){ card.classList.toggle('collapsed'); }
-function initCues(){
-  detailCards().forEach(card => {
-    const top = card.querySelector('.ex-top');
-    if (top && !top.querySelector('.ex-collapse-chevron')) {
-      const ch = document.createElement('span');
-      ch.className = 'ex-collapse-chevron'; ch.textContent = '\u2304';
-      ch.setAttribute('aria-label', 'Toggle details');
-      ch.addEventListener('click', e => { e.stopPropagation(); toggleCard(card); });
-      top.insertBefore(ch, top.firstChild);
-    }
-    const nm = card.querySelector('.ex-name');
-    if (nm && !nm.dataset.cueBound) {
-      nm.dataset.cueBound = '1';
-      nm.addEventListener('click', () => toggleCard(card));
-    }
-  });
-  document.querySelectorAll('.program-panel').forEach(panel => {
-    const hasDetail = panel.querySelector('.ex-desc') || panel.querySelector('.ex-note');
-    const header = panel.querySelector('.program-header');
-    if (hasDetail && header && !header.querySelector('.cue-toggle')) {
-      const btn = document.createElement('button');
-      btn.type = 'button'; btn.className = 'cue-toggle';
-      btn.onclick = () => {
-        const next = !cuesHidden();
-        try { localStorage.setItem(cueKey(), next ? '1' : '0'); } catch(e){}
-        applyCues(next);
-      };
-      header.appendChild(btn);
-    }
-  });
-  applyCues(cuesHidden());
-}
-document.addEventListener('DOMContentLoaded', function() {
-  initCues();
-  document.querySelectorAll('.archive-month-header').forEach(function(header){
-    header.onclick = function(e){ e.stopPropagation(); this.parentElement.classList.toggle('open'); };
-  });
-});
-</script>
-<div id="jb-contact" style="margin:26px 14px 30px;padding:16px;background:#EAF4FB;border-radius:14px;text-align:center;">
-  <div style="font-size:16px;font-weight:700;color:#1B3F6B;margin-bottom:4px;">Question about your programme?</div>
-  <div style="font-size:14px;color:#444;margin-bottom:12px;">Message me any time. I'd rather you ask than guess. I'll get back to you as soon as I can, usually same day.</div>
-  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-    <a id="jb-wa" style="background:#25D366;color:#fff;text-decoration:none;border-radius:10px;padding:12px 18px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.2.3-.1.5.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.5z"/></svg>WhatsApp</a>
-    <a id="jb-em" style="background:#1B3F6B;color:#fff;text-decoration:none;border-radius:10px;padding:12px 18px;font-size:15px;font-weight:600;">Email James</a>
-  </div>
-</div>
-<script>
-(function(){
-  try{
-    var code=typeof CLIENT_CODE!=="undefined"?CLIENT_CODE:"";
-    var t=encodeURIComponent("Hi James, quick question about my programme ("+code+")");
-    var wa=document.getElementById("jb-wa");
-    wa.href="https://wa.me/447469001785?text="+t;
-    wa.target="_blank"; wa.rel="noopener";
-    document.getElementById("jb-em").href="mailto:james@jbhealth.co.uk?subject="+encodeURIComponent("Question about my programme ("+code+")");
-  }catch(e){}
-})();
-</script>
-<script>
-(function(){
-  try{
-    var code=typeof CLIENT_CODE!=="undefined"?CLIENT_CODE:"";
-    if(!code) return;
-    fetch("balances/"+((typeof CLIENT_STREAM!=="undefined"&&CLIENT_STREAM==="online")?"OL_":"JB_")+code+".json",{cache:"no-cache"}).then(function(r){
-      if(!r.ok) throw 0;
-      return r.json();
-    }).then(function(j){
-      if(!j || typeof j.b!=="number") return;
-      var b=Math.round(j.b*100)/100;
-      var pill=document.createElement("div");
-      if(b>0){ pill.className="bal-pill bp-g"; pill.textContent=String(b); }
-      else if(b<0){ pill.className="bal-pill bp-r"; pill.textContent=String(-b); }
-      else { pill.className="bal-pill bp-n"; pill.textContent="Settled"; }
-      var anchor=document.querySelector(".header-info .month-label")||document.querySelector(".header-info");
-      if(anchor && anchor.parentNode) anchor.parentNode.appendChild(pill);
-    }).catch(function(){});
-  }catch(e){}
-})();
+const CLIENT="JB_ABa", WORKER="https://jb-log.james-52d.workers.dev", TOKEN="3ZPjoBYH0775oqvgCEEHLPYoYfBUcj5L";
+function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");}
+function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
+function today(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+var inputs=Array.from(document.querySelectorAll(".log-input"));
+inputs.forEach(function(inp){var k=inp.dataset.k,v="";try{v=localStorage.getItem(k)||"";}catch(e){}if(v){inp.value=v;inp.classList.add("filled");}
+  inp.addEventListener("input",function(){var t=inp.value.trim();try{t?localStorage.setItem(k,t):localStorage.removeItem(k);}catch(e){}inp.classList.toggle("filled",!!t);refresh();});});
+function prescribed(s){s=(s||"").replace(/×/g,"x");var sets=null,m=s.match(/^\s*(\d+)\s*x/);if(m)sets=parseInt(m[1],10);var rest=s.replace(/^\s*\d+\s*x\s*/,"").trim();var dist=null,reps=null,md=rest.match(/(\d+)\s*m\b/);if(md){dist=md[1]+"m";}else if(/\d+\s*(s|sec|min)\b/.test(rest)||/hold|burn/i.test(rest)){reps=null;}else{reps=rest||null;}return {sets:sets,reps:reps,distance:dist};}
+function buildPayload(){var recs=[];inputs.forEach(function(inp){var v=inp.value.trim();if(!v)return;var mm=v.match(/(\d+(?:\.\d+)?)/);if(!mm)return;var w=parseFloat(mm[1]);if(!isFinite(w))return;var p=prescribed(inp.dataset.sets);recs.push({ex:inp.dataset.name,weight:w,unit:"kg",sets:p.sets,reps:p.reps,distance:p.distance,program:inp.dataset.prog});});return {code:CLIENT,token:TOKEN,date:today(),records:recs};}
+function buildBlock(){var byProg={},order=[];inputs.forEach(function(inp){var v=inp.value.trim();if(!v)return;var p=inp.dataset.prog;if(!byProg[p]){byProg[p]=[];order.push(p);}byProg[p].push("- "+inp.dataset.name+" ("+inp.dataset.sets+") = "+v);});
+  if(!order.length)return "";var groups=order.map(function(p){return p+"\n"+byProg[p].join("\n");});
+  return "JBHEALTH-LOG | "+CLIENT+" | "+today()+"\nAction: log these completed loads to "+CLIENT+" archive (feeds weight history).\n\n"+groups.join("\n\n");}
+function refresh(){var n=inputs.filter(function(i){return i.value.trim();}).length;var c=document.getElementById("count");if(c.textContent.indexOf("Sent")<0)c.textContent=n+" logged";document.getElementById("share").disabled=n===0;}
+function markSent(){var btn=document.getElementById("share");btn.textContent="Sent \u2713";btn.disabled=true;btn.classList.add("done");document.getElementById("count").textContent="Sent \u2713";inputs.forEach(function(inp){try{localStorage.removeItem(inp.dataset.k);}catch(e){}inp.value="";inp.classList.remove("filled");});}
+var overlay=document.getElementById("overlay");
+function openModal(b){document.getElementById("blockbox").textContent=b;var mc=document.getElementById("mcopy");mc.textContent="Copy";mc.classList.remove("done");overlay.classList.add("show");}
+document.getElementById("mclose").onclick=function(){overlay.classList.remove("show");};
+overlay.onclick=function(e){if(e.target===overlay)overlay.classList.remove("show");};
+document.getElementById("mcopy").onclick=async function(){var pre=document.getElementById("blockbox"),txt=pre.textContent,ok=false;try{await navigator.clipboard.writeText(txt);ok=true;}catch(e){try{var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);ok=document.execCommand("copy");}catch(_){}}if(ok){var b=document.getElementById("mcopy");b.textContent="Copied \u2713";b.classList.add("done");}};
+async function fallbackShare(){var b=buildBlock();if(!b)return;if(navigator.share){try{await navigator.share({title:"Loads update",text:b});return;}catch(e){if(e&&e.name==="AbortError")return;}}openModal(b);}
+async function send(){var payload=buildPayload();if(!payload.records.length)return;if(WORKER){try{var r=await fetch(WORKER.replace(/\/$/,"")+"/log",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});var j=await r.json().catch(function(){return {};});if(r.ok&&j.ok){markSent();return;}}catch(e){}}fallbackShare();}
+document.getElementById("share").onclick=send;
+(function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
+refresh();
 </script>
 </body>
 </html>
