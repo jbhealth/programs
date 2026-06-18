@@ -56,6 +56,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);}
 #jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
 #jb-contact a{color:var(--blue);text-decoration:none;font-weight:500;}
+.bal-pill{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
+.bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
+.bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
+.bal-pill.bp-n{background:rgba(107,122,141,0.15);color:rgba(255,255,255,0.55);border:1px solid rgba(107,122,141,0.3);}
 
 /* exercise photos */
 .ex-media{margin:10px 0 2px;}
@@ -83,7 +87,7 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 <div class="header"><div class="header-info">
 <div class="brand">JB Health</div>
 <div class="client-name">MH</div>
-<div class="month-label">Built for bodies with mileage</div>
+<div class="month-label">Week commencing 15 June 2026</div>
 </div></div>
 <div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Barbell Strength &amp; Power</button>
 <button class="tab-btn" onclick="show(1,this)">Push, Pull &amp; Core Strength</button>
@@ -97,6 +101,24 @@ function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.cl
 function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
 document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");var b=h.nextElementSibling;if(b)b.style.display=b.style.display==="none"?"block":"none";};});
 (function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
+</script>
+<script>
+(function(){try{
+var code=typeof CLIENT!=="undefined"?CLIENT:"";
+if(!code)return;
+fetch("balances/JB_"+code+".json",{cache:"no-cache"}).then(function(r){
+  if(!r.ok)throw 0;return r.json();
+}).then(function(j){
+  if(!j||typeof j.b!=="number")return;
+  var b=Math.round(j.b*100)/100;
+  var pill=document.createElement("div");
+  if(b>0){pill.className="bal-pill bp-g";pill.textContent=String(b)+" in credit";}
+  else if(b<0){pill.className="bal-pill bp-r";pill.textContent=String(-b)+" owed";}
+  else{pill.className="bal-pill bp-n";pill.textContent="Settled";}
+  var anchor=document.querySelector(".header-info");
+  if(anchor)anchor.appendChild(pill);
+}).catch(function(){});
+}catch(e){}})();
 </script>
 
 <script>function setFrame(b){var t=b.parentElement,m=t.previousElementSibling;var i=[].indexOf.call(t.children,b);t.querySelectorAll('.frame-btn').forEach(function(x,j){x.classList.toggle('active',j===i);});m.querySelectorAll('.ex-img').forEach(function(x,j){x.classList.toggle('active',j===i);});}</script>
