@@ -51,7 +51,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .archive-month{margin-bottom:10px;border:1px solid var(--border);border-radius:10px;overflow:hidden;}
 .archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#fff;cursor:pointer;}
 .archive-month-title{font-weight:600;color:var(--navy);font-size:14px;}
-.archive-month-body{padding:0 14px 10px;}
+.archive-month-body{display:none;padding:0 14px 10px;}
+.archive-chevron{font-size:12px;color:var(--grey);transition:transform .2s;}
+.archive-month.open .archive-chevron{transform:rotate(180deg);}
 .archive-ex{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--border);font-size:13px;}
 .archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);}
 #jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
