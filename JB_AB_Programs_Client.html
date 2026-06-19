@@ -144,6 +144,7 @@ document.getElementById("mcopy").onclick=async function(){var pre=document.getEl
 async function fallbackShare(){var b=buildBlock();if(!b)return;if(navigator.share){try{await navigator.share({title:"Loads update",text:b});return;}catch(e){if(e&&e.name==="AbortError")return;}}openModal(b);}
 async function send(){if(!inputs.some(function(i){return i.value.trim();}))return;var payload=buildPayload();if(!payload.records.length)return;if(WORKER){try{var r=await fetch(WORKER.replace(/\/$/,"")+"/log",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});var j=await r.json().catch(function(){return {};});if(r.ok&&j.ok){markSent();return;}}catch(e){}}fallbackShare();}
 document.getElementById("share").onclick=send;
+document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");var b=h.nextElementSibling;if(b)b.style.display=b.style.display==="none"?"block":"none";};});
 (function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
 refresh();
 </script>
