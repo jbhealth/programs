@@ -1,5 +1,5 @@
 {
- "v": 1,
+ "v": 2,
  "generated": "2026-06-26",
  "source": "yuhonas/free-exercise-db",
  "count": 412,
@@ -10,7 +10,10 @@
    "m": "Ankle Circles",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_Circles/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_Circles/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_Circles/1.jpg"
+   ]
   },
   {
    "id": "Band pull-apart",
@@ -18,7 +21,10 @@
    "m": "Band Pull Apart",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/1.jpg"
+   ]
   },
   {
    "id": "External rotation \u2013 band",
@@ -26,7 +32,10 @@
    "m": "External Rotation",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Pallof press",
@@ -34,7 +43,10 @@
    "m": "Pallof Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/1.jpg"
+   ]
   },
   {
    "id": "Romanian deadlift",
@@ -42,7 +54,10 @@
    "m": "Romanian Deadlift",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Goblet squat",
@@ -50,7 +65,10 @@
    "m": "Goblet Squat",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Face pull",
@@ -58,7 +76,10 @@
    "m": "Face Pull",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+   ]
   },
   {
    "id": "Barbell curl",
@@ -66,7 +87,10 @@
    "m": "Barbell Curl",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg"
+   ]
   },
   {
    "id": "EZ bar curl",
@@ -74,7 +98,10 @@
    "m": "EZ-Bar Curl",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/1.jpg"
+   ]
   },
   {
    "id": "Reverse barbell curl",
@@ -82,7 +109,10 @@
    "m": "Reverse Barbell Curl",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/1.jpg"
+   ]
   },
   {
    "id": "Dumbbell squat",
@@ -90,7 +120,10 @@
    "m": "Dumbbell Squat",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 narrow stance",
@@ -98,7 +131,10 @@
    "m": "Narrow Stance Leg Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Narrow_Stance_Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Narrow_Stance_Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Narrow_Stance_Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 single leg",
@@ -106,7 +142,10 @@
    "m": "Single-Leg Leg Extension",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 wide grip",
@@ -114,7 +153,10 @@
    "m": "Wide-Grip Lat Pulldown",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Cable front raise",
@@ -122,7 +164,10 @@
    "m": "Front Cable Raise",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cable_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cable_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cable_Raise/1.jpg"
+   ]
   },
   {
    "id": "Cable internal rotation",
@@ -130,7 +175,10 @@
    "m": "Cable Internal Rotation",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Band good morning",
@@ -138,7 +186,10 @@
    "m": "Band Good Morning",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning/1.jpg"
+   ]
   },
   {
    "id": "World's greatest stretch",
@@ -146,7 +197,10 @@
    "m": "World's Greatest Stretch",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Worlds_Greatest_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Worlds_Greatest_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Worlds_Greatest_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Standing long jump",
@@ -154,7 +208,10 @@
    "m": "Standing Long Jump",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/1.jpg"
+   ]
   },
   {
    "id": "Mountain climbers / Climbers",
@@ -162,7 +219,10 @@
    "m": "Mountain Climbers",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Mountain_Climbers/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Mountain_Climbers/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Mountain_Climbers/1.jpg"
+   ]
   },
   {
    "id": "Romanian deadlift \u2013 BB",
@@ -170,7 +230,10 @@
    "m": "Romanian Deadlift",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Barbell upright row",
@@ -178,7 +241,10 @@
    "m": "Upright Barbell Row",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Upright_Barbell_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Upright_Barbell_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Upright_Barbell_Row/1.jpg"
+   ]
   },
   {
    "id": "Dumbbell clean",
@@ -186,7 +252,10 @@
    "m": "Dumbbell Clean",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Clean/1.jpg"
+   ]
   },
   {
    "id": "Sumo deadlift",
@@ -194,7 +263,10 @@
    "m": "Sumo Deadlift",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Box squat \u2013 BB",
@@ -202,7 +274,10 @@
    "m": "Box Squat",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat/1.jpg"
+   ]
   },
   {
    "id": "Hack squat \u2013 BB",
@@ -210,7 +285,10 @@
    "m": "Hack Squat",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Push press \u2013 BB",
@@ -218,7 +296,10 @@
    "m": "Push Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/1.jpg"
+   ]
   },
   {
    "id": "Floor press \u2013 BB",
@@ -226,7 +307,10 @@
    "m": "Floor Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press/1.jpg"
+   ]
   },
   {
    "id": "Hang clean \u2013 BB",
@@ -234,7 +318,10 @@
    "m": "Hang Clean",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean/1.jpg"
+   ]
   },
   {
    "id": "Cable crossover",
@@ -242,7 +329,10 @@
    "m": "Cable Crossover",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/1.jpg"
+   ]
   },
   {
    "id": "Single leg hop \u2013 lateral",
@@ -250,7 +340,10 @@
    "m": "Single-Leg Lateral Hop",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Lateral_Hop/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Lateral_Hop/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Lateral_Hop/1.jpg"
+   ]
   },
   {
    "id": "Overhead squat \u2013 BB",
@@ -258,7 +351,10 @@
    "m": "Overhead Squat",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/1.jpg"
+   ]
   },
   {
    "id": "Deficit deadlift",
@@ -266,7 +362,10 @@
    "m": "Deficit Deadlift",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deficit_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deficit_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deficit_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Power clean \u2013 BB",
@@ -274,7 +373,10 @@
    "m": "Power Clean",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Clean/1.jpg"
+   ]
   },
   {
    "id": "Power snatch \u2013 BB",
@@ -282,7 +384,10 @@
    "m": "Power Snatch",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Snatch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Snatch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Snatch/1.jpg"
+   ]
   },
   {
    "id": "Clean and press \u2013 BB",
@@ -290,7 +395,10 @@
    "m": "Clean and Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/1.jpg"
+   ]
   },
   {
    "id": "Weighted pull-ups",
@@ -298,7 +406,10 @@
    "m": "Weighted Pull Ups",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Pull_Ups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Pull_Ups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Pull_Ups/1.jpg"
+   ]
   },
   {
    "id": "Barbell deadlift",
@@ -306,7 +417,10 @@
    "m": "Barbell Deadlift",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Crunches",
@@ -314,7 +428,10 @@
    "m": "Crunches",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/1.jpg"
+   ]
   },
   {
    "id": "Cable chest press",
@@ -322,7 +439,10 @@
    "m": "Cable Chest Press",
    "s": 1.0,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "Barbell shrugs",
@@ -330,7 +450,10 @@
    "m": "Barbell Shrug",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug/1.jpg"
+   ]
   },
   {
    "id": "Front squats",
@@ -338,7 +461,10 @@
    "m": "Front Squat (Clean Grip)",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squat_Clean_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squat_Clean_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squat_Clean_Grip/1.jpg"
+   ]
   },
   {
    "id": "Zercher squat",
@@ -346,7 +472,10 @@
    "m": "Zercher Squats",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Zercher_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Zercher_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Zercher_Squats/1.jpg"
+   ]
   },
   {
    "id": "Split squat \u2013 BB",
@@ -354,7 +483,10 @@
    "m": "Split Squats",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/1.jpg"
+   ]
   },
   {
    "id": "Good mornings \u2013 BB",
@@ -362,7 +494,10 @@
    "m": "Good Morning",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/1.jpg"
+   ]
   },
   {
    "id": "Good mornings \u2013 BB (pause)",
@@ -370,7 +505,10 @@
    "m": "Good Morning",
    "s": 0.96,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/1.jpg"
+   ]
   },
   {
    "id": "Cable hip abduction",
@@ -378,7 +516,10 @@
    "m": "Cable Hip Adduction",
    "s": 0.95,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hip_Adduction/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hip_Adduction/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hip_Adduction/1.jpg"
+   ]
   },
   {
    "id": "Rack pull",
@@ -386,7 +527,10 @@
    "m": "Rack Pulls",
    "s": 0.95,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rack_Pulls/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rack_Pulls/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rack_Pulls/1.jpg"
+   ]
   },
   {
    "id": "Tricep push-down \u2013 cable",
@@ -394,7 +538,10 @@
    "m": "Triceps Pushdown",
    "s": 0.94,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg"
+   ]
   },
   {
    "id": "Barbell back squat",
@@ -402,7 +549,10 @@
    "m": "Barbell Hack Squat",
    "s": 0.94,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Reverse crunches",
@@ -410,7 +560,10 @@
    "m": "Reverse Crunch",
    "s": 0.93,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Crunch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Crunch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Crunch/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups \u2013 bodyweight",
@@ -418,7 +571,10 @@
    "m": "Pullups",
    "s": 0.93,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups",
@@ -426,7 +582,10 @@
    "m": "Pullups",
    "s": 0.93,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/1.jpg"
+   ]
   },
   {
    "id": "Reverse fly \u2013 DB",
@@ -434,7 +593,10 @@
    "m": "Reverse Flyes",
    "s": 0.92,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/1.jpg"
+   ]
   },
   {
    "id": "Cable external rotation \u2013 standing",
@@ -442,7 +604,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.91,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Cable overhead tricep extension",
@@ -450,7 +615,10 @@
    "m": "Cable Rope Overhead Triceps Extension",
    "s": 0.91,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Overhead_Triceps_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Overhead_Triceps_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Overhead_Triceps_Extension/1.jpg"
+   ]
   },
   {
    "id": "Child's pose hold",
@@ -458,7 +626,10 @@
    "m": "Child's Pose",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Childs_Pose/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Childs_Pose/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Childs_Pose/1.jpg"
+   ]
   },
   {
    "id": "Hip flexor stretch \u2013 kneeling",
@@ -466,7 +637,10 @@
    "m": "Kneeling Hip Flexor",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Hip_Flexor/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Hip_Flexor/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Hip_Flexor/1.jpg"
+   ]
   },
   {
    "id": "Supine hamstring stretch",
@@ -474,7 +648,10 @@
    "m": "Hamstring Stretch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Cross-body shoulder stretch",
@@ -482,7 +659,10 @@
    "m": "Shoulder Stretch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Isometric external rotation",
@@ -490,7 +670,10 @@
    "m": "External Rotation",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Elbow plank",
@@ -498,7 +681,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Side plank \u2013 knees bent",
@@ -506,7 +692,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Dead bug \u2013 arms only",
@@ -514,7 +703,10 @@
    "m": "Dead Bug",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+   ]
   },
   {
    "id": "Internal rotation \u2013 band",
@@ -522,7 +714,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Rotator cuff \u2013 side-lying external rotation",
@@ -530,7 +725,10 @@
    "m": "External Rotation",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Walking",
@@ -538,7 +736,10 @@
    "m": "Barbell Walking Lunge",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 partial range",
@@ -546,7 +747,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 calf raise",
@@ -554,7 +758,10 @@
    "m": "Calf Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg curl \u2013 seated",
@@ -562,7 +769,10 @@
    "m": "Ball Leg Curl",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/1.jpg"
+   ]
   },
   {
    "id": "Band pull-apart \u2013 overhead",
@@ -570,7 +780,10 @@
    "m": "Band Pull Apart",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/1.jpg"
+   ]
   },
   {
    "id": "Band squat",
@@ -578,7 +791,10 @@
    "m": "Reverse Band Box Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Box_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Box_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Box_Squat/1.jpg"
+   ]
   },
   {
    "id": "Band face pull \u2013 seated",
@@ -586,7 +802,10 @@
    "m": "Face Pull",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball adductor squeeze",
@@ -594,7 +813,10 @@
    "m": "Adductor",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor/1.jpg"
+   ]
   },
   {
    "id": "Side-lying external rotation \u2013 progressive load",
@@ -602,7 +824,10 @@
    "m": "External Rotation",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Shoulder internal rotation stretch \u2013 side-lying",
@@ -610,7 +835,10 @@
    "m": "Shoulder Stretch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Forearm plank \u2013 leg lift",
@@ -618,7 +846,10 @@
    "m": "Leg Lift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Lift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Lift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Lift/1.jpg"
+   ]
   },
   {
    "id": "Side plank \u2013 feet stacked",
@@ -626,7 +857,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Dead bug \u2013 arms and legs",
@@ -634,7 +868,10 @@
    "m": "Dead Bug",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+   ]
   },
   {
    "id": "Reverse lunge \u2013 bodyweight",
@@ -642,7 +879,10 @@
    "m": "Crossover Reverse Lunge",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Single arm row \u2013 DB",
@@ -650,7 +890,10 @@
    "m": "Kneeling Single-Arm High Pulley Row",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/1.jpg"
+   ]
   },
   {
    "id": "Single arm row \u2013 cable",
@@ -658,7 +901,10 @@
    "m": "Kneeling Single-Arm High Pulley Row",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kneeling_Single-Arm_High_Pulley_Row/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown",
@@ -666,7 +912,10 @@
    "m": "Close-Grip Front Lat Pulldown",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Cable rotation",
@@ -674,7 +923,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Side bends \u2013 KB",
@@ -682,7 +934,10 @@
    "m": "Bosu Ball Cable Crunch With Side Bends",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bosu_Ball_Cable_Crunch_With_Side_Bends/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bosu_Ball_Cable_Crunch_With_Side_Bends/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bosu_Ball_Cable_Crunch_With_Side_Bends/1.jpg"
+   ]
   },
   {
    "id": "Deadlift \u2013 KB",
@@ -690,7 +945,10 @@
    "m": "Axle Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 machine",
@@ -698,7 +956,10 @@
    "m": "Close-Grip Front Lat Pulldown",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Straight arm raise \u2013 plate",
@@ -706,7 +967,10 @@
    "m": "Standing Dumbbell Straight-Arm Front Delt Raise Above Head",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head/1.jpg"
+   ]
   },
   {
    "id": "Dumbbell Romanian deadlift",
@@ -714,7 +978,10 @@
    "m": "Romanian Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Cable pull-through",
@@ -722,7 +989,10 @@
    "m": "Pull Through",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/1.jpg"
+   ]
   },
   {
    "id": "Cable lateral raise",
@@ -730,7 +1000,10 @@
    "m": "Cable Seated Lateral Raise",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 bilateral",
@@ -738,7 +1011,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 high foot placement",
@@ -746,7 +1022,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 low foot placement",
@@ -754,7 +1033,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 wide stance",
@@ -762,7 +1044,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg curl \u2013 seated single leg",
@@ -770,7 +1055,10 @@
    "m": "Seated Leg Curl",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Leg_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Leg_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Leg_Curl/1.jpg"
+   ]
   },
   {
    "id": "Cable kickback",
@@ -778,7 +1066,10 @@
    "m": "One-Legged Cable Kickback",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Legged_Cable_Kickback/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Legged_Cable_Kickback/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Legged_Cable_Kickback/1.jpg"
+   ]
   },
   {
    "id": "Cable pull-through \u2013 hip hinge",
@@ -786,7 +1077,10 @@
    "m": "Pull Through",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/1.jpg"
+   ]
   },
   {
    "id": "Cable Romanian deadlift",
@@ -794,7 +1088,10 @@
    "m": "Romanian Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Face pull \u2013 kneeling",
@@ -802,7 +1099,10 @@
    "m": "Face Pull",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+   ]
   },
   {
    "id": "TRX overhead squat",
@@ -810,7 +1110,10 @@
    "m": "Overhead Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/1.jpg"
+   ]
   },
   {
    "id": "Band monster walk \u2013 diagonal",
@@ -818,7 +1121,10 @@
    "m": "Monster Walk",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Monster_Walk/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Monster_Walk/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Monster_Walk/1.jpg"
+   ]
   },
   {
    "id": "Band glute kickback",
@@ -826,7 +1132,10 @@
    "m": "Glute Kickback",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Kickback/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Kickback/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Kickback/1.jpg"
+   ]
   },
   {
    "id": "Band deadlift",
@@ -834,7 +1143,10 @@
    "m": "Reverse Band Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Band pull-through",
@@ -842,7 +1154,10 @@
    "m": "Pull Through",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pull_Through/1.jpg"
+   ]
   },
   {
    "id": "Band pallof press \u2013 half kneeling",
@@ -850,7 +1165,10 @@
    "m": "Pallof Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/1.jpg"
+   ]
   },
   {
    "id": "Band hamstring curl \u2013 standing",
@@ -858,7 +1176,10 @@
    "m": "Seated Band Hamstring Curl",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball sit-up",
@@ -866,7 +1187,10 @@
    "m": "Sit-Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/1.jpg"
+   ]
   },
   {
    "id": "ISO side plank",
@@ -874,7 +1198,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Romanian deadlift \u2013 single leg",
@@ -882,7 +1209,10 @@
    "m": "Romanian Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Balance board \u2013 double leg",
@@ -890,7 +1220,10 @@
    "m": "Balance Board",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/1.jpg"
+   ]
   },
   {
    "id": "Elbow plank \u2013 arm reach",
@@ -898,7 +1231,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Side plank \u2013 with hip dip",
@@ -906,7 +1242,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Copenhagen plank \u2013 short lever",
@@ -914,7 +1253,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Dead bug \u2013 with resistance",
@@ -922,7 +1264,10 @@
    "m": "Dead Bug",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+   ]
   },
   {
    "id": "Pallof press \u2013 tall kneeling",
@@ -930,7 +1275,10 @@
    "m": "Pallof Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press/1.jpg"
+   ]
   },
   {
    "id": "Goblet squat \u2013 pause at bottom",
@@ -938,7 +1286,10 @@
    "m": "Goblet Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Shoulder press \u2013 seated DB",
@@ -946,7 +1297,10 @@
    "m": "Alternating Cable Shoulder Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/1.jpg"
+   ]
   },
   {
    "id": "Arnold press",
@@ -954,7 +1308,10 @@
    "m": "Arnold Dumbbell Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arnold_Dumbbell_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arnold_Dumbbell_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arnold_Dumbbell_Press/1.jpg"
+   ]
   },
   {
    "id": "Goblet squat and reach",
@@ -962,7 +1319,10 @@
    "m": "Goblet Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Back squat \u2013 BB",
@@ -970,7 +1330,10 @@
    "m": "Hack Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Romanian deadlift to shrug",
@@ -978,7 +1341,10 @@
    "m": "Romanian Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Hip thrust \u2013 BB",
@@ -986,7 +1352,10 @@
    "m": "Barbell Hip Thrust",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg"
+   ]
   },
   {
    "id": "Barbell forward lunge",
@@ -994,7 +1363,10 @@
    "m": "Barbell Lunge",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Reverse lunge \u2013 BB",
@@ -1002,7 +1374,10 @@
    "m": "Crossover Reverse Lunge",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/1.jpg"
+   ]
   },
   {
    "id": "EZ bar preacher curl",
@@ -1010,7 +1385,10 @@
    "m": "EZ-Bar Curl",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/1.jpg"
+   ]
   },
   {
    "id": "DB incline press",
@@ -1018,7 +1396,10 @@
    "m": "Hammer Grip Incline DB Bench Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Grip_Incline_DB_Bench_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Grip_Incline_DB_Bench_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Grip_Incline_DB_Bench_Press/1.jpg"
+   ]
   },
   {
    "id": "Neutral grip press \u2013 DB",
@@ -1026,7 +1407,10 @@
    "m": "Dumbbell Bench Press with Neutral Grip",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/1.jpg"
+   ]
   },
   {
    "id": "Cable face pull \u2013 with rotation",
@@ -1034,7 +1418,10 @@
    "m": "Face Pull",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 single leg",
@@ -1042,7 +1429,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg press \u2013 pause at bottom",
@@ -1050,7 +1440,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups \u2013 chin-up grip",
@@ -1058,7 +1451,10 @@
    "m": "Chin-Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/1.jpg"
+   ]
   },
   {
    "id": "Cable crunch \u2013 kneeling",
@@ -1066,7 +1462,10 @@
    "m": "Cable Crunch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/1.jpg"
+   ]
   },
   {
    "id": "Cable crossover machine \u2013 low",
@@ -1074,7 +1473,10 @@
    "m": "Cable Crossover",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/1.jpg"
+   ]
   },
   {
    "id": "TRX plank",
@@ -1082,7 +1484,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball glute bridge \u2013 single leg",
@@ -1090,7 +1495,10 @@
    "m": "Single Leg Glute Bridge",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball plank",
@@ -1098,7 +1506,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball Russian twist",
@@ -1106,7 +1517,10 @@
    "m": "Russian Twist",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Russian_Twist/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Russian_Twist/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Russian_Twist/1.jpg"
+   ]
   },
   {
    "id": "ISO split squat \u2013 weighted",
@@ -1114,7 +1528,10 @@
    "m": "Weighted Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Squat/1.jpg"
+   ]
   },
   {
    "id": "ISO Romanian deadlift \u2013 single leg",
@@ -1122,7 +1539,10 @@
    "m": "Romanian Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Box jump \u2013 step down",
@@ -1130,7 +1550,10 @@
    "m": "Box Jump (Multiple Response)",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/1.jpg"
+   ]
   },
   {
    "id": "Jump squat \u2013 bodyweight",
@@ -1138,7 +1561,10 @@
    "m": "Freehand Jump Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Freehand_Jump_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Freehand_Jump_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Freehand_Jump_Squat/1.jpg"
+   ]
   },
   {
    "id": "Push-up",
@@ -1146,7 +1572,10 @@
    "m": "Clock Push-Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/1.jpg"
+   ]
   },
   {
    "id": "Sit-up pass \u2013 med ball",
@@ -1154,7 +1583,10 @@
    "m": "Sit-Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/1.jpg"
+   ]
   },
   {
    "id": "ISO side plank \u2013 with leg raise",
@@ -1162,7 +1594,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "ISO Copenhagen plank",
@@ -1170,7 +1605,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Balance board \u2013 single leg",
@@ -1178,7 +1616,10 @@
    "m": "Balance Board",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/1.jpg"
+   ]
   },
   {
    "id": "Balance board \u2013 perturbation",
@@ -1186,7 +1627,10 @@
    "m": "Balance Board",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/1.jpg"
+   ]
   },
   {
    "id": "Forearm to push-up plank",
@@ -1194,7 +1638,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Side plank \u2013 with rotation",
@@ -1202,7 +1649,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Side plank \u2013 with row",
@@ -1210,7 +1660,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Copenhagen plank \u2013 long lever",
@@ -1218,7 +1671,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Dead bug \u2013 slow with band",
@@ -1226,7 +1682,10 @@
    "m": "Dead Bug",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+   ]
   },
   {
    "id": "Pallof press \u2013 single leg",
@@ -1234,7 +1693,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Goblet squat \u2013 pulse",
@@ -1242,7 +1704,10 @@
    "m": "Goblet Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Bench press \u2013 BB",
@@ -1250,7 +1715,10 @@
    "m": "Barbell Bench Press - Medium Grip",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg"
+   ]
   },
   {
    "id": "Shoulder press \u2013 standing",
@@ -1258,7 +1726,10 @@
    "m": "Alternating Cable Shoulder Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/1.jpg"
+   ]
   },
   {
    "id": "Bent-over rows \u2013 BB",
@@ -1266,7 +1737,10 @@
    "m": "Reverse Grip Bent-Over Rows",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Grip_Bent-Over_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Grip_Bent-Over_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Grip_Bent-Over_Rows/1.jpg"
+   ]
   },
   {
    "id": "ViPR \u2013 clean and press",
@@ -1274,7 +1748,10 @@
    "m": "Clean",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/1.jpg"
+   ]
   },
   {
    "id": "Deadlift \u2013 BB",
@@ -1282,7 +1759,10 @@
    "m": "Axle Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Single arm clean and press",
@@ -1290,7 +1770,10 @@
    "m": "Clean",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/1.jpg"
+   ]
   },
   {
    "id": "Deadlift \u2013 sumo BB",
@@ -1298,7 +1781,10 @@
    "m": "Sumo Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Incline bench press \u2013 BB",
@@ -1306,7 +1792,10 @@
    "m": "Barbell Incline Bench Press - Medium Grip",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Bench_Press_-_Medium_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Bench_Press_-_Medium_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Bench_Press_-_Medium_Grip/1.jpg"
+   ]
   },
   {
    "id": "Bench press \u2013 wide grip",
@@ -1314,7 +1803,10 @@
    "m": "Wide-Grip Barbell Bench Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Barbell_Bench_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Barbell_Bench_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Barbell_Bench_Press/1.jpg"
+   ]
   },
   {
    "id": "Hang power clean",
@@ -1322,7 +1814,10 @@
    "m": "Clean",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/1.jpg"
+   ]
   },
   {
    "id": "Step-ups \u2013 BB",
@@ -1330,7 +1825,10 @@
    "m": "Barbell Step Ups",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/1.jpg"
+   ]
   },
   {
    "id": "Barbell overhead press \u2013 push press",
@@ -1338,7 +1836,10 @@
    "m": "Push Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push_Press/1.jpg"
+   ]
   },
   {
    "id": "Close grip bench press",
@@ -1346,7 +1847,10 @@
    "m": "Close-Grip Barbell Bench Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Barbell_Bench_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Barbell_Bench_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Barbell_Bench_Press/1.jpg"
+   ]
   },
   {
    "id": "Dumbbell snatch",
@@ -1354,7 +1858,10 @@
    "m": "Snatch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/1.jpg"
+   ]
   },
   {
    "id": "Renegade row",
@@ -1362,7 +1869,10 @@
    "m": "Alternating Renegade Row",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Renegade_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Renegade_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Renegade_Row/1.jpg"
+   ]
   },
   {
    "id": "Single arm DB snatch",
@@ -1370,7 +1880,10 @@
    "m": "Snatch",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Snatch/1.jpg"
+   ]
   },
   {
    "id": "TRX side plank",
@@ -1378,7 +1891,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball hamstring curl \u2013 single leg",
@@ -1386,7 +1902,10 @@
    "m": "Ball Leg Curl",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball plank \u2013 with roll",
@@ -1394,7 +1913,10 @@
    "m": "Plank",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ]
   },
   {
    "id": "Box jump \u2013 jump down",
@@ -1402,7 +1924,10 @@
    "m": "Box Jump (Multiple Response)",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/1.jpg"
+   ]
   },
   {
    "id": "Lateral bound \u2013 continuous",
@@ -1410,7 +1935,10 @@
    "m": "Lateral Bound",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/1.jpg"
+   ]
   },
   {
    "id": "Tuck jump",
@@ -1418,7 +1946,10 @@
    "m": "Knee Tuck Jump",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Knee_Tuck_Jump/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Knee_Tuck_Jump/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Knee_Tuck_Jump/1.jpg"
+   ]
   },
   {
    "id": "Jump squat \u2013 goblet",
@@ -1426,7 +1957,10 @@
    "m": "Goblet Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Split jump / scissor jump",
@@ -1434,7 +1968,10 @@
    "m": "Split Jump",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Jump/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Jump/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Jump/1.jpg"
+   ]
   },
   {
    "id": "Bottoms-up KB carry",
@@ -1442,7 +1979,10 @@
    "m": "Bottoms Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/1.jpg"
+   ]
   },
   {
    "id": "Dips \u2013 bodyweight",
@@ -1450,7 +1990,10 @@
    "m": "Bench Dips",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/1.jpg"
+   ]
   },
   {
    "id": "Back extension machine \u2013 single leg",
@@ -1458,7 +2001,10 @@
    "m": "Single-Leg Leg Extension",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/1.jpg"
+   ]
   },
   {
    "id": "Balance board \u2013 perturbation eyes closed",
@@ -1466,7 +2012,10 @@
    "m": "Balance Board",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/1.jpg"
+   ]
   },
   {
    "id": "Depth jump",
@@ -1474,7 +2023,10 @@
    "m": "Depth Jump Leap",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Depth_Jump_Leap/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Depth_Jump_Leap/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Depth_Jump_Leap/1.jpg"
+   ]
   },
   {
    "id": "Bottoms-up KB carry \u2013 overhead",
@@ -1482,7 +2034,10 @@
    "m": "Bottoms Up",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/1.jpg"
+   ]
   },
   {
    "id": "Barbell Romanian deadlift",
@@ -1490,7 +2045,10 @@
    "m": "Barbell Deadlift",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Single-leg deadlift to overhead press \u2013 DB",
@@ -1498,7 +2056,10 @@
    "m": "Leg Press",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ]
   },
   {
    "id": "Barbell bench press",
@@ -1506,7 +2067,10 @@
    "m": "Barbell Bench Press - Medium Grip",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg"
+   ]
   },
   {
    "id": "Overhead squat \u2013 single arm DB",
@@ -1514,7 +2078,10 @@
    "m": "Overhead Squat",
    "s": 0.9,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Squat/1.jpg"
+   ]
   },
   {
    "id": "Band straight arm pull-down",
@@ -1522,7 +2089,10 @@
    "m": "Straight-Arm Pulldown",
    "s": 0.88,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Single leg box squats",
@@ -1530,7 +2100,10 @@
    "m": "Single-Leg High Box Squat",
    "s": 0.87,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_High_Box_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_High_Box_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_High_Box_Squat/1.jpg"
+   ]
   },
   {
    "id": "Wrist rotations with light DB",
@@ -1538,7 +2111,10 @@
    "m": "Wrist Rotations with Straight Bar",
    "s": 0.87,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wrist_Rotations_with_Straight_Bar/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wrist_Rotations_with_Straight_Bar/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wrist_Rotations_with_Straight_Bar/1.jpg"
+   ]
   },
   {
    "id": "Knee-to-chest stretch",
@@ -1546,7 +2122,10 @@
    "m": "Chin To Chest Stretch",
    "s": 0.86,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin_To_Chest_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin_To_Chest_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin_To_Chest_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Cable straight arm pull-down",
@@ -1554,7 +2133,10 @@
    "m": "Straight-Arm Pulldown",
    "s": 0.86,
    "t": "strong",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Straight-Arm_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "DB chest press",
@@ -1562,7 +2144,10 @@
    "m": "Cable Chest Press",
    "s": 0.84,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 paused",
@@ -1570,7 +2155,10 @@
    "m": "Leg Extensions",
    "s": 0.82,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Cable tricep push-down \u2013 rope",
@@ -1578,7 +2166,10 @@
    "m": "Cable Incline Pushdown",
    "s": 0.82,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/1.jpg"
+   ]
   },
   {
    "id": "Cable reverse fly",
@@ -1586,7 +2177,10 @@
    "m": "Sled Reverse Flye",
    "s": 0.82,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Reverse_Flye/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Reverse_Flye/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Reverse_Flye/1.jpg"
+   ]
   },
   {
    "id": "Piriformis stretch",
@@ -1594,7 +2188,10 @@
    "m": "Piriformis-SMR",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Piriformis-SMR/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Piriformis-SMR/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Piriformis-SMR/1.jpg"
+   ]
   },
   {
    "id": "Lateral raises \u2013 DB",
@@ -1602,7 +2199,10 @@
    "m": "Side Lateral Raise",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg"
+   ]
   },
   {
    "id": "Cable hammer curl",
@@ -1610,7 +2210,10 @@
    "m": "Incline Hammer Curls",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Hammer_Curls/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Hammer_Curls/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Hammer_Curls/1.jpg"
+   ]
   },
   {
    "id": "ISO split squat \u2013 bodyweight",
@@ -1618,7 +2221,10 @@
    "m": "Split Squats",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squats/1.jpg"
+   ]
   },
   {
    "id": "Barbell seal row",
@@ -1626,7 +2232,10 @@
    "m": "Barbell Rear Delt Row",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/1.jpg"
+   ]
   },
   {
    "id": "TRX push-up \u2013 feet elevated",
@@ -1634,7 +2243,10 @@
    "m": "Push-Ups With Feet Elevated",
    "s": 0.81,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/1.jpg"
+   ]
   },
   {
    "id": "TRX squats",
@@ -1642,7 +2254,10 @@
    "m": "Sit Squats",
    "s": 0.8,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/1.jpg"
+   ]
   },
   {
    "id": "V-sit ups",
@@ -1650,7 +2265,10 @@
    "m": "Sit-Up",
    "s": 0.8,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit-Up/1.jpg"
+   ]
   },
   {
    "id": "Banded hip thrust \u2013 BB",
@@ -1658,7 +2276,10 @@
    "m": "Barbell Hip Thrust",
    "s": 0.8,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg"
+   ]
   },
   {
    "id": "Single leg hop \u2013 crossover",
@@ -1666,7 +2287,10 @@
    "m": "Single-Leg Hop Progression",
    "s": 0.8,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/1.jpg"
+   ]
   },
   {
    "id": "Band chest press \u2013 standing",
@@ -1674,7 +2298,10 @@
    "m": "Cable Chest Press",
    "s": 0.79,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball glute bridge",
@@ -1682,7 +2309,10 @@
    "m": "Barbell Glute Bridge",
    "s": 0.79,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "Barbell hip row",
@@ -1690,7 +2320,10 @@
    "m": "Barbell Hip Thrust",
    "s": 0.79,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg"
+   ]
   },
   {
    "id": "Cross-body carry",
@@ -1698,7 +2331,10 @@
    "m": "Cross-Body Crunch",
    "s": 0.79,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross-Body_Crunch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross-Body_Crunch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross-Body_Crunch/1.jpg"
+   ]
   },
   {
    "id": "Seated row \u2013 machine",
@@ -1706,7 +2342,10 @@
    "m": "Sled Row",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/1.jpg"
+   ]
   },
   {
    "id": "Cable squat",
@@ -1714,7 +2353,10 @@
    "m": "Goblet Squat",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ]
   },
   {
    "id": "Cable hip extension",
@@ -1722,7 +2364,10 @@
    "m": "Low Cable Triceps Extension",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Triceps_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Triceps_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Triceps_Extension/1.jpg"
+   ]
   },
   {
    "id": "Cable split squat",
@@ -1730,7 +2375,10 @@
    "m": "Barbell Side Split Squat",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "Cossack squat",
@@ -1738,7 +2386,10 @@
    "m": "Hack Squat",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Cable lunge and press",
@@ -1746,7 +2397,10 @@
    "m": "Clean and Press",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/1.jpg"
+   ]
   },
   {
    "id": "Anterior tibialis toe raises",
@@ -1754,7 +2408,10 @@
    "m": "Anterior Tibialis-SMR",
    "s": 0.78,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anterior_Tibialis-SMR/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anterior_Tibialis-SMR/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anterior_Tibialis-SMR/1.jpg"
+   ]
   },
   {
    "id": "Sleeper stretch",
@@ -1762,7 +2419,10 @@
    "m": "Shoulder Stretch",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Barbell wrist curls",
@@ -1770,7 +2430,10 @@
    "m": "Barbell Curl",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 close grip",
@@ -1778,7 +2441,10 @@
    "m": "Seated Cable Rows",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 single arm",
@@ -1786,7 +2452,10 @@
    "m": "Seated Cable Rows",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Stiff-leg deadlift \u2013 BB",
@@ -1794,7 +2463,10 @@
    "m": "Stiff-Legged Barbell Deadlift",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Stiff-Legged_Barbell_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Stiff-Legged_Barbell_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Stiff-Legged_Barbell_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Weighted dips",
@@ -1802,7 +2474,10 @@
    "m": "Weighted Bench Dip",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Bench_Dip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Bench_Dip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Bench_Dip/1.jpg"
+   ]
   },
   {
    "id": "Seated leg extension \u2013 bodyweight",
@@ -1810,7 +2485,10 @@
    "m": "Single-Leg Leg Extension",
    "s": 0.77,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/1.jpg"
+   ]
   },
   {
    "id": "Doorway chest stretch",
@@ -1818,7 +2496,10 @@
    "m": "Dynamic Chest Stretch",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Chest_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Chest_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Chest_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Straight leg raises",
@@ -1826,7 +2507,10 @@
    "m": "Rear Leg Raises",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rear_Leg_Raises/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rear_Leg_Raises/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rear_Leg_Raises/1.jpg"
+   ]
   },
   {
    "id": "Back extensions \u2013 bodyweight",
@@ -1834,7 +2518,10 @@
    "m": "Leg Extensions",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Back extensions \u2013 machine",
@@ -1842,7 +2529,10 @@
    "m": "Leg Extensions",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Cable knee extension",
@@ -1850,7 +2540,10 @@
    "m": "Cable One Arm Tricep Extension",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/1.jpg"
+   ]
   },
   {
    "id": "Squat press",
@@ -1858,7 +2551,10 @@
    "m": "Tate Press",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Tate_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Tate_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Tate_Press/1.jpg"
+   ]
   },
   {
    "id": "Barbell pull-over",
@@ -1866,7 +2562,10 @@
    "m": "Bent-Arm Barbell Pullover",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Barbell_Pullover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Barbell_Pullover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Barbell_Pullover/1.jpg"
+   ]
   },
   {
    "id": "TRX tricep extension",
@@ -1874,7 +2573,10 @@
    "m": "Machine Triceps Extension",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Triceps_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Triceps_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Triceps_Extension/1.jpg"
+   ]
   },
   {
    "id": "Barbell Z-press",
@@ -1882,7 +2584,10 @@
    "m": "Barbell Shoulder Press",
    "s": 0.76,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/1.jpg"
+   ]
   },
   {
    "id": "Isometric shoulder press",
@@ -1890,7 +2595,10 @@
    "m": "Seated Cable Shoulder Press",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Shoulder_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Shoulder_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Shoulder_Press/1.jpg"
+   ]
   },
   {
    "id": "Side-lying internal rotation",
@@ -1898,7 +2606,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Cable tricep push-down \u2013 bar",
@@ -1906,7 +2617,10 @@
    "m": "Cable Incline Pushdown",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/1.jpg"
+   ]
   },
   {
    "id": "TRX reverse lunge",
@@ -1914,7 +2628,10 @@
    "m": "Crossover Reverse Lunge",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Hip abduction \u2013 standing band",
@@ -1922,7 +2639,10 @@
    "m": "Band Hip Adductions",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Suitcase squat",
@@ -1930,7 +2650,10 @@
    "m": "Sit Squats",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sit_Squats/1.jpg"
+   ]
   },
   {
    "id": "Low cable row \u2013 standing",
@@ -1938,7 +2661,10 @@
    "m": "Low Cable Crossover",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Crossover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Low_Cable_Crossover/1.jpg"
+   ]
   },
   {
    "id": "Cable chest fly",
@@ -1946,7 +2672,10 @@
    "m": "Cable Chest Press",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "TRX chest press",
@@ -1954,7 +2683,10 @@
    "m": "Cable Chest Press",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "Rack carry \u2013 KB",
@@ -1962,7 +2694,10 @@
    "m": "Rickshaw Carry",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rickshaw_Carry/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rickshaw_Carry/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rickshaw_Carry/1.jpg"
+   ]
   },
   {
    "id": "TRX single leg squat",
@@ -1970,7 +2705,10 @@
    "m": "Smith Single-Leg Split Squat",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "Pause squats \u2013 BB",
@@ -1978,7 +2716,10 @@
    "m": "Speed Squats",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Squats/1.jpg"
+   ]
   },
   {
    "id": "Wall push-up",
@@ -1986,7 +2727,10 @@
    "m": "Plyo Push-up",
    "s": 0.75,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 wide grip",
@@ -1994,7 +2738,10 @@
    "m": "Seated Cable Rows",
    "s": 0.74,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Band standing hip abduction",
@@ -2002,7 +2749,10 @@
    "m": "Band Hip Adductions",
    "s": 0.74,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Walking lunges",
@@ -2010,7 +2760,10 @@
    "m": "Barbell Walking Lunge",
    "s": 0.74,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Push-up plus \u2013 floor",
@@ -2018,7 +2771,10 @@
    "m": "Pushups",
    "s": 0.74,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/1.jpg"
+   ]
   },
   {
    "id": "Single leg wall slide",
@@ -2026,7 +2782,10 @@
    "m": "Single Leg Glute Bridge",
    "s": 0.73,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "TRX hamstring curl",
@@ -2034,7 +2793,10 @@
    "m": "Seated Band Hamstring Curl",
    "s": 0.73,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/1.jpg"
+   ]
   },
   {
    "id": "KB thruster",
@@ -2042,7 +2804,10 @@
    "m": "Kettlebell Thruster",
    "s": 0.73,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/1.jpg"
+   ]
   },
   {
    "id": "Band push-up",
@@ -2050,7 +2815,10 @@
    "m": "Handstand Push-Ups",
    "s": 0.73,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/1.jpg"
+   ]
   },
   {
    "id": "Anderson squat",
@@ -2058,7 +2826,10 @@
    "m": "Jefferson Squats",
    "s": 0.73,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Jefferson_Squats/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Jefferson_Squats/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Jefferson_Squats/1.jpg"
+   ]
   },
   {
    "id": "Box squats \u2013 high box",
@@ -2066,7 +2837,10 @@
    "m": "Box Squat with Bands",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Rowing machine",
@@ -2074,7 +2848,10 @@
    "m": "Dip Machine",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/1.jpg"
+   ]
   },
   {
    "id": "Landmine press",
@@ -2082,7 +2859,10 @@
    "m": "Chain Press",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Press/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 behind neck",
@@ -2090,7 +2870,10 @@
    "m": "Wide-Grip Pulldown Behind The Neck",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Pulldown_Behind_The_Neck/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Pulldown_Behind_The_Neck/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Pulldown_Behind_The_Neck/1.jpg"
+   ]
   },
   {
    "id": "Single leg deadlift \u2013 KB",
@@ -2098,7 +2881,10 @@
    "m": "Leverage Deadlift",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Single-leg deadlift \u2013 DB",
@@ -2106,7 +2892,10 @@
    "m": "Leverage Deadlift",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Overhead walking lunges",
@@ -2114,7 +2903,10 @@
    "m": "Bodyweight Walking Lunge",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/1.jpg"
+   ]
   },
   {
    "id": "TRX pistol squat",
@@ -2122,7 +2914,10 @@
    "m": "Kettlebell Pistol Squat",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Pistol_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Pistol_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Pistol_Squat/1.jpg"
+   ]
   },
   {
    "id": "Overhead walking lunges \u2013 BB",
@@ -2130,7 +2925,10 @@
    "m": "Bodyweight Walking Lunge",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Single leg deadlift \u2013 bodyweight",
@@ -2138,7 +2936,10 @@
    "m": "Leverage Deadlift",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Deadlift/1.jpg"
+   ]
   },
   {
    "id": "Box squats - weighted",
@@ -2146,7 +2947,10 @@
    "m": "Box Squat with Bands",
    "s": 0.72,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Lateral band walks",
@@ -2154,7 +2958,10 @@
    "m": "Lateral Bound",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/1.jpg"
+   ]
   },
   {
    "id": "ViPR rotations",
@@ -2162,7 +2969,10 @@
    "m": "Torso Rotation",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Landmine squat",
@@ -2170,7 +2980,10 @@
    "m": "Landmine 180's",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/1.jpg"
+   ]
   },
   {
    "id": "Barbell 21s biceps",
@@ -2178,7 +2991,10 @@
    "m": "Barbell Step Ups",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 slow eccentric",
@@ -2186,7 +3002,10 @@
    "m": "Seated Cable Rows",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Nordic hamstring curls",
@@ -2194,7 +3013,10 @@
    "m": "Seated Band Hamstring Curl",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/1.jpg"
+   ]
   },
   {
    "id": "Bulgarian split squat",
@@ -2202,7 +3024,10 @@
    "m": "Barbell Side Split Squat",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "Lateral step-ups with DB",
@@ -2210,7 +3035,10 @@
    "m": "Lateral Raise - With Bands",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/1.jpg"
+   ]
   },
   {
    "id": "Single leg hop \u2013 forward",
@@ -2218,7 +3046,10 @@
    "m": "Single-Leg Hop Progression",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/1.jpg"
+   ]
   },
   {
    "id": "Bulgarian split squat \u2013 BB",
@@ -2226,7 +3057,10 @@
    "m": "Barbell Side Split Squat",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "Dead hang",
@@ -2234,7 +3068,10 @@
    "m": "Dead Bug",
    "s": 0.71,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 bilateral",
@@ -2242,7 +3079,10 @@
    "m": "Leg Extensions",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Bicep curls",
@@ -2250,7 +3090,10 @@
    "m": "Finger Curls",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Finger_Curls/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Finger_Curls/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Finger_Curls/1.jpg"
+   ]
   },
   {
    "id": "Band overhead press",
@@ -2258,7 +3101,10 @@
    "m": "Speed Band Overhead Triceps",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball single leg wall squat",
@@ -2266,7 +3112,10 @@
    "m": "Smith Single-Leg Split Squat",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Smith_Single-Leg_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "Single arm overhead press",
@@ -2274,7 +3123,10 @@
    "m": "Supine One-Arm Overhead Throw",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/1.jpg"
+   ]
   },
   {
    "id": "TRX push-up",
@@ -2282,7 +3134,10 @@
    "m": "Plyo Push-up",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/1.jpg"
+   ]
   },
   {
    "id": "Bench press \u2013 paused",
@@ -2290,7 +3145,10 @@
    "m": "Bench Press - With Bands",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_With_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_With_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_With_Bands/1.jpg"
+   ]
   },
   {
    "id": "DB single-arm press",
@@ -2298,7 +3156,10 @@
    "m": "Single-Arm Push-Up",
    "s": 0.7,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Push-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Push-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Push-Up/1.jpg"
+   ]
   },
   {
    "id": "Pelvic tilts",
@@ -2306,7 +3167,10 @@
    "m": "Standing Pelvic Tilt",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Pelvic_Tilt/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Pelvic_Tilt/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Pelvic_Tilt/1.jpg"
+   ]
   },
   {
    "id": "Prone Y raise",
@@ -2314,7 +3178,10 @@
    "m": "Front Leg Raises",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/1.jpg"
+   ]
   },
   {
    "id": "Prone T raise",
@@ -2322,7 +3189,10 @@
    "m": "Front Leg Raises",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/1.jpg"
+   ]
   },
   {
    "id": "Prone W raise",
@@ -2330,7 +3200,10 @@
    "m": "Front Leg Raises",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/1.jpg"
+   ]
   },
   {
    "id": "Dips \u2013 machine assisted",
@@ -2338,7 +3211,10 @@
    "m": "Dip Machine",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/1.jpg"
+   ]
   },
   {
    "id": "TRX bicep curl",
@@ -2346,7 +3222,10 @@
    "m": "Machine Bicep Curl",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bicep_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bicep_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bicep_Curl/1.jpg"
+   ]
   },
   {
    "id": "TRX shoulder series",
@@ -2354,7 +3233,10 @@
    "m": "Shoulder Circles",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Circles/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Circles/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Shoulder_Circles/1.jpg"
+   ]
   },
   {
    "id": "Farmer's carries",
@@ -2362,7 +3244,10 @@
    "m": "Farmer's Walk",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Farmers_Walk/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Farmers_Walk/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Farmers_Walk/1.jpg"
+   ]
   },
   {
    "id": "Landmine row",
@@ -2370,7 +3255,10 @@
    "m": "Landmine 180's",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_180s/1.jpg"
+   ]
   },
   {
    "id": "DB lateral lunge",
@@ -2378,7 +3266,10 @@
    "m": "Lateral Bound",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/1.jpg"
+   ]
   },
   {
    "id": "TRX resisted rotation",
@@ -2386,7 +3277,10 @@
    "m": "Torso Rotation",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Torso_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Cable diagonal pull",
@@ -2394,7 +3288,10 @@
    "m": "Clean Pull",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Pull/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Pull/1.jpg"
+   ]
   },
   {
    "id": "Back squat \u2013 pause",
@@ -2402,7 +3299,10 @@
    "m": "Hack Squat",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Back squat \u2013 tempo",
@@ -2410,7 +3310,10 @@
    "m": "Hack Squat",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Barbell high pull",
@@ -2418,7 +3321,10 @@
    "m": "Barbell Curl",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg"
+   ]
   },
   {
    "id": "Reverse fly \u2013 single arm",
@@ -2426,7 +3332,10 @@
    "m": "Reverse Flyes",
    "s": 0.69,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes/1.jpg"
+   ]
   },
   {
    "id": "Terminal knee extension",
@@ -2434,7 +3343,10 @@
    "m": "Single-Leg Leg Extension",
    "s": 0.68,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Leg_Extension/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball dumbbell chest press",
@@ -2442,7 +3354,10 @@
    "m": "One Arm Dumbbell Bench Press",
    "s": 0.68,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Dumbbell_Bench_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Dumbbell_Bench_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Dumbbell_Bench_Press/1.jpg"
+   ]
   },
   {
    "id": "Push-up \u2013 varied grip",
@@ -2450,7 +3365,10 @@
    "m": "Incline Push-Up Reverse Grip",
    "s": 0.68,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/1.jpg"
+   ]
   },
   {
    "id": "Med ball rotational throw",
@@ -2458,7 +3376,10 @@
    "m": "Medicine Ball Scoop Throw",
    "s": 0.68,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Medicine_Ball_Scoop_Throw/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Medicine_Ball_Scoop_Throw/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Medicine_Ball_Scoop_Throw/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 single arm twist",
@@ -2466,7 +3387,10 @@
    "m": "Seated Cable Rows",
    "s": 0.68,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Neck and upper trap stretch",
@@ -2474,7 +3398,10 @@
    "m": "Chair Upper Body Stretch",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Upper_Body_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Upper_Body_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Upper_Body_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Lunge matrix",
@@ -2482,7 +3409,10 @@
    "m": "Lunge Sprint",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lunge_Sprint/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lunge_Sprint/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lunge_Sprint/1.jpg"
+   ]
   },
   {
    "id": "Cycling / bike",
@@ -2490,7 +3420,10 @@
    "m": "Bicycling",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling/1.jpg"
+   ]
   },
   {
    "id": "Band hip hinge",
@@ -2498,7 +3431,10 @@
    "m": "Band Hip Adductions",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball wall squat",
@@ -2506,7 +3442,10 @@
    "m": "Barbell Full Squat",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Full_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Full_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Full_Squat/1.jpg"
+   ]
   },
   {
    "id": "Supine spinal rotation",
@@ -2514,7 +3453,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Lateral hip rotation flow",
@@ -2522,7 +3464,10 @@
    "m": "External Rotation",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Seated thoracic extension",
@@ -2530,7 +3475,10 @@
    "m": "Standing Towel Triceps Extension",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Towel_Triceps_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Towel_Triceps_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Towel_Triceps_Extension/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 close neutral grip",
@@ -2538,7 +3486,10 @@
    "m": "Close-Grip Front Lat Pulldown",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Dips \u2013 band assisted",
@@ -2546,7 +3497,10 @@
    "m": "Band Assisted Pull-Up",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/1.jpg"
+   ]
   },
   {
    "id": "TRX lateral lunge",
@@ -2554,7 +3508,10 @@
    "m": "Lateral Bound",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Bound/1.jpg"
+   ]
   },
   {
    "id": "Scapular clock",
@@ -2562,7 +3519,10 @@
    "m": "Scapular Pull-Up",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Scapular_Pull-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Scapular_Pull-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Scapular_Pull-Up/1.jpg"
+   ]
   },
   {
    "id": "Skull crushers \u2013 EZ bar",
@@ -2570,7 +3530,10 @@
    "m": "Band Skull Crusher",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/1.jpg"
+   ]
   },
   {
    "id": "Back squat \u2013 high bar",
@@ -2578,7 +3541,10 @@
    "m": "Box Squat with Bands",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Barbell anti-rotation press",
@@ -2586,7 +3552,10 @@
    "m": "Barbell Ab Rollout - On Knees",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout_-_On_Knees/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout_-_On_Knees/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout_-_On_Knees/1.jpg"
+   ]
   },
   {
    "id": "Half-kneeling cable press",
@@ -2594,7 +3563,10 @@
    "m": "Standing Cable Chest Press",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Cable_Chest_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Cable_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Cable_Chest_Press/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 slow eccentric",
@@ -2602,7 +3574,10 @@
    "m": "Leg Extensions",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball dumbbell fly",
@@ -2610,7 +3585,10 @@
    "m": "Incline Dumbbell Flyes",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Flyes/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Flyes/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Flyes/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball rollout",
@@ -2618,7 +3596,10 @@
    "m": "Barbell Ab Rollout",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/1.jpg"
+   ]
   },
   {
    "id": "TRX hip press",
@@ -2626,7 +3607,10 @@
    "m": "Body Tricep Press",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body_Tricep_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body_Tricep_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body_Tricep_Press/1.jpg"
+   ]
   },
   {
    "id": "Pendlay row",
@@ -2634,7 +3618,10 @@
    "m": "Suspended Row",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Suspended_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Suspended_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Suspended_Row/1.jpg"
+   ]
   },
   {
    "id": "DB thruster",
@@ -2642,7 +3629,10 @@
    "m": "Kettlebell Thruster",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Thruster/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups \u2013 wide grip",
@@ -2650,7 +3640,10 @@
    "m": "Push-Up Wide",
    "s": 0.67,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Up_Wide/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Up_Wide/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Up_Wide/1.jpg"
+   ]
   },
   {
    "id": "Prone hip internal rotation stretch",
@@ -2658,7 +3651,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.66,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Calf raises \u2013 bilateral",
@@ -2666,7 +3662,10 @@
    "m": "Calf Raises - With Bands",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/1.jpg"
+   ]
   },
   {
    "id": "Hip adduction machine",
@@ -2674,7 +3673,10 @@
    "m": "Band Hip Adductions",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Supine figure-4 with rotation",
@@ -2682,7 +3684,10 @@
    "m": "Pallof Press With Rotation",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press_With_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press_With_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pallof_Press_With_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Prone scaption",
@@ -2690,7 +3695,10 @@
    "m": "Dumbbell Scaption",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Scaption/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Scaption/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Scaption/1.jpg"
+   ]
   },
   {
    "id": "Seated cable row \u2013 close neutral grip",
@@ -2698,7 +3706,10 @@
    "m": "Seated Cable Rows",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball leg squeeze bridge",
@@ -2706,7 +3717,10 @@
    "m": "Single Leg Glute Bridge",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "Landmine rotation",
@@ -2714,7 +3728,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "ISO Bulgarian split squat",
@@ -2722,7 +3739,10 @@
    "m": "Barbell Side Split Squat",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "TRX Bulgarian split squat",
@@ -2730,7 +3750,10 @@
    "m": "Barbell Side Split Squat",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+   ]
   },
   {
    "id": "TRX atomic push-up",
@@ -2738,7 +3761,10 @@
    "m": "Clock Push-Up",
    "s": 0.65,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/1.jpg"
+   ]
   },
   {
    "id": "Squat matrix",
@@ -2746,7 +3772,10 @@
    "m": "Squat Jerk",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_Jerk/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_Jerk/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_Jerk/1.jpg"
+   ]
   },
   {
    "id": "Glute bridges \u2013 bilateral",
@@ -2754,7 +3783,10 @@
    "m": "One-Arm Side Laterals",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball seated balance",
@@ -2762,7 +3794,10 @@
    "m": "Barbell Seated Calf Raise",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/1.jpg"
+   ]
   },
   {
    "id": "Balance \u2013 single leg assisted",
@@ -2770,7 +3805,10 @@
    "m": "Flat Bench Lying Leg Raise",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 reverse grip",
@@ -2778,7 +3816,10 @@
    "m": "Incline Push-Up Reverse Grip",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Push-Up_Reverse_Grip/1.jpg"
+   ]
   },
   {
    "id": "TRX T raise",
@@ -2786,7 +3827,10 @@
    "m": "Front Plate Raise",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Plate_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Plate_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Plate_Raise/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball back extension",
@@ -2794,7 +3838,10 @@
    "m": "Weighted Ball Hyperextension",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Ball_Hyperextension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Ball_Hyperextension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Weighted_Ball_Hyperextension/1.jpg"
+   ]
   },
   {
    "id": "Deep squat with thoracic rotation",
@@ -2802,7 +3849,10 @@
    "m": "Reverse Flyes With External Rotation",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes_With_External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes_With_External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Flyes_With_External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Reverse lunge to knee raise",
@@ -2810,7 +3860,10 @@
    "m": "Step-up with Knee Raise",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Step-up_with_Knee_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Step-up_with_Knee_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Step-up_with_Knee_Raise/1.jpg"
+   ]
   },
   {
    "id": "Bicycle twists",
@@ -2818,7 +3871,10 @@
    "m": "Plate Twist",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plate_Twist/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plate_Twist/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plate_Twist/1.jpg"
+   ]
   },
   {
    "id": "Squat thrust",
@@ -2826,7 +3882,10 @@
    "m": "Squat with Bands",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Squat_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups \u2013 neutral grip",
@@ -2834,7 +3893,10 @@
    "m": "Dumbbell Bench Press with Neutral Grip",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/1.jpg"
+   ]
   },
   {
    "id": "Back squat \u2013 low bar",
@@ -2842,7 +3904,10 @@
    "m": "Hack Squat",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg"
+   ]
   },
   {
    "id": "Bench press \u2013 narrow grip",
@@ -2850,7 +3915,10 @@
    "m": "Bench Press - Powerlifting",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_Powerlifting/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_Powerlifting/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_Powerlifting/1.jpg"
+   ]
   },
   {
    "id": "Landmine press \u2013 single arm",
@@ -2858,7 +3926,10 @@
    "m": "Landmine Linear Jammer",
    "s": 0.64,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_Linear_Jammer/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_Linear_Jammer/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Landmine_Linear_Jammer/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 partial range (terminal)",
@@ -2866,7 +3937,10 @@
    "m": "Leg Extensions",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Hip abduction machine",
@@ -2874,7 +3948,10 @@
    "m": "Ab Crunch Machine",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/1.jpg"
+   ]
   },
   {
    "id": "Box squats \u2013 medium box",
@@ -2882,7 +3959,10 @@
    "m": "Box Squat with Bands",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Single arm DB row \u2013 incline",
@@ -2890,7 +3970,10 @@
    "m": "Single-Arm Cable Crossover",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Cable_Crossover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Arm_Cable_Crossover/1.jpg"
+   ]
   },
   {
    "id": "Cable squat and row",
@@ -2898,7 +3981,10 @@
    "m": "Cable Seated Crunch",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Crunch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Crunch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Crunch/1.jpg"
+   ]
   },
   {
    "id": "Meadows row",
@@ -2906,7 +3992,10 @@
    "m": "Sled Row",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Row/1.jpg"
+   ]
   },
   {
    "id": "Push jerk \u2013 BB",
@@ -2914,7 +4003,10 @@
    "m": "Power Jerk",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Jerk/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Jerk/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Power_Jerk/1.jpg"
+   ]
   },
   {
    "id": "ISO deadlift pull \u2013 mid shin",
@@ -2922,7 +4014,10 @@
    "m": "Sumo Deadlift with Chains",
    "s": 0.63,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/1.jpg"
+   ]
   },
   {
    "id": "Scapular depression",
@@ -2930,7 +4025,10 @@
    "m": "Calf Press",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/1.jpg"
+   ]
   },
   {
    "id": "Hip abduction \u2013 clamshell",
@@ -2938,7 +4036,10 @@
    "m": "Band Hip Adductions",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Wall push-up plus",
@@ -2946,7 +4047,10 @@
    "m": "Plyo Push-up",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/1.jpg"
+   ]
   },
   {
    "id": "Glute bridges \u2013 march",
@@ -2954,7 +4058,10 @@
    "m": "Barbell Glute Bridge",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "Curtsey lunge \u2013 bodyweight",
@@ -2962,7 +4069,10 @@
    "m": "Barbell Lunge",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/1.jpg"
+   ]
   },
   {
    "id": "Step-ups \u2013 lateral low",
@@ -2970,7 +4080,10 @@
    "m": "Seated Side Lateral Raise",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/1.jpg"
+   ]
   },
   {
    "id": "Cable knee flexion",
@@ -2978,7 +4091,10 @@
    "m": "Cable One Arm Tricep Extension",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/1.jpg"
+   ]
   },
   {
    "id": "TRX Y raise",
@@ -2986,7 +4102,10 @@
    "m": "Glute Ham Raise",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/1.jpg"
+   ]
   },
   {
    "id": "TRX W raise",
@@ -2994,7 +4113,10 @@
    "m": "Glute Ham Raise",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/1.jpg"
+   ]
   },
   {
    "id": "Step-ups \u2013 lateral medium",
@@ -3002,7 +4124,10 @@
    "m": "Seated Side Lateral Raise",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Side_Lateral_Raise/1.jpg"
+   ]
   },
   {
    "id": "Lunge pass \u2013 med ball",
@@ -3010,7 +4135,10 @@
    "m": "Hug A Ball",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_A_Ball/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_A_Ball/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_A_Ball/1.jpg"
+   ]
   },
   {
    "id": "Band squat to press",
@@ -3018,7 +4146,10 @@
    "m": "Bent Press",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Press/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball hamstring curl \u2013 bilateral",
@@ -3026,7 +4157,10 @@
    "m": "Seated Band Hamstring Curl",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Band_Hamstring_Curl/1.jpg"
+   ]
   },
   {
    "id": "Swiss ball overhead press",
@@ -3034,7 +4168,10 @@
    "m": "Speed Band Overhead Triceps",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Speed_Band_Overhead_Triceps/1.jpg"
+   ]
   },
   {
    "id": "Back extension machine \u2013 rotation",
@@ -3042,7 +4179,10 @@
    "m": "External Rotation",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "TRX row \u2013 feet elevated",
@@ -3050,7 +4190,10 @@
    "m": "Push-Ups With Feet Elevated",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Push-Ups_With_Feet_Elevated/1.jpg"
+   ]
   },
   {
    "id": "TRX pike",
@@ -3058,7 +4201,10 @@
    "m": "Air Bike",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Air_Bike/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Air_Bike/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Air_Bike/1.jpg"
+   ]
   },
   {
    "id": "TRX standing fall-out",
@@ -3066,7 +4212,10 @@
    "m": "Standing Long Jump",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Long_Jump/1.jpg"
+   ]
   },
   {
    "id": "Burpee \u2013 with press-up",
@@ -3074,7 +4223,10 @@
    "m": "Decline Smith Press",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Smith_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Smith_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Smith_Press/1.jpg"
+   ]
   },
   {
    "id": "Single-leg deadlift \u2013 DB with rotation",
@@ -3082,7 +4234,10 @@
    "m": "Sumo Deadlift with Chains",
    "s": 0.62,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sumo_Deadlift_with_Chains/1.jpg"
+   ]
   },
   {
    "id": "Leg extension \u2013 light and high rep",
@@ -3090,7 +4245,10 @@
    "m": "Hip Extension with Bands",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Balance \u2013 single leg free",
@@ -3098,7 +4256,10 @@
    "m": "Flat Bench Lying Leg Raise",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/1.jpg"
+   ]
   },
   {
    "id": "Cable curl \u2013 bilateral",
@@ -3106,7 +4267,10 @@
    "m": "Cable Seated Lateral Raise",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/1.jpg"
+   ]
   },
   {
    "id": "Cable curl \u2013 single arm",
@@ -3114,7 +4278,10 @@
    "m": "Cable Crossover",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/1.jpg"
+   ]
   },
   {
    "id": "Drop landing \u2013 bilateral",
@@ -3122,7 +4289,10 @@
    "m": "Standing Lateral Stretch",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Lateral_Stretch/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Lateral_Stretch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Lateral_Stretch/1.jpg"
+   ]
   },
   {
    "id": "Cable press \u2013 stability",
@@ -3130,7 +4300,10 @@
    "m": "Cable Deadlifts",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Deadlifts/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Deadlifts/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Deadlifts/1.jpg"
+   ]
   },
   {
    "id": "Shin to opposite shoulder",
@@ -3138,7 +4311,10 @@
    "m": "Side to Side Box Shuffle",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_to_Side_Box_Shuffle/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_to_Side_Box_Shuffle/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_to_Side_Box_Shuffle/1.jpg"
+   ]
   },
   {
    "id": "Cable row \u2013 high to low",
@@ -3146,7 +4322,10 @@
    "m": "Cable Rope Rear-Delt Rows",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Rear-Delt_Rows/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Rear-Delt_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Rear-Delt_Rows/1.jpg"
+   ]
   },
   {
    "id": "Ab rollout \u2013 full",
@@ -3154,7 +4333,10 @@
    "m": "Barbell Ab Rollout",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/1.jpg"
+   ]
   },
   {
    "id": "Back extensions \u2013 loaded",
@@ -3162,7 +4344,10 @@
    "m": "Leg Extensions",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+   ]
   },
   {
    "id": "Single arm hold overhead lunge",
@@ -3170,7 +4355,10 @@
    "m": "Supine One-Arm Overhead Throw",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Supine_One-Arm_Overhead_Throw/1.jpg"
+   ]
   },
   {
    "id": "Step-ups \u2013 rotational",
@@ -3178,7 +4366,10 @@
    "m": "External Rotation",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Upside-down KB press",
@@ -3186,7 +4377,10 @@
    "m": "See-Saw Press (Alternating Side Press)",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/See-Saw_Press_Alternating_Side_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/See-Saw_Press_Alternating_Side_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/See-Saw_Press_Alternating_Side_Press/1.jpg"
+   ]
   },
   {
    "id": "Bent-over row \u2013 BB underhand",
@@ -3194,7 +4388,10 @@
    "m": "Bent Over Low-Pulley Side Lateral",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Low-Pulley_Side_Lateral/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Low-Pulley_Side_Lateral/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Low-Pulley_Side_Lateral/1.jpg"
+   ]
   },
   {
    "id": "Calf raises \u2013 single leg",
@@ -3202,7 +4399,10 @@
    "m": "Calf Raise On A Dumbbell",
    "s": 0.61,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raise_On_A_Dumbbell/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raise_On_A_Dumbbell/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raise_On_A_Dumbbell/1.jpg"
+   ]
   },
   {
    "id": "Hip abduction \u2013 side lying",
@@ -3210,7 +4410,10 @@
    "m": "Band Hip Adductions",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg"
+   ]
   },
   {
    "id": "Scapular protraction \u2013 wall",
@@ -3218,7 +4421,10 @@
    "m": "Cable Internal Rotation",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg"
+   ]
   },
   {
    "id": "Glute bridges \u2013 single leg",
@@ -3226,7 +4432,10 @@
    "m": "Single Leg Glute Bridge",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single_Leg_Glute_Bridge/1.jpg"
+   ]
   },
   {
    "id": "Pull-ups \u2013 band assisted",
@@ -3234,7 +4443,10 @@
    "m": "Band Assisted Pull-Up",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/1.jpg"
+   ]
   },
   {
    "id": "Chest press machine \u2013 bilateral",
@@ -3242,7 +4454,10 @@
    "m": "Chest Stretch on Stability Ball",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Stretch_on_Stability_Ball/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Stretch_on_Stability_Ball/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Stretch_on_Stability_Ball/1.jpg"
+   ]
   },
   {
    "id": "45\u00b0 back extension \u2013 weighted",
@@ -3250,7 +4465,10 @@
    "m": "Hip Extension with Bands",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/1.jpg"
+   ]
   },
   {
    "id": "Lat pulldown \u2013 single arm",
@@ -3258,7 +4476,10 @@
    "m": "One Arm Lat Pulldown",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Lat_Pulldown/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One_Arm_Lat_Pulldown/1.jpg"
+   ]
   },
   {
    "id": "Step-ups \u2013 lateral high with DB",
@@ -3266,7 +4487,10 @@
    "m": "Lateral Raise - With Bands",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lateral_Raise_-_With_Bands/1.jpg"
+   ]
   },
   {
    "id": "Waiter carry \u2013 bilateral",
@@ -3274,7 +4498,10 @@
    "m": "One-Arm Side Laterals",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Side_Laterals/1.jpg"
+   ]
   },
   {
    "id": "Triple hop \u2013 single leg",
@@ -3282,7 +4509,10 @@
    "m": "Single-Leg Hop Progression",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Single-Leg_Hop_Progression/1.jpg"
+   ]
   },
   {
    "id": "DB pullover",
@@ -3290,7 +4520,10 @@
    "m": "Ab Roller",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/1.jpg"
+   ]
   },
   {
    "id": "Curl and press \u2013 single arm",
@@ -3298,7 +4531,10 @@
    "m": "Clean and Press",
    "s": 0.6,
    "t": "review",
-   "img": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg"
+   "imgs": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/1.jpg"
+   ]
   }
  ]
 }
