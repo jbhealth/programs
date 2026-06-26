@@ -58,6 +58,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);}
 #jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
 #jb-contact a{color:var(--blue);text-decoration:none;font-weight:500;}
+.jb-foot{margin:24px 20px calc(28px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--grey);}
+.jb-foot a{color:var(--blue);text-decoration:none;font-weight:600;}
 .bal-pill{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
 .bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
 .bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
@@ -164,6 +166,7 @@ fetch("balances/JB_RC.json",{cache:"no-cache"}).then(function(r){
 }).catch(function(){});
 }catch(e){}})();
 </script>
+<div class="jb-foot">JB Health &middot; <a href="https://jbhealth.co.uk" target="_blank" rel="noopener">jbhealth.co.uk</a></div>
 
 <script>function setFrame(b){var t=b.parentElement,m=t.previousElementSibling;var i=[].indexOf.call(t.children,b);t.querySelectorAll('.frame-btn').forEach(function(x,j){x.classList.toggle('active',j===i);});m.querySelectorAll('.ex-img').forEach(function(x,j){x.classList.toggle('active',j===i);});}</script>
 </body>
