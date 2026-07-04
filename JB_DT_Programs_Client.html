@@ -52,8 +52,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#fff;cursor:pointer;}
 .archive-month-title{font-weight:600;color:var(--navy);font-size:14px;}
 .archive-month-body{display:none;padding:0 14px 10px;}
-.archive-chevron{font-size:12px;color:var(--grey);transition:transform .2s;}
-.archive-month.open .archive-chevron{transform:rotate(180deg);}
+.archive-month.open .archive-month-body{display:block;}
+.archive-chevron{font-size:12px;color:var(--grey);transition:transform .2s;transform:rotate(-90deg);}
+.archive-month.open .archive-chevron{transform:rotate(0deg);}
 .archive-ex{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--border);font-size:13px;}
 .archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);}
 #jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
@@ -89,7 +90,7 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 <script>
 function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");}
 function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
-document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");var b=h.nextElementSibling;if(b)b.style.display=b.style.display==="none"?"block":"none";};});
+document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");};});
 (function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
 </script>
 <script>
