@@ -1,6 +1,6 @@
 {
-  "name": "JB Health",
-  "short_name": "JB Health",
+  "name": "ABr — JB Health",
+  "short_name": "ABr",
   "description": "Your personal training programs from JB Health.",
   "start_url": "JB_ABr_Programs_Client.html",
   "scope": "./",
