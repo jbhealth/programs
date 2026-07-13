@@ -68,6 +68,29 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
 .bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
 .bal-pill.bp-n{background:rgba(107,122,141,0.15);color:rgba(255,255,255,0.55);border:1px solid rgba(107,122,141,0.3);}
+
+.mlabel{font-size:11px;color:var(--grey);width:96px;flex-shrink:0;line-height:1.3;}
+.mlabel .hint{display:block;font-size:10px;color:#9AABB9;}
+.log-input{border:1px solid var(--border);border-radius:8px;padding:6px 11px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--navy);background:#fff;width:118px;}
+.log-input:focus{outline:none;border-color:var(--blue);}
+.log-input.filled{border-color:var(--blue);background:#F4FAFF;}
+.log-check{color:#27AE60;font-size:15px;opacity:0;transition:opacity .15s;}
+.log-input.filled ~ .log-check{opacity:1;}
+.sendbar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--border);padding:12px 16px calc(12px + env(safe-area-inset-bottom));z-index:60;}
+.sendbar-inner{max-width:800px;margin:0 auto;display:flex;align-items:center;gap:12px;}
+.count{font-size:13px;color:var(--grey);white-space:nowrap;}
+.share-btn{flex:1;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:14px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;}
+.share-btn:disabled{background:#C7D2DC;cursor:default;}
+.overlay{position:fixed;inset:0;background:rgba(20,35,55,0.55);display:none;align-items:center;justify-content:center;padding:20px;z-index:80;}
+.overlay.show{display:flex;}
+.modal{background:#fff;border-radius:16px;max-width:520px;width:100%;padding:22px;}
+.modal h3{font-family:'Playfair Display',serif;font-size:19px;color:var(--navy);margin-bottom:6px;}
+.modal p{font-size:13px;color:var(--grey);line-height:1.5;margin-bottom:14px;}
+.blockbox{width:100%;height:190px;overflow:auto;border:1px solid var(--border);border-radius:10px;padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--navy);background:var(--warm);line-height:1.5;white-space:pre-wrap;}
+.modal-btns{display:flex;gap:10px;margin-top:14px;}
+.m-copy{flex:1;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:600;cursor:pointer;} .m-copy.done{background:#27AE60;}
+.m-close{background:none;border:1px solid var(--border);color:var(--grey);border-radius:10px;padding:13px 18px;font-size:15px;cursor:pointer;}
+.note{max-width:800px;margin:0 auto;padding:0 20px;font-size:12px;color:var(--grey);line-height:1.5;}
 </style>
 </head>
 <body>
@@ -87,14 +110,38 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 <div class="client-name">LT</div>
 <div class="month-label"></div>
 </div></div>
-<div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Welcome</button></div>
-<div class="content"><div class="program-panel active" id="program-0"><div class="program-header"><div class="program-title">Welcome</div></div><div class="exercise-card main"><div class="ex-desc"><p><strong>This is your training home.</strong> Every programme I build for you will live here from now on.</p><p>There&rsquo;s nothing to see just yet &mdash; your first programme will appear on this page after your next session, usually within a day or two.</p><p>The link never changes, so save it once and it&rsquo;ll always be current. An archive of past sessions builds up here over time too, so it only gets more useful the longer we train together.</p><p>Any questions, just ask me next time you&rsquo;re in.</p></div></div></div></div>
-<div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time &mdash; I'd rather you ask than guess.</div>
+<div class="tab-nav"><button class="tab-btn archive-tab" onclick="show(0,this)">Archive</button></div>
+<div class="content"><div class="program-panel" id="program-0"><div class="program-header"><div class="program-title">Archive</div></div><div class="exercise-card"><div class="ex-desc"><p>Nothing archived yet. When a new programme replaces this one, the old one moves here, along with the weights you logged against it.</p><p>Over time it builds into a record of how far you&rsquo;ve come, so it only gets more useful the longer we train.</p></div></div></div></div>
+<p class="note" id="lognote">Type a <strong>logged weight</strong> only where you used something different from the badge. Anything you leave blank is logged as done at the weight shown. Tap a move name for cues, then tap <strong>Share logged weights with James</strong> when done, even if nothing changed.</p><div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time &mdash; I'd rather you ask than guess.</div><div class="sendbar"><div class="sendbar-inner"><span class="count" id="count">0 logged</span><button class="share-btn" id="share" disabled><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#fff" d="M12 2l4 4h-3v8h-2V6H8l4-4zM5 10h3v9h8v-9h3v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9z"/></svg>Share logged weights with James</button></div></div><div class="overlay" id="overlay"><div class="modal"><h3>Send to James</h3><p>Copy this and paste it to James (WhatsApp or email). It has everything he needs.</p><pre class="blockbox" id="blockbox"></pre><div class="modal-btns"><button class="m-copy" id="mcopy">Copy</button><button class="m-close" id="mclose">Close</button></div></div></div>
 <script>
-function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");}
+const CLIENT="JB_LT", WORKER=null, TOKEN=null;
+function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");var ln=document.getElementById("lognote");if(ln){var pt=t&&t.querySelector(".program-title");ln.style.display=(pt&&pt.textContent.trim()==="Archive")?"none":"";}}
 function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
+function today(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+var inputs=Array.from(document.querySelectorAll(".log-input"));
+var shareHTML=(document.getElementById("share")||{}).innerHTML||"";
+var armed=false,armTimer=null;
+function disarm(){armed=false;if(armTimer){clearTimeout(armTimer);armTimer=null;}var b=document.getElementById("share");if(b&&!b.classList.contains("done"))b.innerHTML=shareHTML;}
+inputs.forEach(function(inp){var k=inp.dataset.k,v="";try{v=localStorage.getItem(k)||"";}catch(e){}if(v){inp.value=v;inp.classList.add("filled");}
+  inp.addEventListener("input",function(){var t=inp.value.trim();try{t?localStorage.setItem(k,t):localStorage.removeItem(k);}catch(e){}inp.classList.toggle("filled",!!t);refresh();});});
+function prescribed(s){s=(s||"").replace(/×/g,"x");var sets=null,m=s.match(/^\s*(\d+)\s*x/);if(m)sets=parseInt(m[1],10);var rest=s.replace(/^\s*\d+\s*x\s*/,"").trim();var dist=null,reps=null,md=rest.match(/(\d+)\s*m\b/);if(md){dist=md[1]+"m";}else if(/\d+\s*(s|sec|min)\b/.test(rest)||/hold|burn/i.test(rest)){reps=null;}else{reps=rest||null;}return {sets:sets,reps:reps,distance:dist};}
+function buildPayload(){var recs=[];inputs.forEach(function(inp){var v=inp.value.trim();var p=prescribed(inp.dataset.sets);var w=null;if(v){var mm=v.match(/(\d+(?:\.\d+)?)/);if(mm){var cv=parseFloat(mm[1]);if(isFinite(cv))w=cv;}}if(w===null){var pw=parseFloat(inp.dataset.pw);if(isFinite(pw))w=pw;}recs.push({ex:inp.dataset.name,weight:w,unit:(w===null?null:"kg"),sets:p.sets,reps:p.reps,distance:p.distance,program:inp.dataset.prog});});return {code:CLIENT,token:TOKEN,date:today(),records:recs};}
+function buildBlock(){var byProg={},order=[];inputs.forEach(function(inp){var v=inp.value.trim();var pw=parseFloat(inp.dataset.pw);var line;if(v){line=v;}else if(isFinite(pw)){line=pw+"kg (as prescribed)";}else{line="as prescribed";}var p=inp.dataset.prog;if(!byProg[p]){byProg[p]=[];order.push(p);}byProg[p].push("- "+inp.dataset.name+" ("+inp.dataset.sets+") = "+line);});
+  if(!order.length)return "";var groups=order.map(function(p){return p+"\n"+byProg[p].join("\n");});
+  return "JBHEALTH-LOG | "+CLIENT+" | "+today()+"\nAction: log these completed loads to "+CLIENT+" archive (feeds weight history).\n\n"+groups.join("\n\n");}
+function refresh(){if(armed)disarm();var n=inputs.filter(function(i){return i.value.trim();}).length;var c=document.getElementById("count");if(c.textContent.indexOf("Sent")<0)c.textContent=(n>0?n+" changed":(inputs.length?"Ready to log":"0 logged"));document.getElementById("share").disabled=!inputs.length;}
+function markSent(){armed=false;if(armTimer){clearTimeout(armTimer);armTimer=null;}var btn=document.getElementById("share");btn.textContent="Sent \u2713";btn.disabled=true;btn.classList.add("done");document.getElementById("count").textContent="Sent \u2713";inputs.forEach(function(inp){try{localStorage.removeItem(inp.dataset.k);}catch(e){}inp.value="";inp.classList.remove("filled");});}
+var overlay=document.getElementById("overlay");
+function openModal(b){document.getElementById("blockbox").textContent=b;var mc=document.getElementById("mcopy");mc.textContent="Copy";mc.classList.remove("done");overlay.classList.add("show");}
+document.getElementById("mclose").onclick=function(){overlay.classList.remove("show");};
+overlay.onclick=function(e){if(e.target===overlay)overlay.classList.remove("show");};
+document.getElementById("mcopy").onclick=async function(){var pre=document.getElementById("blockbox"),txt=pre.textContent,ok=false;try{await navigator.clipboard.writeText(txt);ok=true;}catch(e){try{var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);ok=document.execCommand("copy");}catch(_){}}if(ok){var b=document.getElementById("mcopy");b.textContent="Copied \u2713";b.classList.add("done");}};
+async function fallbackShare(reason){var b=buildBlock();if(!b)return;if(reason)b+="\n\n[direct send failed: "+reason+"]";if(navigator.share){try{await navigator.share({title:"Loads update",text:b});return;}catch(e){if(e&&e.name==="AbortError")return;}}openModal(b);}
+async function send(){var b=document.getElementById("share");if(b.disabled)return;var anyTyped=inputs.some(function(i){return i.value.trim();});if(!anyTyped){if(!armed){armed=true;b.textContent="Tap again to log as prescribed";armTimer=setTimeout(disarm,4000);return;}disarm();}var payload=buildPayload();if(!payload.records.length){fallbackShare("nothing to log");return;}var reason="no endpoint";if(WORKER){try{var r=await fetch(WORKER.replace(/\/$/,"")+"/log",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(payload)});var j=await r.json().catch(function(){return {};});if(r.ok&&j.ok){markSent();return;}reason=(j&&j.error)?j.error:("http "+r.status);}catch(e){reason="network";}}fallbackShare(reason);}
+document.getElementById("share").onclick=send;
 document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");};});
 (function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
+refresh();
 </script>
 <script>
 (function(){try{
