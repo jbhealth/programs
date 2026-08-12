@@ -1,334 +1,334 @@
 {
-  "_schema": 1,
-  "_note": "slug -> ordered frames with labels. Generated from programs/exercise-media/.",
-  "exercises": {
-    "90-90-hip-flow": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "anterior-tibialis-toe-raises": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "balance-single-leg-with-arm-reach": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "reach-forward",
-        "label": "Forward"
-      },
-      {
-        "frame": "reach-side",
-        "label": "Side"
-      },
-      {
-        "frame": "reach-rotation",
-        "label": "Rotation"
-      }
-    ],
-    "band-good-morning": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "band-pull-apart": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "bird-dog": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "calf-raises-slow-eccentric": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "cat-cow": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "cossack-squat": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "db-lateral-lunge": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "dead-bug-arms-and-legs": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "deadlift-kb": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "dumbbell-romanian-deadlift": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "glute-bridges-bilateral": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "glute-bridges-march": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "glute-bridges-single-leg": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "goblet-squat": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "hip-abduction-clamshell": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "hip-flexor-stretch-kneeling": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "iso-split-squat-bodyweight": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "kb-swings": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "lateral-band-walks": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "prone-t-raise": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "prone-y-raise": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "reverse-fly-db": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "romanian-deadlift-single-leg": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "rotator-cuff-side-lying-external-rotation": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "shoulder-press-standing": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "side-plank-knees-bent": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "suitcase-carry": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "wall-slides": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ],
-    "worlds-greatest-stretch": [
-      {
-        "frame": "start",
-        "label": "Start"
-      },
-      {
-        "frame": "finish",
-        "label": "Finish"
-      }
-    ]
-  }
+ "_schema": 1,
+ "_note": "slug -> ordered frames with labels. Generated from programs/exercise-media/.",
+ "exercises": {
+  "90-90-hip-flow": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "anterior-tibialis-toe-raises": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "balance-single-leg-with-arm-reach": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "reach-forward",
+    "label": "Forward"
+   },
+   {
+    "frame": "reach-side",
+    "label": "Side"
+   },
+   {
+    "frame": "reach-rotation",
+    "label": "Rotation"
+   }
+  ],
+  "band-good-morning": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "band-pull-apart": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "bird-dog": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "calf-raises-slow-eccentric": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "cat-cow": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "cossack-squat": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "db-lateral-lunge": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "dead-bug-arms-and-legs": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "deadlift-kb": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "romanian-deadlift-db": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "glute-bridges-bilateral": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "glute-bridges-march": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "glute-bridges-single-leg": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "goblet-squat": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "hip-abduction-clamshell": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "hip-flexor-stretch-kneeling": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "iso-split-squat-bodyweight": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "kb-swings": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "lateral-band-walks": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "prone-t-raise": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "prone-y-raise": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "reverse-fly-db": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "romanian-deadlift-single-leg": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "rotator-cuff-side-lying-external-rotation": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "shoulder-press-standing": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "side-plank-knees-bent": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "suitcase-carry": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "wall-slides": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ],
+  "worlds-greatest-stretch": [
+   {
+    "frame": "start",
+    "label": "Start"
+   },
+   {
+    "frame": "finish",
+    "label": "Finish"
+   }
+  ]
+ }
 }
