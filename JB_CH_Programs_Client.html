@@ -95,16 +95,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .m-copy{flex:1;background:var(--blue);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:600;cursor:pointer;} .m-copy.done{background:#27AE60;}
 .m-close{background:none;border:1px solid var(--border);color:var(--grey);border-radius:10px;padding:13px 18px;font-size:15px;cursor:pointer;}
 .note{max-width:800px;margin:0 auto;padding:0 20px;font-size:12px;color:var(--grey);line-height:1.5;}
-
-/* exercise photos */
-.ex-media{margin:10px 0 2px;}
-.ex-media-frame{position:relative;width:100%;border-radius:10px;overflow:hidden;background:#EEF2F6;aspect-ratio:4/3;border:1px solid var(--border);}
-.ex-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .18s;}
-.ex-img.active{opacity:1;}
-.frame-toggle{display:flex;gap:6px;margin-top:8px;}
-.frame-btn{flex:1;background:#fff;border:1px solid var(--border);color:var(--grey);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;padding:7px 4px;border-radius:8px;cursor:pointer;}
-.frame-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);}
-.exercise-card.collapsed .ex-media{display:none;}
 </style>
 </head>
 <body>
@@ -176,7 +166,5 @@ fetch("balances/JB_CH.json",{cache:"no-cache"}).then(function(r){
 }catch(e){}})();
 </script>
 <div class="jb-foot">JB Health &middot; <a href="https://jbhealth.co.uk" target="_blank" rel="noopener">jbhealth.co.uk</a></div>
-
-<script>function setFrame(b){var t=b.parentElement,m=t.previousElementSibling;var i=[].indexOf.call(t.children,b);t.querySelectorAll('.frame-btn').forEach(function(x,j){x.classList.toggle('active',j===i);});m.querySelectorAll('.ex-img').forEach(function(x,j){x.classList.toggle('active',j===i);});}</script>
 </body>
 </html>
