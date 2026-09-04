@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20260904T104541Z"/>
+<meta name="jb-build" content="20260904T105859Z"/>
 <meta name="jb-key" content="JB_CH"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
@@ -70,7 +70,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .jb-foot{margin:24px 20px calc(28px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--grey);}
 .jb-foot a{color:var(--blue);text-decoration:none;font-weight:600;}
 .bal-row{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap;}
-.bal-stamp{font-size:12px;opacity:0.7;letter-spacing:0.01em;}
+.bal-stamp{font-size:12px;font-weight:300;color:rgba(255,255,255,0.55);letter-spacing:0.01em;}
 .bal-pill{display:inline-block;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
 .bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
 .bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
@@ -182,7 +182,7 @@ fetch("balances/JB_CH.json",{cache:"no-cache"}).then(function(r){
     var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     var stamp=document.createElement("span");
     stamp.className="bal-stamp";
-    stamp.textContent="Updated "+parseInt(d.slice(8,10),10)+" "+M[parseInt(d.slice(5,7),10)-1];
+    stamp.textContent="Balance updated "+parseInt(d.slice(8,10),10)+" "+M[parseInt(d.slice(5,7),10)-1];
     row.appendChild(stamp);
   }
   var anchor=document.querySelector(".header-info");
@@ -199,7 +199,7 @@ fetch("balances/JB_CH.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20260904T104541Z",VK="JB_CH";
+var BID="20260904T105859Z",VK="JB_CH";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;
