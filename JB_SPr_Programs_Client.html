@@ -4,6 +4,8 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+<meta name="jb-build" content="20260904T102539Z"/>
+<meta name="jb-key" content="JB_SPr"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
 <meta name="theme-color" content="#1B3F6B"/>
@@ -172,6 +174,30 @@ fetch("balances/JB_SPr.json",{cache:"no-cache"}).then(function(r){
   else{pill.className="bal-pill bp-n";pill.textContent="Settled";}
   var anchor=document.querySelector(".header-info");
   if(anchor)anchor.appendChild(pill);
+}).catch(function(){});
+}catch(e){}})();
+</script>
+<script>
+/* Stale-page self-heal. iOS home-screen webclips keep their own HTTP cache and
+   force-quitting the app does not clear it, so a client can sit on an old page
+   for days. The stale page still runs this, so it can rescue itself: fetch the
+   version map with no-store (bypasses the stale cache entry), and if this
+   page's baked id is behind, refetch from network and reload once. The
+   sessionStorage guard bounds it to a single reload per new version, so a
+   lagging versions.json can never cause a reload loop. */
+(function(){try{
+var BID="20260904T102539Z",VK="JB_SPr";
+if(!BID||!VK||BID.indexOf("__")===0)return;
+fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
+  return r.ok?r.json():null;
+}).then(function(v){
+  if(!v||!v[VK]||v[VK]===BID)return;
+  try{
+    if(sessionStorage.getItem("jb-reloaded")===v[VK])return;
+    sessionStorage.setItem("jb-reloaded",v[VK]);
+  }catch(e){}
+  fetch(location.pathname,{cache:"reload"}).then(
+    function(){location.reload();},function(){location.reload();});
 }).catch(function(){});
 }catch(e){}})();
 </script>
