@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20260906T163214Z"/>
+<meta name="jb-build" content="20260906T163239Z"/>
 <meta name="jb-key" content="JB_AB"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
@@ -203,7 +203,7 @@ fetch("balances/JB_AB.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20260906T163214Z",VK="JB_AB";
+var BID="20260906T163239Z",VK="JB_AB";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;
