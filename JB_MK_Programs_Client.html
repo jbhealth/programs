@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20261106T185403Z"/>
+<meta name="jb-build" content="20261106T185423Z"/>
 <meta name="jb-key" content="JB_MK"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
@@ -78,7 +78,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 
 .logrow{margin-top:2px;}
 .logcap{font-size:11px;font-weight:500;color:var(--grey);margin-bottom:5px;}
-.logfields{display:grid;grid-template-columns:58px minmax(0,1fr) 86px;gap:8px;}
+.logfields{display:grid;grid-template-columns:58px minmax(0,1fr) 86px;gap:8px;max-width:340px;}
 .lf{display:block;min-width:0;}
 .lf>span{display:block;font-size:10px;color:#9AABB9;margin-bottom:3px;}
 .log-input{width:100%;border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--navy);background:#fff;}
@@ -208,7 +208,7 @@ fetch("balances/JB_MK.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20261106T185403Z",VK="JB_MK";
+var BID="20261106T185423Z",VK="JB_MK";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;
