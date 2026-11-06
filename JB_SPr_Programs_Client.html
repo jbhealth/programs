@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20261106T191132Z"/>
+<meta name="jb-build" content="20261106T200407Z"/>
 <meta name="jb-key" content="JB_SPr"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
@@ -80,6 +80,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .logcap{font-size:11px;font-weight:500;color:var(--grey);margin-bottom:5px;}
 .logfields{display:grid;grid-template-columns:58px minmax(0,1fr) 86px;gap:8px;max-width:340px;}
 .lf{display:block;min-width:0;}
+.logn{display:block;margin-top:8px;max-width:340px;}
+.logn>span{display:block;font-size:10px;color:#9AABB9;margin-bottom:3px;}
 .lf>span{display:block;font-size:10px;color:#9AABB9;margin-bottom:3px;}
 .log-input{width:100%;border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--navy);background:#fff;}
 .log-input::placeholder{color:#9AABB9;opacity:1;}
@@ -161,15 +163,15 @@ function buildPayload(){var recs=[],bad=false;groups(scoped()).forEach(function(
   if(sv){var sn=/^\d{1,2}$/.test(sv)?parseInt(sv,10):NaN;if(isFinite(sn)&&sn>=1&&sn<=20)sets=sn;else{g.f.sets.classList.add("bad");bad=true;}}
   var reps=p.reps,dist=p.distance,rv=val(g,"reps");
   if(rv){reps=rv.slice(0,20);dist=null;}
-  recs.push({ex:g.name,weight:w,unit:(w===null?null:"kg"),sets:sets,reps:reps,distance:dist,program:g.prog});});
+  var rec={ex:g.name,weight:w,unit:(w===null?null:"kg"),sets:sets,reps:reps,distance:dist,program:g.prog},lw=(w===null&&g.f.weight)?(g.f.weight.dataset.w||""):"";if(lw)rec.load=lw;var nv=val(g,"note").replace(/\s+/g," ").trim();if(nv)rec.note=nv.slice(0,200);recs.push(rec);});
   if(bad)return null;return {code:CLIENT,token:TOKEN,date:today(),records:recs};}
 function buildBlock(){var byProg={},order=[];groups(scoped()).forEach(function(g){var v=val(g,"weight"),pw=parseFloat(g.f.weight?g.f.weight.dataset.pw:NaN),line;if(v){line=v;}else if(isFinite(pw)){line=pw+"kg (as prescribed)";}else{line="as prescribed";}
   var sv=val(g,"sets"),rv=val(g,"reps"),did="";
   if(sv||rv){var p=prescribed(g.presc),parts=[];if(sv||p.sets)parts.push(sv||p.sets);parts.push(rv||p.reps||p.distance||"as prescribed");did="; did "+parts.join(" x ");}
-  if(!byProg[g.prog]){byProg[g.prog]=[];order.push(g.prog);}byProg[g.prog].push("- "+g.name+" ("+g.presc+did+") = "+line);});
+  if(!byProg[g.prog]){byProg[g.prog]=[];order.push(g.prog);}var nt=val(g,"note").replace(/\s+/g," ").trim();byProg[g.prog].push("- "+g.name+" ("+g.presc+did+") = "+line+(nt?" | note: "+nt:""));});
   if(!order.length)return "";var out=order.map(function(p){return p+"\n"+byProg[p].join("\n");});
   return "JBHEALTH-LOG | "+CLIENT+" | "+today()+"\nAction: log these completed loads to "+CLIENT+" archive (feeds weight history).\n\n"+out.join("\n\n");}
-function refresh(){if(armed)disarm();var n=groups(inputs).filter(function(g){return val(g,"sets")||val(g,"reps")||val(g,"weight");}).length;var c=document.getElementById("count");if(c.textContent.indexOf("Sent")<0)c.textContent=(n>0?n+" changed":(inputs.length?"Ready to log":"0 logged"));document.getElementById("share").disabled=!inputs.length;}
+function refresh(){if(armed)disarm();var n=groups(inputs).filter(function(g){return val(g,"sets")||val(g,"reps")||val(g,"weight")||val(g,"note");}).length;var c=document.getElementById("count");if(c.textContent.indexOf("Sent")<0)c.textContent=(n>0?n+" changed":(inputs.length?"Ready to log":"0 logged"));document.getElementById("share").disabled=!inputs.length;}
 function markSent(){armed=false;if(armTimer){clearTimeout(armTimer);armTimer=null;}var btn=document.getElementById("share");btn.textContent="Sent ✓";btn.disabled=true;btn.classList.add("done");document.getElementById("count").textContent="Sent ✓";inputs.forEach(function(inp){try{localStorage.removeItem(inp.dataset.k);}catch(e){}inp.value="";inp.classList.remove("filled");});}
 var overlay=document.getElementById("overlay");
 var focusBad=false;
@@ -225,7 +227,7 @@ fetch("balances/JB_SPr.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20261106T191132Z",VK="JB_SPr";
+var BID="20261106T200407Z",VK="JB_SPr";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;
