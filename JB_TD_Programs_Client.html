@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+<meta name="jb-build" content="20261110T114200Z"/>
+<meta name="jb-key" content="JB_TD"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>JB Health</title>
+<meta name="theme-color" content="#1B3F6B"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="JB Health"/>
+<link rel="apple-touch-icon" href="icon-180.png"/>
+<link rel="icon" href="icon-180.png"/>
+<link rel="manifest" href="manifest-TD.webmanifest"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);min-height:100vh;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none;padding-bottom:120px;}
+.header{background:var(--navy);padding:calc(28px + env(safe-area-inset-top)) 24px 22px;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(46,134,193,0.15);}
+.header-info{position:relative;z-index:1;max-width:800px;margin:0 auto;}
+.brand{font-family:'Playfair Display',serif;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;}
+.client-name{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,34px);font-weight:700;color:#fff;line-height:1.1;}
+.month-label{font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);margin-top:4px;}
+.tab-nav{background:var(--navy);padding:0 24px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;overflow-x:auto;position:sticky;top:0;z-index:50;-webkit-overflow-scrolling:touch;}
+.tab-btn{background:transparent;border:none;color:rgba(255,255,255,0.4);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:15px 18px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;}
+.tab-btn.active{color:#fff;border-bottom-color:var(--blue);}
+.content{max-width:800px;margin:0 auto;padding:24px 20px 30px;}
+.program-panel{display:none;} .program-panel.active{display:block;}
+.program-header{margin-bottom:6px;padding-bottom:14px;border-bottom:1px solid var(--border);}
+.program-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.lead{font-size:13px;color:var(--grey);line-height:1.5;}
+.section-label{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--grey);margin:22px 0 10px;}
+.cardio-info{background:var(--accent);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:10px;}
+.exercise-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;border-left:3px solid var(--blue);}
+.ex-top{display:flex;align-items:flex-start;gap:8px;}
+.chev{color:var(--grey);font-size:20px;font-weight:700;line-height:1;cursor:pointer;padding:0 4px;user-select:none;-webkit-user-select:none;transition:transform .2s;margin-top:-1px;}
+.exercise-card.collapsed .chev{transform:rotate(-90deg);}
+.ex-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.25;cursor:pointer;flex:1;}
+.meta{margin-top:10px;}
+.metarow{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap;}
+.metarow:last-child{margin-bottom:0;}
+.badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;white-space:nowrap;}
+.badge-sets{background:var(--navy);color:#fff;} .badge-reps{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy);} .badge-equip{background:var(--accent);color:var(--blue);} .badge-weight{background:#FBEFD8;color:#9A6700;}
+.ex-cue{font-size:12.5px;line-height:1.5;margin-top:8px;background:var(--accent);border-radius:8px;padding:8px 11px;color:#1A1A1A;}
+.ex-cue strong{color:var(--navy);font-weight:600;}
+.ex-desc{font-size:13px;line-height:1.65;color:#444;margin-top:8px;}
+.ex-desc p{margin-bottom:5px;} .ex-desc strong{color:var(--navy);font-weight:500;}
+.exercise-card.collapsed .ex-desc{display:none;}
+.archive-month{margin-bottom:10px;border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.archive-month-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#fff;cursor:pointer;}
+.archive-month-title{font-weight:600;color:var(--navy);font-size:14px;}
+.archive-month-body{display:none;padding:0 14px 10px;}
+.archive-month.open .archive-month-body{display:block;}
+.archive-chevron{font-size:12px;color:var(--grey);transition:transform .2s;transform:rotate(-90deg);}
+.archive-month.open .archive-chevron{transform:rotate(0deg);}
+.archive-ex{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:7px 0;border-top:1px solid var(--border);font-size:13px;}
+.archive-ex>div:first-child{min-width:0;flex:1 1 0;}
+.archive-ex-name{color:var(--navy);} .archive-ex-sets{color:var(--grey);text-align:right;flex:0 1 auto;max-width:55%;}
+.archive-ex-desc{font-size:12px;line-height:1.6;color:#555;margin-top:4px;}
+.archive-ex-desc p{margin-bottom:4px;} .archive-ex-desc strong{color:var(--navy);font-weight:500;}
+#jb-contact{margin:20px 20px 8px;text-align:center;font-size:13px;color:var(--grey);line-height:1.7;}
+#jb-contact a{color:var(--blue);text-decoration:none;font-weight:500;}
+.jb-foot{margin:24px 20px calc(28px + env(safe-area-inset-bottom));text-align:center;font-size:12px;color:var(--grey);}
+.jb-foot a{color:var(--blue);text-decoration:none;font-weight:600;}
+.bal-row{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap;}
+.bal-stamp{font-size:12px;font-weight:300;color:rgba(255,255,255,0.55);letter-spacing:0.01em;}
+.bal-pill{display:inline-block;padding:4px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:0.02em;line-height:1.4;}
+.bal-pill.bp-g{background:rgba(46,204,113,0.18);color:#7DE8A8;border:1px solid rgba(46,204,113,0.45);}
+.bal-pill.bp-r{background:rgba(231,76,60,0.18);color:#F5A097;border:1px solid rgba(231,76,60,0.45);}
+.bal-pill.bp-n{background:rgba(107,122,141,0.15);color:rgba(255,255,255,0.55);border:1px solid rgba(107,122,141,0.3);}
+</style>
+<style id="xp-css">
+.xp-sec{margin-top:6px;}
+.xp-tog{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 2px;background:transparent;border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:var(--blue,#2E86C1);text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-tog::after{content:'\2212';font-size:19px;line-height:1;}
+.xp-sec.xp-closed .xp-tog::after{content:'+';}
+.xp-sec.xp-closed .xp-body{display:none;}
+.xp-sec.xp-desc.xp-closed + .ex-desc{display:none;}
+.xp-body{margin-top:6px;}
+.xp-frame{position:relative;width:100%;aspect-ratio:var(--xp-a,1.33);max-width:calc(min(300px, 42vh) * var(--xp-a,1.33));min-height:150px;margin:0 auto;border-radius:12px;background:#F2EFEA;overflow:hidden;}
+.xp-pic{position:absolute;inset:10px;display:none;background-color:#F2EFEA;background-repeat:no-repeat;background-position:center;background-size:contain;background-blend-mode:multiply;}
+.xp-pic.xp-on{display:block;}
+.xp-frame.xp-tap{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;}
+.xp-clip{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;background:#F2EFEA;mix-blend-mode:multiply;}
+.xp-frame.xp-still .xp-clip{display:none;}
+.xp-clock{position:absolute;top:10px;right:10px;width:26px;height:26px;z-index:2;}
+.xp-btns{display:flex;margin-top:8px;border:2px solid var(--navy,#1B3F6B);border-radius:10px;overflow:hidden;}
+.xp-fbtn,.xp-play{flex:1;min-height:44px;padding:8px 6px;background:#fff;border:none;border-radius:0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy,#1B3F6B);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-fbtn+.xp-fbtn{border-left:2px solid var(--navy,#1B3F6B);}
+.xp-fbtn.xp-on{background:var(--navy,#1B3F6B);color:#fff;}
+.xp-desc .ex-desc{margin-top:0;}
+.xp-bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.xp-bulk-btn{min-height:44px;padding:8px 16px;background:#fff;border:1px solid var(--border,#D4E4F0);border-radius:22px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--blue,#2E86C1);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-mwrap{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.xp-mwrap>.xp-sec{display:contents;}
+.xp-mwrap .xp-pics>.xp-body{grid-row:1;grid-column:1 / -1;min-width:0;}
+.xp-mwrap .xp-pics>.xp-tog{grid-row:2;grid-column:1;justify-self:start;}
+.xp-mwrap .xp-desc>.xp-tog{grid-row:2;grid-column:2;justify-self:end;}
+.exercise-card.xp-card{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.exercise-card.xp-card>*,.exercise-card.xp-card .metarow,.exercise-card.xp-card .logrow,.exercise-card.xp-card .xp-body{grid-column:1 / -1;min-width:0;}
+.exercise-card.xp-card .meta,.exercise-card.xp-card .xp-sec{display:contents;}
+.exercise-card.xp-card .ex-top{grid-row:1;}
+.exercise-card.xp-card .metarow{grid-row:2;margin:10px 0 0;}
+.exercise-card.xp-card .ex-cue{grid-row:3;}
+.exercise-card.xp-card .xp-pics>.xp-body{grid-row:4;margin-top:10px;}
+.exercise-card.xp-card .xp-pics>.xp-tog{grid-row:5;grid-column:1;justify-self:start;margin-top:4px;}
+.exercise-card.xp-card .xp-desc>.xp-tog{grid-row:5;grid-column:2;justify-self:end;margin-top:4px;}
+.exercise-card.xp-card .xp-desc>.xp-body{grid-row:6;}
+.exercise-card.xp-card .logrow{grid-row:7;margin-top:10px;padding-top:12px;border-top:1px solid var(--border,#D4E4F0);}
+</style>
+</head>
+<body>
+<div id="a2hs" style="display:none;background:#1B3F6B;color:#fff;padding:12px 14px;font-size:15px;line-height:1.45;align-items:center;gap:10px;">
+  <div id="a2hs-msg" style="flex:1;"></div>
+  <button id="a2hs-no" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:14px;padding:8px;white-space:nowrap;">Not now</button>
+</div>
+<script>
+(function(){try{var bar=document.getElementById('a2hs'),msg=document.getElementById('a2hs-msg'),no=document.getElementById('a2hs-no');
+var standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;var dismissed=false;try{dismissed=localStorage.getItem('jbh_a2hs_dismissed')==='1';}catch(e){}
+if(standalone||dismissed)return;var ua=navigator.userAgent,isIOS=/iPhone|iPad|iPod/.test(ua),isSafari=isIOS&&/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+no.onclick=function(){bar.style.display='none';try{localStorage.setItem('jbh_a2hs_dismissed','1');}catch(e){}};
+if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> then <b>Add to Home Screen</b>.';bar.style.display='flex';}}catch(e){}})();
+</script>
+<div class="header"><div class="header-info">
+<div class="brand">JB Health</div>
+<div class="client-name">TD</div>
+<div class="month-label"></div>
+</div></div>
+<div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Welcome</button></div>
+<div class="content"><div class="program-panel active" id="program-0"><div class="program-header"><div class="program-title">Welcome</div></div><div class="exercise-card main"><div class="ex-desc"><p><strong>This is your training home.</strong> Every programme I build for you will live here from now on.</p><p>There&rsquo;s nothing to see just yet. Your first programme will appear on this page after your next session, usually within a day or two.</p><p>The link never changes, so save it once and it&rsquo;ll always be current. An archive of past sessions builds up here over time too, so it only gets more useful the longer we train together.</p><p>Any questions, just ask me next time you&rsquo;re in.</p></div></div></div></div>
+<div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time. I'd rather you ask than guess.</div>
+<script>
+const CLIENT="JB_TD", WORKER="https://jb-log.james-52d.workers.dev", TOKEN="5k349chdg5xVwN8i2I6szaC0aAvPCZ_9";
+function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");window.scrollTo(0,0);}
+function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
+document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");};});
+(function(){try{var t=encodeURIComponent('Hi James, quick question about my programme');var wa=document.getElementById('jb-wa');if(wa){wa.href='https://wa.me/447469001785?text='+t;wa.target='_blank';wa.rel='noopener';}var em=document.getElementById('jb-em');if(em)em.href='mailto:james@jbhealth.co.uk?subject='+encodeURIComponent('Question about my programme');}catch(e){}})();
+</script>
+<script>
+(function(){try{
+fetch("balances/JB_TD.json",{cache:"no-cache"}).then(function(r){
+  if(!r.ok)throw 0;return r.json();
+}).then(function(j){
+  if(!j||typeof j.b!=="number")return;
+  var b=Math.round(j.b*100)/100;
+  var pill=document.createElement("div");
+  if(b>0){pill.className="bal-pill bp-g";pill.textContent=String(b)+" in credit";}
+  else if(b<0){pill.className="bal-pill bp-r";pill.textContent=String(-b)+" owed";}
+  else{pill.className="bal-pill bp-n";pill.textContent="Settled";}
+  var row=document.createElement("div");
+  row.className="bal-row";
+  row.appendChild(pill);
+  var d=(j.d&&/^\d{4}-\d{2}-\d{2}$/.test(j.d))?j.d:"";
+  if(d){
+    var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    var stamp=document.createElement("span");
+    stamp.className="bal-stamp";
+    stamp.textContent="Balance updated "+parseInt(d.slice(8,10),10)+" "+M[parseInt(d.slice(5,7),10)-1];
+    row.appendChild(stamp);
+  }
+  var anchor=document.querySelector(".header-info");
+  if(anchor)anchor.appendChild(row);
+}).catch(function(){});
+}catch(e){}})();
+</script>
+<script>
+/* Stale-page self-heal. iOS home-screen webclips keep their own HTTP cache and
+   force-quitting the app does not clear it, so a client can sit on an old page
+   for days. The stale page still runs this, so it can rescue itself: fetch the
+   version map with no-store (bypasses the stale cache entry), and if this
+   page's baked id is behind, refetch from network and reload once. The
+   sessionStorage guard bounds it to a single reload per new version, so a
+   lagging versions.json can never cause a reload loop. */
+(function(){try{
+var BID="20261110T114200Z",VK="JB_TD";
+if(!BID||!VK||BID.indexOf("__")===0)return;
+fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
+  return r.ok?r.json():null;
+}).then(function(v){
+  if(!v||!v[VK]||v[VK]===BID)return;
+  try{
+    if(sessionStorage.getItem("jb-reloaded")===v[VK])return;
+    sessionStorage.setItem("jb-reloaded",v[VK]);
+  }catch(e){}
+  fetch(location.pathname,{cache:"reload"}).then(
+    function(){location.reload();},function(){location.reload();});
+}).catch(function(){});
+}catch(e){}})();
+</script>
+<div class="jb-foot">JB Health &middot; <a href="https://jbhealth.co.uk" target="_blank" rel="noopener">jbhealth.co.uk</a></div>
+<script>
+/* == exercise pictures: begin (one copy, shared with client pages) == */
+/* James, 9 Nov 2026. One frame per exercise, Start / Middle / Finish buttons under it,
+   and two independent sections ("Hide pictures", "Show description") whose state is
+   remembered per exercise on this device. exercise_pictures.py cuts this block out and
+   bakes it into client pages, so it lives here once. Event delegation only: it needs no
+   markup hooks and does nothing on a page without pictures. Clips (not yet approved):
+   muted, inline, three plays then stop, tap to pause; reduced motion shows the pictures
+   with a "Show the movement" button that plays once. */
+// The picture CSS, one copy (exercise_pictures.py bakes it into client pages).
+// Client cards (xp-card, 9 Nov 2026 "tidier"): look first, then log. Name and pills,
+// James's cue, the picture with a joined Start / Finish bar, then "Hide pictures" and
+// "Show description" as light links on one line, and the log boxes last under a rule.
+// Grid placement only: the markup and what each box logs are unchanged.
+// Frame: warm grey with each picture multiplied onto it, so the white background and the
+// cut floor shadow melt in. Its shape is the exercise's widest picture (--xp-a): full
+// width for landscape, narrower and taller (capped) for portrait, fixed per exercise.
+function _xpCssSrc(){/*XP-CSS
+.xp-sec{margin-top:6px;}
+.xp-tog{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 2px;background:transparent;border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:var(--blue,#2E86C1);text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-tog::after{content:'\2212';font-size:19px;line-height:1;}
+.xp-sec.xp-closed .xp-tog::after{content:'+';}
+.xp-sec.xp-closed .xp-body{display:none;}
+.xp-sec.xp-desc.xp-closed + .ex-desc{display:none;}
+.xp-body{margin-top:6px;}
+.xp-frame{position:relative;width:100%;aspect-ratio:var(--xp-a,1.33);max-width:calc(min(300px, 42vh) * var(--xp-a,1.33));min-height:150px;margin:0 auto;border-radius:12px;background:#F2EFEA;overflow:hidden;}
+.xp-pic{position:absolute;inset:10px;display:none;background-color:#F2EFEA;background-repeat:no-repeat;background-position:center;background-size:contain;background-blend-mode:multiply;}
+.xp-pic.xp-on{display:block;}
+.xp-frame.xp-tap{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;}
+.xp-clip{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;background:#F2EFEA;mix-blend-mode:multiply;}
+.xp-frame.xp-still .xp-clip{display:none;}
+.xp-clock{position:absolute;top:10px;right:10px;width:26px;height:26px;z-index:2;}
+.xp-btns{display:flex;margin-top:8px;border:2px solid var(--navy,#1B3F6B);border-radius:10px;overflow:hidden;}
+.xp-fbtn,.xp-play{flex:1;min-height:44px;padding:8px 6px;background:#fff;border:none;border-radius:0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy,#1B3F6B);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-fbtn+.xp-fbtn{border-left:2px solid var(--navy,#1B3F6B);}
+.xp-fbtn.xp-on{background:var(--navy,#1B3F6B);color:#fff;}
+.xp-desc .ex-desc{margin-top:0;}
+.xp-bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+.xp-bulk-btn{min-height:44px;padding:8px 16px;background:#fff;border:1px solid var(--border,#D4E4F0);border-radius:22px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--blue,#2E86C1);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-mwrap{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.xp-mwrap>.xp-sec{display:contents;}
+.xp-mwrap .xp-pics>.xp-body{grid-row:1;grid-column:1 / -1;min-width:0;}
+.xp-mwrap .xp-pics>.xp-tog{grid-row:2;grid-column:1;justify-self:start;}
+.xp-mwrap .xp-desc>.xp-tog{grid-row:2;grid-column:2;justify-self:end;}
+.exercise-card.xp-card{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.exercise-card.xp-card>*,.exercise-card.xp-card .metarow,.exercise-card.xp-card .logrow,.exercise-card.xp-card .xp-body{grid-column:1 / -1;min-width:0;}
+.exercise-card.xp-card .meta,.exercise-card.xp-card .xp-sec{display:contents;}
+.exercise-card.xp-card .ex-top{grid-row:1;}
+.exercise-card.xp-card .metarow{grid-row:2;margin:10px 0 0;}
+.exercise-card.xp-card .ex-cue{grid-row:3;}
+.exercise-card.xp-card .xp-pics>.xp-body{grid-row:4;margin-top:10px;}
+.exercise-card.xp-card .xp-pics>.xp-tog{grid-row:5;grid-column:1;justify-self:start;margin-top:4px;}
+.exercise-card.xp-card .xp-desc>.xp-tog{grid-row:5;grid-column:2;justify-self:end;margin-top:4px;}
+.exercise-card.xp-card .xp-desc>.xp-body{grid-row:6;}
+.exercise-card.xp-card .logrow{grid-row:7;margin-top:10px;padding-top:12px;border-top:1px solid var(--border,#D4E4F0);}
+XP-CSS*/}
+(function(){
+  if (window.__xpInit) return; window.__xpInit = true;
+  function nameOf(sec){ var c = sec.closest('.exercise-card'); var n = c && c.querySelector('.ex-name');
+    return n ? (n.textContent || '').trim() : ''; }
+  function key(sec){ return 'jbxp:' + (sec.classList.contains('xp-pics') ? 'pictures' : 'description') + ':' + nameOf(sec); }
+  function rd(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
+  function wr(k, v){ try { localStorage.setItem(k, v); } catch(e){} }
+  function tog(sec){ for (var i = 0; i < sec.children.length; i++) if (sec.children[i].classList.contains('xp-tog')) return sec.children[i]; return null; }
+  function setOpen(sec, open){
+    sec.classList.toggle('xp-closed', !open);
+    var b = tog(sec);
+    if (b) { b.textContent = (open ? 'Hide ' : 'Show ') + b.getAttribute('data-what'); b.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+    if (!open) sec.querySelectorAll('video').forEach(function(v){ try { v.pause(); } catch(e){} });
+  }
+  function pick(btn){
+    var body = btn.closest('.xp-body'); if (!body) return;
+    var btns = [].slice.call(btn.parentNode.querySelectorAll('.xp-fbtn')), i = btns.indexOf(btn);
+    btns.forEach(function(b, j){ b.classList.toggle('xp-on', j === i); b.setAttribute('aria-pressed', j === i ? 'true' : 'false'); });
+    [].slice.call(body.querySelectorAll('.xp-frame .xp-pic')).forEach(function(p, j){ p.classList.toggle('xp-on', j === i); });
+  }
+  function reduced(){ try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){ return false; } }
+  function clip(fr){
+    var v = fr.querySelector('.xp-clip'); if (!v || fr.__xp) return; fr.__xp = true;
+    var bar = fr.parentNode.querySelector('.xp-motion'), btn = bar && bar.querySelector('.xp-play'), plays = 0, once = false;
+    v.muted = true; v.loop = false; v.setAttribute('playsinline', '');
+    function label(){ if (btn) btn.textContent = v.paused ? 'Show the movement' : 'Pause'; }
+    v.addEventListener('play', label); v.addEventListener('pause', label);
+    v.addEventListener('ended', function(){
+      if (once) { once = false; fr.classList.add('xp-still'); label(); return; }
+      if (++plays < 3) { try { v.play(); } catch(e){} } });
+    v.addEventListener('click', function(){ if (v.paused) { try { v.play(); } catch(e){} } else v.pause(); });
+    if (reduced()) { fr.classList.add('xp-still'); label(); }
+    else { if (bar) bar.hidden = true; try { var p = v.play(); if (p && p.catch) p.catch(function(){}); } catch(e){} }
+    if (btn) btn.addEventListener('click', function(){
+      if (!v.paused) { v.pause(); return; }
+      once = true; fr.classList.remove('xp-still'); try { v.currentTime = 0; v.play(); } catch(e){} });
+  }
+  function secsOf(kind){ return [].slice.call(document.querySelectorAll(kind === 'pictures' ? '.xp-sec.xp-pics' : '.xp-sec.xp-desc')); }
+  function anyOpen(secs){ return secs.some(function(s){ return !s.classList.contains('xp-closed'); }); }
+  // The all-cards buttons at the top of a Master's programme: one tap hides (or shows)
+  // that section on every card; each card's own choice is remembered as if tapped.
+  function bulkRefresh(){
+    document.querySelectorAll('.xp-bulk-btn').forEach(function(b){
+      var k = b.getAttribute('data-kind'), o = anyOpen(secsOf(k));
+      b.textContent = (o ? 'Hide ' : 'Show ') + (k === 'pictures' ? 'pictures' : 'descriptions');
+    });
+  }
+  window.xpBulkRefresh = bulkRefresh;
+  document.addEventListener('click', function(e){
+    var bb = e.target.closest && e.target.closest('.xp-bulk-btn');
+    if (bb) {
+      var secs = secsOf(bb.getAttribute('data-kind')), open = !anyOpen(secs);
+      secs.forEach(function(s){ setOpen(s, open); wr(key(s), open ? 'open' : 'closed'); });
+      bulkRefresh(); return;
+    }
+    var t = e.target.closest && e.target.closest('.xp-tog');
+    if (t) { var s = t.parentNode, open2 = s.classList.contains('xp-closed'); setOpen(s, open2); wr(key(s), open2 ? 'open' : 'closed'); bulkRefresh(); return; }
+    var f = e.target.closest && e.target.closest('.xp-fbtn');
+    if (f) { pick(f); return; }
+    // Tapping the picture moves on to the next one, Finish back round to Start
+    // (James, 9 Nov 2026). The buttons stay, so it is a shortcut, not the only way.
+    var fr = e.target.closest && e.target.closest('.xp-frame');
+    if (fr && !fr.classList.contains('xp-has-clip')) {
+      var bar = fr.parentNode.querySelector('.xp-btns'), bs = bar ? [].slice.call(bar.querySelectorAll('.xp-fbtn')) : [];
+      if (bs.length > 1) {
+        var on = 0; bs.forEach(function(b, j){ if (b.classList.contains('xp-on')) on = j; });
+        pick(bs[(on + 1) % bs.length]);
+      }
+    }
+  });
+  function css(){ var s = _xpCssSrc.toString(); return s.slice(s.indexOf('XP-CSS') + 7, s.lastIndexOf('XP-CSS') - 1); }
+  window.xpCss = css;
+  function init(){
+    // Client pages carry this CSS from the build; a Master gets it here, marked so the
+    // app strips it before any save.
+    if (document.querySelector('.xp-sec') && !document.getElementById('xp-css')) {
+      var st = document.createElement('style'); st.id = 'xp-css'; st.setAttribute('data-appinject', '1');
+      st.textContent = css(); (document.head || document.body).appendChild(st);
+    }
+    document.querySelectorAll('.xp-sec').forEach(function(s){
+      var v = rd(key(s)); setOpen(s, (v || s.getAttribute('data-default')) === 'open'); });
+    document.querySelectorAll('.xp-frame.xp-has-clip').forEach(clip);
+    bulkRefresh();
+  }
+  window.xpInit = init;   // the app calls this after adding pictures to a Master
+  window.xpReset = function(){
+    document.querySelectorAll('.xp-sec').forEach(function(s){ setOpen(s, s.getAttribute('data-default') === 'open'); });
+    document.querySelectorAll('.xp-btns .xp-fbtn:first-child').forEach(pick);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+/* == exercise pictures: end == */
+</script>
+</body>
+</html>
