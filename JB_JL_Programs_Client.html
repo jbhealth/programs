@@ -4,8 +4,8 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20261115T152844Z"/>
-<meta name="jb-key" content="JB_JA"/>
+<meta name="jb-build" content="20261118T114627Z"/>
+<meta name="jb-key" content="JB_JL"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
 <meta name="theme-color" content="#1B3F6B"/>
@@ -15,7 +15,7 @@
 <meta name="apple-mobile-web-app-title" content="JB Health"/>
 <link rel="apple-touch-icon" href="icon-180.png"/>
 <link rel="icon" href="icon-180.png"/>
-<link rel="manifest" href="manifest-JA.webmanifest"/>
+<link rel="manifest" href="manifest-JL.webmanifest"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--navy:#1B3F6B;--blue:#2E86C1;--warm:#FAFCFE;--dark:#1A1A1A;--grey:#6B7A8D;--border:#D4E4F0;--accent:#E8F4FD;}
@@ -130,14 +130,14 @@ if(isIOS&&isSafari){msg.innerHTML='<b>Save this as an app:</b> tap <b>Share</b> 
 </script>
 <div class="header"><div class="header-info">
 <div class="brand">JB Health</div>
-<div class="client-name">JA</div>
+<div class="client-name">JL</div>
 <div class="month-label"></div>
 </div></div>
 <div class="tab-nav"><button class="tab-btn active" onclick="show(0,this)">Welcome</button></div>
 <div class="content"><div class="program-panel active" id="program-0"><div class="program-header"><div class="program-title">Welcome</div></div><div class="exercise-card main"><div class="ex-desc"><p><strong>This is your training home.</strong> Every programme I build for you will live here from now on.</p><p>There&rsquo;s nothing to see just yet. Your first programme will appear on this page the evening before your first session.</p><p>The link never changes, so save it once and it&rsquo;ll always be current. An archive of past sessions builds up here over time too, so it only gets more useful the longer we train together.</p><p>Any questions, just ask me next time you&rsquo;re in.</p></div></div></div></div>
 <div id="jb-contact">Question about your programme? <a id="jb-wa">WhatsApp</a> or <a id="jb-em">email James</a> any time. I'd rather you ask than guess.</div>
 <script>
-const CLIENT="JB_JA", WORKER="https://jb-log.james-52d.workers.dev", TOKEN="CwdgYVngX49vyjCKWZnSecBVqAossgVY";
+const CLIENT="JB_JL", WORKER="https://jb-log.james-52d.workers.dev", TOKEN="ESeOAyWDXFqhsN7DXoibRECABwdWRtP5";
 function show(i,btn){document.querySelectorAll(".program-panel").forEach(p=>p.classList.remove("active"));document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));var t=document.getElementById("program-"+i);if(t)t.classList.add("active");btn.classList.add("active");window.scrollTo(0,0);}
 function tog(el){el.closest(".exercise-card").classList.toggle("collapsed");}
 document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick=function(){h.parentElement.classList.toggle("open");};});
@@ -145,7 +145,7 @@ document.querySelectorAll(".archive-month-header").forEach(function(h){h.onclick
 </script>
 <script>
 (function(){try{
-fetch("balances/JB_JA.json",{cache:"no-cache"}).then(function(r){
+fetch("balances/JB_JL.json",{cache:"no-cache"}).then(function(r){
   if(!r.ok)throw 0;return r.json();
 }).then(function(j){
   if(!j||typeof j.b!=="number")return;
@@ -179,7 +179,7 @@ fetch("balances/JB_JA.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20261115T152844Z",VK="JB_JA";
+var BID="20261118T114627Z",VK="JB_JL";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;

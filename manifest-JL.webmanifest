@@ -2,7 +2,7 @@
   "name": "JB Health",
   "short_name": "JB Health",
   "description": "Your personal training programs from JB Health.",
-  "start_url": "JB_JA_Programs_Client.html",
+  "start_url": "JB_JL_Programs_Client.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
