@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex, nofollow"/>
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
-<meta name="jb-build" content="20261109T210338Z"/>
+<meta name="jb-build" content="20261125T184924Z"/>
 <meta name="jb-key" content="JB_LT"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 <title>JB Health</title>
@@ -118,7 +118,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .xp-pic.xp-on{display:block;}
 .xp-frame.xp-tap{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;}
 .xp-clip{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;background:#F2EFEA;mix-blend-mode:multiply;}
+.xp-frame.xp-wait .xp-clip{opacity:0;pointer-events:none;}
+.xp-frame.xp-has-clip:not(.xp-wait):not(.xp-still) .xp-pic{visibility:hidden;}
 .xp-frame.xp-still .xp-clip{display:none;}
+.xp-btns[hidden]{display:none;}
+.xp-btns+.xp-btns{margin-top:6px;}
 .xp-clock{position:absolute;top:10px;right:10px;width:26px;height:26px;z-index:2;}
 .xp-btns{display:flex;margin-top:8px;border:2px solid var(--navy,#1B3F6B);border-radius:10px;overflow:hidden;}
 .xp-fbtn,.xp-play{flex:1;min-height:44px;padding:8px 6px;background:#fff;border:none;border-radius:0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy,#1B3F6B);cursor:pointer;-webkit-tap-highlight-color:transparent;}
@@ -127,6 +131,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--warm);color:var(--dark);m
 .xp-desc .ex-desc{margin-top:0;}
 .xp-bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
 .xp-bulk-btn{min-height:44px;padding:8px 16px;background:#fff;border:1px solid var(--border,#D4E4F0);border-radius:22px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--blue,#2E86C1);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-mwrap{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.xp-mwrap>.xp-sec{display:contents;}
+.xp-mwrap .xp-pics>.xp-body{grid-row:1;grid-column:1 / -1;min-width:0;}
+.xp-mwrap .xp-pics>.xp-tog{grid-row:2;grid-column:1;justify-self:start;}
+.xp-mwrap .xp-desc>.xp-tog{grid-row:2;grid-column:2;justify-self:end;}
 .exercise-card.xp-card{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
 .exercise-card.xp-card>*,.exercise-card.xp-card .metarow,.exercise-card.xp-card .logrow,.exercise-card.xp-card .xp-body{grid-column:1 / -1;min-width:0;}
 .exercise-card.xp-card .meta,.exercise-card.xp-card .xp-sec{display:contents;}
@@ -249,7 +258,7 @@ fetch("balances/JB_LT.json",{cache:"no-cache"}).then(function(r){
    sessionStorage guard bounds it to a single reload per new version, so a
    lagging versions.json can never cause a reload loop. */
 (function(){try{
-var BID="20261109T210338Z",VK="JB_LT";
+var BID="20261125T184924Z",VK="JB_LT";
 if(!BID||!VK||BID.indexOf("__")===0)return;
 fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
   return r.ok?r.json():null;
@@ -271,9 +280,11 @@ fetch("versions.json?_="+Date.now(),{cache:"no-store"}).then(function(r){
    and two independent sections ("Hide pictures", "Show description") whose state is
    remembered per exercise on this device. exercise_pictures.py cuts this block out and
    bakes it into client pages, so it lives here once. Event delegation only: it needs no
-   markup hooks and does nothing on a page without pictures. Clips (not yet approved):
-   muted, inline, three plays then stop, tap to pause; reduced motion shows the pictures
-   with a "Show the movement" button that plays once. */
+   markup hooks and does nothing on a page without pictures. Clips (25 Nov 2026): the
+   card links to the clip and nothing downloads until Show pictures is opened; the Start
+   picture shows while it loads. Muted, inline, three plays then stop, tap to pause or play
+   again. Reduced motion shows the Start / Finish pictures with a "Play the movement" button
+   that plays once. A clip that can't be had (no signal) leaves the pictures as they were. */
 // The picture CSS, one copy (exercise_pictures.py bakes it into client pages).
 // Client cards (xp-card, 9 Nov 2026 "tidier"): look first, then log. Name and pills,
 // James's cue, the picture with a joined Start / Finish bar, then "Hide pictures" and
@@ -295,7 +306,11 @@ function _xpCssSrc(){/*XP-CSS
 .xp-pic.xp-on{display:block;}
 .xp-frame.xp-tap{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;}
 .xp-clip{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:contain;background:#F2EFEA;mix-blend-mode:multiply;}
+.xp-frame.xp-wait .xp-clip{opacity:0;pointer-events:none;}
+.xp-frame.xp-has-clip:not(.xp-wait):not(.xp-still) .xp-pic{visibility:hidden;}
 .xp-frame.xp-still .xp-clip{display:none;}
+.xp-btns[hidden]{display:none;}
+.xp-btns+.xp-btns{margin-top:6px;}
 .xp-clock{position:absolute;top:10px;right:10px;width:26px;height:26px;z-index:2;}
 .xp-btns{display:flex;margin-top:8px;border:2px solid var(--navy,#1B3F6B);border-radius:10px;overflow:hidden;}
 .xp-fbtn,.xp-play{flex:1;min-height:44px;padding:8px 6px;background:#fff;border:none;border-radius:0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy,#1B3F6B);cursor:pointer;-webkit-tap-highlight-color:transparent;}
@@ -304,6 +319,11 @@ function _xpCssSrc(){/*XP-CSS
 .xp-desc .ex-desc{margin-top:0;}
 .xp-bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
 .xp-bulk-btn{min-height:44px;padding:8px 16px;background:#fff;border:1px solid var(--border,#D4E4F0);border-radius:22px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--blue,#2E86C1);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.xp-mwrap{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
+.xp-mwrap>.xp-sec{display:contents;}
+.xp-mwrap .xp-pics>.xp-body{grid-row:1;grid-column:1 / -1;min-width:0;}
+.xp-mwrap .xp-pics>.xp-tog{grid-row:2;grid-column:1;justify-self:start;}
+.xp-mwrap .xp-desc>.xp-tog{grid-row:2;grid-column:2;justify-self:end;}
 .exercise-card.xp-card{display:grid;grid-template-columns:1fr 1fr;column-gap:8px;}
 .exercise-card.xp-card>*,.exercise-card.xp-card .metarow,.exercise-card.xp-card .logrow,.exercise-card.xp-card .xp-body{grid-column:1 / -1;min-width:0;}
 .exercise-card.xp-card .meta,.exercise-card.xp-card .xp-sec{display:contents;}
@@ -329,6 +349,7 @@ XP-CSS*/}
     var b = tog(sec);
     if (b) { b.textContent = (open ? 'Hide ' : 'Show ') + b.getAttribute('data-what'); b.setAttribute('aria-expanded', open ? 'true' : 'false'); }
     if (!open) sec.querySelectorAll('video').forEach(function(v){ try { v.pause(); } catch(e){} });
+    else if (sec.classList.contains('xp-pics')) startClips(sec);
   }
   function pick(btn){
     var body = btn.closest('.xp-body'); if (!body) return;
@@ -337,22 +358,51 @@ XP-CSS*/}
     [].slice.call(body.querySelectorAll('.xp-frame .xp-pic')).forEach(function(p, j){ p.classList.toggle('xp-on', j === i); });
   }
   function reduced(){ try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){ return false; } }
+  // A clip (25 Nov 2026). Bound once per frame; nothing loads until start() runs, which
+  // happens when the card's pictures are opened (setOpen). States: xp-wait = the Start
+  // picture shows while the clip loads; xp-still = the pictures with their buttons
+  // (reduced motion, or the clip failed); neither = the clip is in the frame.
   function clip(fr){
-    var v = fr.querySelector('.xp-clip'); if (!v || fr.__xp) return; fr.__xp = true;
-    var bar = fr.parentNode.querySelector('.xp-motion'), btn = bar && bar.querySelector('.xp-play'), plays = 0, once = false;
+    var v = fr.querySelector('.xp-clip'); if (!v || fr.__xp) return;
+    var body = fr.parentNode, bar = body.querySelector('.xp-motion'), btn = bar && bar.querySelector('.xp-play'),
+        pb = body.querySelector('.xp-still-btns'), plays = 0, once = false, failed = false, timer = null;
+    fr.__xp = { start: start };
     v.muted = true; v.loop = false; v.setAttribute('playsinline', '');
-    function label(){ if (btn) btn.textContent = v.paused ? 'Show the movement' : 'Pause'; }
+    function play(){ try { var p = v.play(); if (p && p.catch) p.catch(function(){}); } catch(e){} }
+    function still(on){ fr.classList.toggle('xp-still', on); if (pb) pb.hidden = !on; }
+    function label(){ if (btn) btn.textContent = v.paused ? 'Play the movement' : 'Pause'; }
+    function load(){
+      if (v.getAttribute('src')) return;
+      v.preload = 'auto'; v.src = v.getAttribute('data-src');
+      timer = setTimeout(function(){ if (fr.classList.contains('xp-wait')) fail(); }, 12000);
+    }
+    function fail(){ failed = true; clearTimeout(timer); fr.classList.remove('xp-wait'); still(true); if (bar) bar.hidden = true; try { v.pause(); } catch(e){} }
+    v.addEventListener('error', fail);
+    v.addEventListener('loadeddata', function(){ if (!failed) { clearTimeout(timer); fr.classList.remove('xp-wait');
+      if (pb && !fr.classList.contains('xp-still')) pb.hidden = true; } });
     v.addEventListener('play', label); v.addEventListener('pause', label);
     v.addEventListener('ended', function(){
-      if (once) { once = false; fr.classList.add('xp-still'); label(); return; }
-      if (++plays < 3) { try { v.play(); } catch(e){} } });
-    v.addEventListener('click', function(){ if (v.paused) { try { v.play(); } catch(e){} } else v.pause(); });
-    if (reduced()) { fr.classList.add('xp-still'); label(); }
-    else { if (bar) bar.hidden = true; try { var p = v.play(); if (p && p.catch) p.catch(function(){}); } catch(e){} }
+      if (once) { once = false; still(true); label(); return; }
+      if (++plays < 3) play(); });
+    v.addEventListener('click', function(){ if (v.paused) { plays = 0; play(); } else v.pause(); });
+    function start(){
+      if (failed) return;
+      if (reduced()) { still(true); if (bar) bar.hidden = false; label(); return; }
+      // No signal and nothing loaded yet: the pictures and their buttons, straight away
+      // (James, 25 Nov 2026: on his iPhone they took ten seconds). Not marked failed, so
+      // opening the card again with a signal tries the clip again.
+      if (navigator.onLine === false && !v.getAttribute('src')) { still(true); if (bar) bar.hidden = true; return; }
+      still(false); if (bar) bar.hidden = true; plays = 0;
+      // While the clip loads the pictures are fully usable: their buttons show too.
+      if (pb && fr.classList.contains('xp-wait')) pb.hidden = false;
+      load(); play();
+    }
     if (btn) btn.addEventListener('click', function(){
       if (!v.paused) { v.pause(); return; }
-      once = true; fr.classList.remove('xp-still'); try { v.currentTime = 0; v.play(); } catch(e){} });
+      if (failed) return;
+      once = true; still(false); load(); try { v.currentTime = 0; } catch(e){} play(); });
   }
+  function startClips(sec){ sec.querySelectorAll('.xp-frame.xp-has-clip').forEach(function(fr){ clip(fr); if (fr.__xp) fr.__xp.start(); }); }
   function secsOf(kind){ return [].slice.call(document.querySelectorAll(kind === 'pictures' ? '.xp-sec.xp-pics' : '.xp-sec.xp-desc')); }
   function anyOpen(secs){ return secs.some(function(s){ return !s.classList.contains('xp-closed'); }); }
   // The all-cards buttons at the top of a Master's programme: one tap hides (or shows)
@@ -378,7 +428,7 @@ XP-CSS*/}
     // Tapping the picture moves on to the next one, Finish back round to Start
     // (James, 9 Nov 2026). The buttons stay, so it is a shortcut, not the only way.
     var fr = e.target.closest && e.target.closest('.xp-frame');
-    if (fr && !fr.classList.contains('xp-has-clip')) {
+    if (fr && (!fr.classList.contains('xp-has-clip') || fr.classList.contains('xp-still') || fr.classList.contains('xp-wait'))) {
       var bar = fr.parentNode.querySelector('.xp-btns'), bs = bar ? [].slice.call(bar.querySelectorAll('.xp-fbtn')) : [];
       if (bs.length > 1) {
         var on = 0; bs.forEach(function(b, j){ if (b.classList.contains('xp-on')) on = j; });
@@ -395,9 +445,9 @@ XP-CSS*/}
       var st = document.createElement('style'); st.id = 'xp-css'; st.setAttribute('data-appinject', '1');
       st.textContent = css(); (document.head || document.body).appendChild(st);
     }
+    document.querySelectorAll('.xp-frame.xp-has-clip').forEach(clip);
     document.querySelectorAll('.xp-sec').forEach(function(s){
       var v = rd(key(s)); setOpen(s, (v || s.getAttribute('data-default')) === 'open'); });
-    document.querySelectorAll('.xp-frame.xp-has-clip').forEach(clip);
     bulkRefresh();
   }
   window.xpInit = init;   // the app calls this after adding pictures to a Master
